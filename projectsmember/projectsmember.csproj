@@ -2187,6 +2187,7 @@
     <Content Include="members\assets\images\git-img\گیت مخزن جدید علامت مثبت.jpg" />
     <Content Include="members\assets\js\docs.js" />
     <Content Include="members\assets\js\highlight-custom.js" />
+    <Content Include="js\signDesign.js" />
     <Content Include="members\assets\plugins\bootstrap\css\bootstrap-grid.css" />
     <Content Include="members\assets\plugins\bootstrap\css\bootstrap-grid.min.css" />
     <Content Include="members\assets\plugins\bootstrap\css\bootstrap-grid.rtl.css" />
@@ -2537,6 +2538,7 @@
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="signin.aspx" />
+    <Content Include="signindesign.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -2580,6 +2582,13 @@
     </Compile>
     <Compile Include="signin.aspx.designer.cs">
       <DependentUpon>signin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="signindesign.aspx.cs">
+      <DependentUpon>signindesign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="signindesign.aspx.designer.cs">
+      <DependentUpon>signindesign.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

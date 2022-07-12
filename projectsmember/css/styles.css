@@ -263,7 +263,7 @@ sup {
 
 a {
   color: #1D809F;
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:hover {
   color: #17667f;
@@ -11544,12 +11544,12 @@ footer.footer .social-link:hover {
   margin: auto 2rem 2rem;
 }
 .portfolio-item .caption .caption-content h2, .portfolio-item .caption .caption-content .h2 {
-  font-size: 0.8rem;
+  font-size:1.5rem;
   text-transform: uppercase;
 }
 .portfolio-item .caption .caption-content p {
   font-weight: 300;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 @media (min-width: 992px) {
   .portfolio-item {
@@ -11576,14 +11576,16 @@ footer.footer .social-link:hover {
     -webkit-clip-path: inset(-1px);
             clip-path: inset(-1px);
   }
-  .portfolio-item:hover img {
-    -webkit-clip-path: inset(2rem);
-            clip-path: inset(2rem);
-  }
+    .portfolio-item:hover img {
+        -webkit-clip-path: inset(2rem);
+        clip-path: inset(2rem);
+        cursor:default  !important;
+    }
   .portfolio-item:hover .caption {
     background-color: rgba(29, 128, 159, 0.9);
     -webkit-clip-path: inset(2rem);
             clip-path: inset(2rem);
+            cursor :default  !important   ;
   }
 }
 

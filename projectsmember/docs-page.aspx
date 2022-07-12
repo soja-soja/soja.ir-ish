@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="members/assets/plugins/simplelightbox/simple-lightbox.min.css">
 
     <!-- Theme CSS -->  
-    <link  rel ="stylesheet" href="members/assets/css/theme.css">
+    <link  rel ="stylesheet" href="members/assets/css/memberstyle.css">
 </head>
 <body>
     <form id="form1" runat="server">

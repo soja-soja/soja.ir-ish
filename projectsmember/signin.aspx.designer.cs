@@ -96,24 +96,6 @@ namespace projectsmember
         protected global::System.Web.UI.WebControls.RadioButtonList rbtnAparat;
 
         /// <summary>
-        /// ckbVideoYuotube control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList ckbVideoYuotube;
-
-        /// <summary>
-        /// ckbVideoAparat control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList ckbVideoAparat;
-
-        /// <summary>
         /// lblSojaSite control.
         /// </summary>
         /// <remarks>
