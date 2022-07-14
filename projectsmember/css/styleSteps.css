@@ -137,3 +137,8 @@ body {
     color: rgba(0,0,0,0.3);
     padding-top: 15px;
 }
+a:link, a:visited
+a:hover, a:active {
+    text-decoration: none !important ;
+    color: white !important ;
+}
