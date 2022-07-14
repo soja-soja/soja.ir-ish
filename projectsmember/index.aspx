@@ -50,10 +50,10 @@
         <header class="masthead d-flex align-items-center" id="page-top" dir="rtl">
             <div class="container px-4 px-lg-5 text-center">
                 <h1 class="mb-2">یه پیشنهاد جذاب</h1>
-                <h3 class="mb-2">دوست داری عضو تیم ما بشی و همکاری کنی؟</h3>
-                <h3 class="mb-5">یا دوست داری سفارش طراحی سایت بدی؟</h3>
+                <h3 class="mb-2">برای عضویت در تیم ما و همکاری با ما</h3>
+                <h3 class="mb-5">یا برای سفارش پروژه های جدید</h3>
                 <a class="btn btn-primary btn-xl" href="#about">می خوام همکارتون بشم</a>
-                <a class="btn btn-primary btn-xl" href="#services">سفارش طراحی پروژه </a>
+                <a class="btn btn-primary btn-xl" href="#portfolio">سفارش طراحی پروژه </a>
             </div>
         </header>
         <!-- About-->
@@ -177,7 +177,7 @@
                     <em>همکار</em>
                     بشیم
                 </h2>
-                <a class="btn btn-primary btn-xl" href="#contact">وقتشه ثبت نام کنی </a>
+                <a class="btn btn-primary btn-xl" href="members.aspx">وقتشه ثبت نام کنی </a>
             </div>
         </section>
         <!-- Portfolio-->
@@ -185,14 +185,17 @@
             <div class="container px-4 px-lg-5">
                 <div class="content-section-heading text-center">
                     <h3 class="text-secondary mb-0">راستی قبل از اینکه ثبت نام کنی بگم که   </h3>
-                    <h2 class="mb-5">هر طرحی دوست داشته باشی قابل اجراست حالا برو برای ثبت نام و سفارش  </h2>
+                    <h2 class="mb-5">هر طرحی دوست داشته باشی قابل اجراست
+                        <br /><br />
+                <a class="btn btn-xl btn-dark" href="signindesign.aspx">سفارش طراحی سایت </a>
+                        </h2>
                 </div>
                 <div class="row gx-0">
                     <div class="col-lg-6">
                         <a class="portfolio-item" href="#!">
                             <div class="caption">
                                 <div class="caption-content ">
-                                    <div dir="rtl" class="h2">طراحی رسپانسیو</div>
+                                    <div dir="rtl" class="h2">طراحی پویا (Responsive)</div>
                                     <p dir="rtl" class="mb-0">طراحی وب سایت کاملا سازگار با صفحه های نمایش موبایل و تبلت و با رویکرد رسپانسیو </p>
                                 </div>
                             </div>
@@ -239,7 +242,6 @@
         <section class="content-section bg-primary text-white" id="contact">
             <div class="container px-4 px-lg-5 text-center">
                 <h2 class="mb-4">وقتی تمام مراحل کامل طی کردی برو برای ثبت نام </h2>
-                <a class="btn btn-xl btn-light me-4" href="signin.aspx">فرم همکاری</a>
                 <a class="btn btn-xl btn-dark" href="signindesign.aspx">سفارش طراحی سایت </a>
             </div>
         </section>
