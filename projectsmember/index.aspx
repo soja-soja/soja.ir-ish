@@ -37,25 +37,27 @@
         <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
         <nav id="sidebar-wrapper">
             <ul class="sidebar-nav">
-                <li class="sidebar-brand"><a href="#page-top">شرایط همکاری </a></li>
-                <li class="sidebar-nav-item"><a href="#page-top">نحوه همکاری </a></li>
-                <li class="sidebar-nav-item"><a href="#about">مقدمه</a></li>
-                <li class="sidebar-nav-item"><a href="#steps">مراحل کار </a></li>
-                <li class="sidebar-nav-item"><a href="#services">مراحل ضروری</a></li>
-                <li class="sidebar-nav-item"><a href="#portfolio">چالش </a></li>
+                <li class="sidebar-brand"><a href="#page-top">سفارش و همکاری </a></li>
+                <li class="sidebar-nav-item"><a href="#page-top">مقدمه </a></li>
+                <li class="sidebar-nav-item"><a href="#about">نحوه همکاری</a></li>
+                <li class="sidebar-nav-item"><a href="#steps">مراحل همکاری </a></li>
+                <li class="sidebar-nav-item"><a href="#services">مراحل ثبت سفارش</a></li>
+                <li class="sidebar-nav-item"><a href="#portfolio">نکات قابل توجه  </a></li>
                 <li class="sidebar-nav-item"><a href="#contact">فرم همکاری</a></li>
             </ul>
         </nav>
         <!-- Header-->
         <header class="masthead d-flex align-items-center" id="page-top" dir="rtl">
             <div class="container px-4 px-lg-5 text-center">
-                <h1 class="mb-1">یه پیشنهاد جذاب</h1>
-                <h3 class="mb-5">دوست داری عضو تیم ما بشی و همکاری کنی؟</h3>
-                <a class="btn btn-primary btn-xl" href="#about">پس بزن بریم !</a>
+                <h1 class="mb-2">یه پیشنهاد جذاب</h1>
+                <h3 class="mb-2">دوست داری عضو تیم ما بشی و همکاری کنی؟</h3>
+                <h3 class="mb-5">یا دوست داری سفارش طراحی سایت بدی؟</h3>
+                <a class="btn btn-primary btn-xl" href="#about">می خوام همکارتون بشم</a>
+                <a class="btn btn-primary btn-xl" href="#services">سفارش طراحی پروژه </a>
             </div>
         </header>
         <!-- About-->
-        <section class="content-section bg-light" id="about" dir="rtl">
+        <section class="content-section  bg-light mb-5   " id="about" dir="rtl">
             <div class="container px-4 px-lg-5 text-center">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-10">
@@ -73,7 +75,7 @@
             </div>
         </section>
         <!-- steps-->
-        <section class="content-section " id="steps">
+        <section class="content-section  " style ="padding-top :10px;" id="steps">
             <div class="container text-center ">
                 <div class="row">
                     <div class="how-it-work clearfix">
@@ -81,20 +83,22 @@
                             <h4>چهار مرحله  <span class="bg-theme">طلایی</span> </h4>
                         </div>
                         <div class="panel panel-default col-sm-10 col-sm-offset-2">
-                            <div class="panel-body">
-                                <span>1 </span>
-                                <h3 class="step-heading">مرحله اول  </h3>
-                                عضویت توی کانال یوتیوب یا آپارات
-				 
-                            </div>
+                            
+                                <div class="panel-body ">
+                                    <span>1 </span>
+                                    <h3 class="step-heading">مرحله اول  </h3>
+                                   <a href="https://www.youtube.com/c/SOJAA" style ="color:white; text-decoration :none ;"> عضویت توی کانال یوتیوب یا آپارات
+				 </a>
+                                </div>
+                            
                         </div>
 
                         <div class="panel panel-default col-sm-10 col-sm-offset-2">
                             <div class="panel-body">
                                 <span>2 </span>
                                 <h3 class="step-heading">مرحله دوم  </h3>
-                                عضویت توی سایت سوال و جواب
-				 
+                                <a href="https://soja.ir/Signup.aspx" style ="color:white; text-decoration :none ; ">عضویت توی سایت سوال و جواب</a>
+				
                             </div>
                         </div>
 
@@ -102,8 +106,8 @@
                             <div class="panel-body">
                                 <span>3 </span>
                                 <h3 class="step-heading">مرحله سوم </h3>
-                                مشاهده ی همه یا ویدیوهایی که نیازتونه
-				 
+                                <a href="https://www.youtube.com/c/SOJAA/playlists" style ="color:white; text-decoration :none ;">مشاهده ی همه یا ویدیوهایی که نیازتونه
+				 </a>
                             </div>
                         </div>
 
@@ -111,7 +115,7 @@
                             <div class="panel-body">
                                 <span>4 </span>
                                 <h3 class="step-heading">مرحله چهارم</h3>
-                                انجام چالش های توی این سایت
+                                انجام چالش های مورد نظر
 				 
                             </div>
                         </div>
@@ -119,7 +123,7 @@
                     </div>
 
                 </div>
-                <a class="btn btn-warning  btn-xl" href="#services">گام بعدی </a>
+                <a class="btn btn-warning btn-xl " href="#letsgo">گام بعدی </a>
             </div>
         </section>
         <!-- Services-->
@@ -127,24 +131,25 @@
             <div class="container px-4 px-lg-5">
                 <div class="content-section-heading">
                     <h3 class="text-secondary mb-0">مراحل ضروری</h3>
-                    <h2 class="mb-5">امتیازاتت بالا ببر</h2>
+                    <h2 class="mb-5">اول عضویت در سایت های زیر انجام بده</h2>
                 </div>
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                <div class="row gx-4 gx-lg-5 justify-content-center  ">
+                    <!--  <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
                         <span class="service-icon rounded-circle mx-auto mb-3">
                             <img src="assets/img/chaleng.png" alt="chalenge" width="60px" height="60px" />
                         </span>
                         <h4><strong>مرحله چهارم</strong></h4>
                         <p class="text-faded mb-0">انجام چالش های توی این سایت</p>
-                    </div>
+                    </div>-->
                     <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><a href ="https://www.youtube.com/c/SOJAA/playlists"><i class="fa fa-video-camera"></i></a></span>
+                        <span class="service-icon rounded-circle mx-auto mb-3"><a href="#portfolio"><i class="fa fa-registered "></i></a></span>
                         <h4><strong>مرحله سوم</strong></h4>
-                        <p class="text-faded mb-0">مشاهده ی همه یا ویدیوهایی که نیازتونه</p>
+                        <p class="text-faded mb-0">ثبت نام در سایت </p>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
                         <span class="service-icon rounded-circle mx-auto mb-3">
-                          <a href ="https://soja.ir/" > <img src="assets/img/soja.jpg"  alt="soja.ir" width ="60px" height="60px"/></a></span>
+                            <a href="https://soja.ir/Signup.aspx">
+                                <img src="assets/img/soja.jpg" alt="soja.ir" width="60px" height="60px" /></a></span>
                         <h4><strong>مرحله دوم</strong></h4>
                         <p class="text-faded mb-0">
                             عضویت توی سایت سوال و جواب
@@ -156,7 +161,8 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <span class="service-icon rounded-circle mx-auto mb-3">
-                           <a href ="https://www.youtube.com/c/SOJAA"> <img src="assets/img/yt.png" alt="youtube"  width ="60px" height="60px" /></a></span>
+                            <a href="https://www.youtube.com/c/SOJAA">
+                                <img src="assets/img/yt.png" alt="youtube" width="60px" height="60px" /></a></span>
                         <h4><strong>مرحله اول</strong></h4>
                         <p class="text-faded mb-0">عضویت توی کانال یوتیوب یا آپارات</p>
                     </div>
@@ -164,30 +170,30 @@
             </div>
         </section>
         <!-- Callout-->
-        <section class="callout">
+        <section class="callout" id="letsgo">
             <div class="container px-4 px-lg-5 text-center">
                 <h2 class="mx-auto mb-5">بهت تبریک میگم چیزی نمونده که 
                    
                     <em>همکار</em>
                     بشیم
                 </h2>
-                <a class="btn btn-primary btn-xl" href="#portfolio">بریم سراغ چالش </a>
+                <a class="btn btn-primary btn-xl" href="#contact">وقتشه ثبت نام کنی </a>
             </div>
         </section>
         <!-- Portfolio-->
-        <section class="content-section" id="portfolio">
+        <section class="content-section " id="portfolio">
             <div class="container px-4 px-lg-5">
                 <div class="content-section-heading text-center">
-                    <h3 class="text-secondary mb-0">آماده ای؟ </h3>
-                    <h2 class="mb-5">کدوم اول انتخاب میکنی ؟</h2>
+                    <h3 class="text-secondary mb-0">راستی قبل از اینکه ثبت نام کنی بگم که   </h3>
+                    <h2 class="mb-5">هر طرحی دوست داشته باشی قابل اجراست حالا برو برای ثبت نام و سفارش  </h2>
                 </div>
                 <div class="row gx-0">
                     <div class="col-lg-6">
                         <a class="portfolio-item" href="#!">
                             <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Stationary</div>
-                                    <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
+                                <div class="caption-content ">
+                                    <div dir="rtl" class="h2">طراحی رسپانسیو</div>
+                                    <p dir="rtl" class="mb-0">طراحی وب سایت کاملا سازگار با صفحه های نمایش موبایل و تبلت و با رویکرد رسپانسیو </p>
                                 </div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio-1.jpg" alt="..." />
@@ -197,8 +203,8 @@
                         <a class="portfolio-item" href="#!">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <div class="h2">Ice Cream</div>
-                                    <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+                                    <div dir="rtl" class="h2">دسته بندی خدمات</div>
+                                    <p dir="rtl" class="mb-0">بدون هیچ محدودیتی در ارائه طرح های متنوع و متناسب سفارش شما  </p>
                                 </div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio-2.jpg" alt="..." />
@@ -208,8 +214,8 @@
                         <a class="portfolio-item" href="#!">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <div class="h2">Strawberries</div>
-                                    <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+                                    <div dir="rtl" class="h2">پشتیبانی فنی</div>
+                                    <p dir="rtl" class="mb-0">پشتیبانی کامل در صورت هرگونه خرابی ، مشکلات نرم افزاری </p>
                                 </div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio-3.jpg" alt="..." />
@@ -219,8 +225,8 @@
                         <a class="portfolio-item" href="#!">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <div class="h2">Workspace</div>
-                                    <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
+                                    <div dir="rtl" class="h2">مدت زمان اجرای پروژه</div>
+                                    <p dir="rtl" class="mb-0">مدت زمان اجرای پروژه بر اساس حجم کاری شما تعیین می گردد</p>
                                 </div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio-4.jpg" alt="..." />
@@ -232,9 +238,9 @@
         <!-- Call to Action-->
         <section class="content-section bg-primary text-white" id="contact">
             <div class="container px-4 px-lg-5 text-center">
-                <h2 class="mb-4">اگر تمام مراحل کامل طی کردی برو برای فرم همکاری در غیر اینصورت برو عزمت جزم کن و دوباره بیا</h2>
+                <h2 class="mb-4">وقتی تمام مراحل کامل طی کردی برو برای ثبت نام </h2>
                 <a class="btn btn-xl btn-light me-4" href="signin.aspx">فرم همکاری</a>
-                <a class="btn btn-xl btn-dark" href="#page-top">برم دوباره برمیگردم</a>
+                <a class="btn btn-xl btn-dark" href="signindesign.aspx">سفارش طراحی سایت </a>
             </div>
         </section>
         <!-- Map
@@ -257,7 +263,7 @@
                         <a class="social-link rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
                     </li>
                 </ul>
-                <p class="text-muted small mb-0">Copyright &copy; Your Website 2022</p>
+                <p dir="rtl" class="text-muted small mb-0">Copyright &copy; تمامی حقوق مادی و معنوی، متعلق به وب سایت سوال جواب (soja.ir) و تیم مدیریتی آن می باشد.</p>
             </div>
         </footer>
         <!-- Scroll to Top Button-->
