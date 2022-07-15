@@ -51,6 +51,7 @@
 body {
     font-family: byekan,Tahoma;
     text-align: right;
+   
 }
 
 a:link, a:visited {
@@ -66,8 +67,8 @@ a:hover, a:active {
 
 .register {
     background: -webkit-linear-gradient(left, #3931af, #00c6ff);
-    margin-top: 3%;
-    padding: 3%;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .register-left {
@@ -130,13 +131,14 @@ a:hover, a:active {
 }
 
 .register .register-form {
-    padding: 10%;
+
+    padding: 5%;
     margin-top: 10%;
 }
 
 .btnRegister {
-    float: right;
-    margin-top: 10%;
+    float:right  ;
+    margin-top: 5%;
     border: none;
     border-radius: 1.5rem;
     padding: 2%;

@@ -96,6 +96,42 @@ namespace projectsmember
         protected global::System.Web.UI.WebControls.RadioButtonList rbtnAparat;
 
         /// <summary>
+        /// btnRegStep1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnRegStep1;
+
+        /// <summary>
+        /// ckbVideoYuotube control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBoxList ckbVideoYuotube;
+
+        /// <summary>
+        /// ckbVideoAparat control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBoxList ckbVideoAparat;
+
+        /// <summary>
+        /// btnRegStep2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnRegStep2;
+
+        /// <summary>
         /// lblSojaSite control.
         /// </summary>
         /// <remarks>
