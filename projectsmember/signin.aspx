@@ -20,9 +20,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </head>
-<body dir="rtl">
+<body dir="rtl" style="font-family: bmitra">
     <form id="form1" runat="server">
-        <div class="container register">
+        <div class="container register" style="margin-top: 0; padding: 150px 50px 50px 50px; position: ; max-width: 100%; height: vmax; margin-left: 0; margin-right: 0;">
             <div class="row">
                 <div class="col-md-3 register-left">
                     <!--  <asp:Image ID="imaLogin" src="https://image.ibb.co/n7oTvU/logo_white.png" alt="" runat="server" />-->
@@ -36,7 +36,7 @@
                 <div class="col-md-9 register-right">
                     <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" id="step1-tab" data-toggle="tab" href="#step1" role="tab" aria-controls="step1" aria-selected="true">مرحله1</a>
+                            <a class="nav-link active  " id="step1-tab" data-toggle="tab" href="#step1" role="tab" aria-controls="step1" aria-selected="true">مرحله1</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="step2-tab" data-toggle="tab" href="#step2" role="tab" aria-controls="step2" aria-selected="false">مرحله2</a>
@@ -48,6 +48,7 @@
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="step1" role="tabpanel" aria-labelledby="step1-tab">
                             <h3 class="register-heading">در کانال ما عضو شدید ؟</h3>
+                            <br />
                             <div class="row register-form">
                                 <div class="col-md-6">
                                     <div class="form-group register-right">
@@ -60,6 +61,8 @@
 
                                         </asp:RadioButtonList>
                                     </div>
+                                    </div>
+                                <div class="col-md-6">
                                     <div class="form-group register-right ">
                                         <asp:Label ID="lblAparat" runat="server" Text="">کانال آپارات به آدرس :aparat.com/sojaa</asp:Label>
                                     </div>
@@ -70,18 +73,20 @@
 
                                         </asp:RadioButtonList>
                                     </div>
-
-                                </div>
-
-                                <div class="col-md-6">
                                     <div>
-                                        <a class="btnRegister" aria-controls="step2"  href="#step2">مرحله بعد</a>
+                                        <asp:Button ID="btnRegStep1" class="btnRegister" value="Register" OnClick ="btnRegStep1_Click"  runat="server" style="margin-top: 80px; margin-right: 50px;" Text="ثبت اطلاعات" />
+
                                     </div>
                                 </div>
+
+                               
+                                    
+                                
                             </div>
                         </div>
                         <div class="tab-pane fade show " id="step2" role="tabpanel" aria-labelledby="step2-tab">
                             <h3 class="register-heading">کدام یک از ویدئوهای ما را تماشا کردین؟</h3>
+                            <br />
                             <div class="row register-form">
                                 <div class="col-md-6  ">
                                     <asp:CheckBoxList ID="ckbVideoYuotube" TextAlign="Right" CssClass="form-check form-reverse " runat="server">
@@ -100,8 +105,10 @@
                                         <asp:ListItem Text="" Value="3">آموزش نصب و استفاده از GIT</asp:ListItem>
 
                                     </asp:CheckBoxList>
-                                    <a class="btnRegister" href="#final" aria-controls ="final">مرحله آخر</a>
+                                    <div >
+                                    <asp:Button ID="btnRegStep2" class="btnRegister" OnClick ="btnRegStep2_Click"  value="Register" runat="server" Style="margin-top: 60px; margin-right: 50px;" Text="ثبت اطلاعات" />
                                 </div>
+                                    </div>
                             </div>
                         </div>
 
@@ -142,7 +149,7 @@
                                         <asp:TextBox ID="TextBox1" MaxLength="11" minlength="11" class="form-control" placeholder="کپچا" value="" runat="server"></asp:TextBox>
 
                                     </div>
-                                    <asp:Button ID="btnRegFinal" class="btnRegister" value="Register" OnClick="btnRegFinal_Click" runat="server" Text="ثبت اطلاعات" ValidationGroup="g1" />
+                                    <asp:Button ID="btnRegFinal" class="btnRegister" value="Register" OnClick="btnRegFinal_Click" runat="server" Style="margin-top: 90px; margin-right: 50px;" Text="ثبت اطلاعات" ValidationGroup="g1" />
                                 </div>
                             </div>
 
