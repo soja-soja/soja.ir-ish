@@ -23,13 +23,18 @@
 </head>
 <body dir="rtl" style="font-family: bmitra">
     <form id="form1" runat="server">
-        <div class="container register">
-            <div class="row">
-                <div class="col-md-3 register-left">
+        <div class="container register" style ="margin-top: 0;padding:70px 50px 50px 50px;position:;
+    max-width  :100%; height :vmax;margin-left :0; margin-right :0;">
+            <div class="row" >
+                <div class="col-md-3 register-left" >
                     <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="" />
-                    <h3>Welcome</h3>
-                    <p>You are 30 seconds away from earning your own money!</p>
-                    <input type="submit" name="" value="Login" /><br />
+                    <br />
+                    <br />
+                     <br />
+                    <br />
+                    <h3>خوش آمدید</h3>
+                    <p>لطفا اطلاعات  با دقت وارد کنید و پس از ثبت اطلاعات  منتظر دریافت ایمیل از طرف ماباشید .</p>
+                  <!--  <input type="submit" name="" value="Login" /><br />-->
                 </div>
                 <div class="col-md-9 register-right ">
                     <!-- <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
@@ -43,7 +48,7 @@
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                             <h3 class="register-heading">Apply as a Employee</h3>-->
-                    <div class="row register-form mt-0 ">
+                    <div class="row register-form mt-0 "  >
 
                         <div class="col-md-6">
 
@@ -177,7 +182,7 @@
                             <asp:TextBox ID="txtDeliveryTime" CssClass="form-control " runat="server"></asp:TextBox>
                         </div>
                          <div>
-                        <input type="submit" class="btnRegister" style="position: center" value="ثبت اطلاعات" />
+                        <input type="submit" class="btnRegister" style=" margin-top:1px ;  margin-right :200px;" value="ثبت اطلاعات" />
                     </div>
                     </div>
                    

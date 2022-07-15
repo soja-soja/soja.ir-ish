@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>مراحل عضوگیری پروژه</title>
-    <link href="../css/styleSteps.css" rel="stylesheet" />
+    <link href="../css/styleSteps.css?2" rel="stylesheet" />
 
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/font-awesome.min.css" rel="stylesheet" />
@@ -57,7 +57,7 @@
             </div>
         </header>
         <!-- About-->
-        <section class="content-section  bg-light mb-5   " id="about" dir="rtl">
+        <section class="content-section  bg-light " id="about" dir="rtl">
             <div class="container px-4 px-lg-5 text-center">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-10">
@@ -76,7 +76,7 @@
         </section>
         <!-- steps-->
         <section class="content-section  " style ="padding-top :10px;" id="steps">
-            <div class="container text-center ">
+            <div class="container text-center   "  id="steps">
                 <div class="row">
                     <div class="how-it-work clearfix">
                         <div class="main-how-it">
@@ -123,9 +123,9 @@
                     </div>
 
                 </div>
-                <a class="btn btn-warning btn-xl " href="#letsgo">گام بعدی </a>
+                <a class="btn btn-secondary    btn-xl " href="#letsgo">گام بعدی </a>
             </div>
-        </section>
+        </section> 
         <!-- Services-->
         <section class="content-section bg-primary text-white text-center" id="services">
             <div class="container px-4 px-lg-5">
