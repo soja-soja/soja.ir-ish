@@ -49,5 +49,10 @@ namespace projectsmember
 
             btnRegFinal.Text = "اطلاعات ثبت شد";
         }
+
+        protected void btnRegStep1_Click(object sender, EventArgs e) => btnRegStep1.Text = "اطلاعات ثبت شد";
+
+        protected void btnRegStep2_Click(object sender, EventArgs e) => btnRegStep2.Text = "اطلاعات ثبت شد";
+        
     }
 }
