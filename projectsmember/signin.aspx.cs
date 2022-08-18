@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace projectsmember
 {
@@ -16,8 +11,9 @@ namespace projectsmember
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            DataSet1TableAdapters .sojaUsersInfoTableAdapter users = new DataSet1TableAdapters .sojaUsersInfoTableAdapter();
-            int numberOfUsers = users.LoginQuery(txtUsername.Text).GetValueOrDefault();
+            //DataSet1TableAdapters .sojaUsersInfoTableAdapter users = new DataSet1TableAdapters .sojaUsersInfoTableAdapter();
+            int numberOfUsers = 0;
+            //users.LoginQuery(txtUsername.Text).GetValueOrDefault();
 
             if(numberOfUsers > 0)
             {
@@ -43,11 +39,31 @@ namespace projectsmember
 
         protected void btnRegFinal_Click(object sender, EventArgs e)
         {
-            DataSet1TableAdapters.sojaUsersInfoTableAdapter usda = new DataSet1TableAdapters.sojaUsersInfoTableAdapter();
-            usda.Insert(txtSojaUserName.Text, txtEmail.Text, txtPhoneNumber.Text);
-            txtSojaUserName.Text = txtEmail.Text = txtPhoneNumber.Text = "";
+            if (String.IsNullOrEmpty(RecaptchaWidget1.Response))
+            {
+                lblErr.Text = "Captcha cannot be empty.";
+            }
+            else
+            {
+                var result = RecaptchaWidget1.Verify();
+                if (result.Success)
+                {
+                    //DataSet1TableAdapters.sojaUsersInfoTableAdapter usda = new DataSet1TableAdapters.sojaUsersInfoTableAdapter();
+                    //usda.Insert(txtSojaUserName.Text, txtEmail.Text, txtPhoneNumber.Text);
+                    txtSojaUserName.Text = txtEmail.Text = txtPhoneNumber.Text = "";
 
-            btnRegFinal.Text = "اطلاعات ثبت شد";
+                    btnRegFinal.Text = "اطلاعات ثبت شد";
+                }
+                else
+                {
+                    lblErr.Text = "رباتی؟ ";
+                    //foreach (var err in result.ErrorCodes)
+                    //{
+                    //    lblErr.Text = lblErr.Text + err;
+                    //}
+                }
+            }
+            
         }
 
         protected void btnRegStep1_Click(object sender, EventArgs e) => btnRegStep1.Text = "اطلاعات ثبت شد";

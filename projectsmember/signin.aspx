@@ -1,4 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="signin.aspx.cs" UnobtrusiveValidationMode="None" Inherits="projectsmember.signin" %>
+<%@ Register Assembly="Recaptcha.Web" Namespace="Recaptcha.Web.UI.Controls" TagPrefix="cc1" %>
 
 <!DOCTYPE html>
 
@@ -19,13 +20,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    
+    <%--https://github.com/tanveery/recaptcha-net--%>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 <body dir="rtl" style="font-family: bmitra">
     <form id="form1" runat="server">
         <div class="container register" style="margin-top: 0; padding: 150px 50px 50px 50px; position: ; max-width: 100%; height: vmax; margin-left: 0; margin-right: 0;">
             <div class="row">
                 <div class="col-md-3 register-left">
-                    <!--  <asp:Image ID="imaLogin" src="https://image.ibb.co/n7oTvU/logo_white.png" alt="" runat="server" />-->
                     <h3 style="margin-top: 60px">خوش آمدید</h3>
                     <p style="margin-top: 10px">3 مرحله تا ثبت نام کامل فاصله دارید!</p>
                     <asp:TextBox ID="txtUsername" Font-Size="Small" Font-Names="byekan,tahoma" Font-Italic="true" runat="server"></asp:TextBox>
@@ -146,9 +150,9 @@
                                     <div class="form-group ">
                                     </div>
                                     <div class="form-group ">
-                                        <asp:TextBox ID="TextBox1" MaxLength="11" minlength="11" class="form-control" placeholder="کپچا" value="" runat="server"></asp:TextBox>
-
-                                    </div>
+                                        <cc1:RecaptchaWidget ID="RecaptchaWidget1" RenderApiScript="false" runat="server" />
+                           
+                                    </div>                             
                                     <asp:Button ID="btnRegFinal" class="btnRegister" value="Register" OnClick="btnRegFinal_Click" runat="server" Style="margin-top: 90px; margin-right: 50px;" Text="ثبت اطلاعات" ValidationGroup="g1" />
                                 </div>
                             </div>
