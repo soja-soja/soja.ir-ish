@@ -18,6 +18,28 @@ namespace projectsmember
 
         }
 
-
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(RecaptchaWidget1.Response))
+            {
+                lblErr.Text = "Captcha cannot be empty.";
+            }
+            else
+            {
+                var result = RecaptchaWidget1.Verify();
+                if (result.Success)
+                {
+                    Response.Redirect("Welcome.aspx");
+                }
+                else
+                {
+                    lblErr.Text = "رباتی؟";
+                    //foreach (var err in result.ErrorCodes)
+                    //{
+                    //    lblErr.Text = lblErr.Text + err;
+                    //}
+                }
+            }
+        }
     }
 }

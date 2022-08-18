@@ -1,4 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="signindesign.aspx.cs" UnobtrusiveValidationMode="None" Inherits="projectsmember.signindesign" %>
+<%@ Register Assembly="Recaptcha.Web" Namespace="Recaptcha.Web.UI.Controls" TagPrefix="cc1" %>
 
 <!DOCTYPE html>
 
@@ -19,6 +20,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <%--https://github.com/tanveery/recaptcha-net--%> 
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </head>
 <body dir="rtl" style="font-family: bmitra">
@@ -27,7 +30,6 @@
     max-width  :100%; height :vmax;margin-left :0; margin-right :0;">
             <div class="row" >
                 <div class="col-md-3 register-left" >
-                    <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="" />
                     <br />
                     <br />
                      <br />
@@ -182,7 +184,10 @@
                             <asp:TextBox ID="txtDeliveryTime" CssClass="form-control " runat="server"></asp:TextBox>
                         </div>
                          <div>
-                        <input type="submit" class="btnRegister" style=" margin-top:1px ;  margin-right :200px;" value="ثبت اطلاعات" />
+                            <cc1:RecaptchaWidget ID="RecaptchaWidget1" RenderApiScript="false" runat="server" />
+                             <asp:Label ID="lblErr" runat="server" Text="" ForeColor="Red"></asp:Label>
+                             <asp:Button ID="btnSubmit" type="submit" OnClick="btnSubmit_Click" runat="server" class="btnRegister" style=" margin-top:1px ;  margin-right :200px;" Text="ثبت اطلاعات"  />
+                             
                     </div>
                     </div>
                    
