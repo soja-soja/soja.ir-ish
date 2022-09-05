@@ -1,4 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="signin.aspx.cs" UnobtrusiveValidationMode="None" Inherits="projectsmember.signin" %>
+
 <%@ Register Assembly="Recaptcha.Web" Namespace="Recaptcha.Web.UI.Controls" TagPrefix="cc1" %>
 
 <!DOCTYPE html>
@@ -6,7 +7,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>ثبت نام / ورود </title>
-    <link href="../css/signinStyle.css" rel="stylesheet" />
+   <!-- <link href="css/signinStyle.css" rel="stylesheet" />-->
+    <link href="css/StyleSign.css" rel="stylesheet" />
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <script src="Scripts/jquery-3.6.0.slim.min.js"></script>
     <script src="Scripts/popper.min.js"></script>
@@ -20,7 +22,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-    
+
     <%--https://github.com/tanveery/recaptcha-net--%>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
@@ -55,64 +57,64 @@
                             <br />
                             <div class="row register-form">
                                 <div class="col-md-6">
-                                    <div class="form-group register-right">
+                                    <div class="form-group">
                                         <asp:Label ID="lblYouTube" runat="server" Text="">کانال یوتیوب به آدرس :Youtube.com/SOJAA</asp:Label>
                                     </div>
-                                    <div class="form-group align-content-center ">
+                                    <div class="form-group ">
                                         <asp:RadioButtonList ID="rbtnYouTube" RepeatDirection="Horizontal" runat="server">
                                             <asp:ListItem Text="بله" Value="0"></asp:ListItem>
                                             <asp:ListItem Text="خیر" Value="1"></asp:ListItem>
 
                                         </asp:RadioButtonList>
                                     </div>
-                                    </div>
-                                <div class="col-md-6">
-                                    <div class="form-group register-right ">
+                                    <div class="form-group">
                                         <asp:Label ID="lblAparat" runat="server" Text="">کانال آپارات به آدرس :aparat.com/sojaa</asp:Label>
                                     </div>
-                                    <div class="form-group  align-content-center ">
+                                    <div class="form-group">
                                         <asp:RadioButtonList ID="rbtnAparat" RepeatDirection="Horizontal" runat="server">
                                             <asp:ListItem Text="بله" Value="0"></asp:ListItem>
                                             <asp:ListItem Text="خیر" Value="1"></asp:ListItem>
 
                                         </asp:RadioButtonList>
                                     </div>
-                                    <div>
-                                        <asp:Button ID="btnRegStep1" class="btnRegister" value="Register" OnClick ="btnRegStep1_Click"  runat="server" style="margin-top: 80px; margin-right: 50px;" Text="ثبت اطلاعات" />
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group ">
+                                        <asp:Label ID="lblUrl" runat="server" Text="">آدرس های مربوط به صفحات اجتماعی و وب سایت های خود را وارد کنید.</asp:Label>
 
                                     </div>
+                                    <div class="form-group">
+                                        <asp:TextBox ID="txtUrl" TextMode="MultiLine"  CssClass="form-control " runat="server"></asp:TextBox>
+                                    </div>
+                                    <div class="form-group"></div>
+                                    <div class="form-group"></div>
                                 </div>
-
-                               
-                                    
-                                
                             </div>
                         </div>
+
                         <div class="tab-pane fade show " id="step2" role="tabpanel" aria-labelledby="step2-tab">
                             <h3 class="register-heading">کدام یک از ویدئوهای ما را تماشا کردین؟</h3>
                             <br />
                             <div class="row register-form">
                                 <div class="col-md-6  ">
                                     <asp:CheckBoxList ID="ckbVideoYuotube" TextAlign="Right" CssClass="form-check form-reverse " runat="server">
-                                        <asp:ListItem Text="" Value="0">آموزش مقدماتی وب سایت HTML</asp:ListItem>
-                                        <asp:ListItem Text="" Value="1">آموزش Wordpress</asp:ListItem>
-                                        <asp:ListItem Text="" Value="2">آموزش Pythone</asp:ListItem>
-                                        <asp:ListItem Text="" Value="3">آموزش Bootstrap</asp:ListItem>
+                                        <asp:ListItem Text="آموزش مقدماتی وب سایت HTML" Value="0">آموزش مقدماتی وب سایت HTML</asp:ListItem>
+                                        <asp:ListItem Text=">آموزش Wordpress" Value="1">آموزش Wordpress</asp:ListItem>
+                                        <asp:ListItem Text="آموزش Pythone" Value="2">آموزش Pythone</asp:ListItem>
+                                        <asp:ListItem Text="آموزش Bootstrap" Value="3">آموزش Bootstrap</asp:ListItem>
 
                                     </asp:CheckBoxList>
                                 </div>
                                 <div class="col-md-6 ">
                                     <asp:CheckBoxList ID="ckbVideoAparat" TextAlign="Right" CssClass="form-check form-check-reverse" runat="server">
-                                        <asp:ListItem Text="" Value="0">آموزش ASP.NET</asp:ListItem>
-                                        <asp:ListItem Text="" Value="1">طراحی بازی با JAvaScript سطح مقدماتی</asp:ListItem>
-                                        <asp:ListItem Text="" Value="2">طراحی بازی با JAvaScript سطح متوسط</asp:ListItem>
-                                        <asp:ListItem Text="" Value="3">آموزش نصب و استفاده از GIT</asp:ListItem>
+                                        <asp:ListItem Text="آموزش ASP.NET" Value="0">آموزش ASP.NET</asp:ListItem>
+                                        <asp:ListItem Text="طراحی بازی با JAvaScript سطح مقدماتی" Value="1">طراحی بازی با JAvaScript سطح مقدماتی</asp:ListItem>
+                                        <asp:ListItem Text="طراحی بازی با JAvaScript سطح متوسط" Value="2">طراحی بازی با JAvaScript سطح متوسط</asp:ListItem>
+                                        <asp:ListItem Text="آموزش نصب و استفاده از GIT" Value="3">آموزش نصب و استفاده از GIT</asp:ListItem>
 
                                     </asp:CheckBoxList>
-                                    <div >
-                                    <asp:Button ID="btnRegStep2" class="btnRegister" OnClick ="btnRegStep2_Click"  value="Register" runat="server" Style="margin-top: 60px; margin-right: 50px;" Text="ثبت اطلاعات" />
+
                                 </div>
-                                    </div>
                             </div>
                         </div>
 
@@ -127,7 +129,7 @@
                                         <!-- <input type="text" class="form-control" placeholder="Last Name *" value="" />-->
                                         <asp:TextBox ID="txtSojaUserName" class="form-control" placeholder="نام کاربری سایت سوال جواب*" value="" runat="server"></asp:TextBox>
                                         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtSojaUserName" Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" ErrorMessage="نام کاربری را وارد کنید." ValidationGroup="g1"></asp:RequiredFieldValidator>
-
+                                        <asp:Label ID="lblSojaUserName" runat="server" Visible="false" Text="Label"></asp:Label>
                                     </div>
                                     <div class="form-group">
                                         <!-- <input type="email" class="form-control" placeholder="Email *" value="" />-->
@@ -146,20 +148,22 @@
 
 
                                     </div>
-
-                                    <div class="form-group ">
-                                    </div>
                                     <div class="form-group ">
                                         <cc1:RecaptchaWidget ID="RecaptchaWidget1" RenderApiScript="false" runat="server" />
-                           
-                                    </div>                             
-                                    <asp:Button ID="btnRegFinal" class="btnRegister" value="Register" OnClick="btnRegFinal_Click" runat="server" Style="margin-top: 90px; margin-right: 50px;" Text="ثبت اطلاعات" ValidationGroup="g1" />
+
+                                    </div>
+                                    <div>
+                                        <asp:Button ID="btnRegFinal" class="btnRegister" value="Register" OnClick="btnRegFinal_Click" runat="server" Style="margin-top: 10px; margin-right: 50px;" Text="ثبت اطلاعات" />
+
+                                    </div>
+
                                 </div>
+
                             </div>
 
                         </div>
-
                     </div>
+
                 </div>
             </div>
         </div>
