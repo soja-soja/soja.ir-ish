@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data.SqlClient;
+using System.Drawing;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -7,8 +10,13 @@ using System.Web.UI.WebControls;
 
 namespace projectsmember
 {
+
+
     public partial class signindesign : System.Web.UI.Page
     {
+        SqlConnection LOGConn = new SqlConnection(ConfigurationManager.ConnectionStrings["sojaIrishConnectionString"].ConnectionString);
+       
+         
         protected void Page_Load(object sender, EventArgs e)
         {
             txtOther.Attributes.Add("placeholder", "لطفا نحوه آشنایی را بنویسید.");
@@ -40,6 +48,17 @@ namespace projectsmember
                     //}
                 }
             }
+            string ProjectFeatures = txtOtherProject.Text + "|$|" + txtTeachProficiency.Text + "|$|" + txtExmpWebPage.Text + "|$|" + chbFavMngment.Text + "|$|" + rbtTech.Text + "|$|" + txtDetailsDescription.Text + "|$|" + txtTeachSubject.Text + "|$|" + chbTeachVideo.Text + "|$|" + txtTeachTime.Text + "|$|" + txtTeachSubject2.Text + "|$|" + chbTeaching.Text + "|$|" + txtTeachTime2.Text;
+            int vReff = ddlOther.SelectedIndex;
+            int vProType = selProjectType.SelectedIndex;
+            DataSet1TableAdapters.ProjectsTableAdapter dstaProj = new DataSet1TableAdapters.ProjectsTableAdapter();
+            dstaProj.Insert(vReff, vProType, txtBudget.Text, txtDeliveryTime.Text, ProjectFeatures, "", "", false, false, false, false, "", "");
+            txtBudget.Text = txtDeliveryTime.Text = "";
+            btnSubmit.Text = "اطلاعات ثبت شد";
+
         }
+
+
     }
+
 }

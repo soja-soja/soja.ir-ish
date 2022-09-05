@@ -33,6 +33,15 @@ namespace projectsmember
         protected global::System.Web.UI.WebControls.Label lblWhere;
 
         /// <summary>
+        /// ddlOther control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlOther;
+
+        /// <summary>
         /// txtOther control.
         /// </summary>
         /// <remarks>
@@ -49,6 +58,15 @@ namespace projectsmember
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblProjectType;
+
+        /// <summary>
+        /// selProjectType control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList selProjectType;
 
         /// <summary>
         /// txtOtherProject control.
@@ -76,6 +94,24 @@ namespace projectsmember
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtExmpWebPage;
+
+        /// <summary>
+        /// lblTeachProficiency control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTeachProficiency;
+
+        /// <summary>
+        /// txtTeachProficiency control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtTeachProficiency;
 
         /// <summary>
         /// lblFavMngment control.
@@ -132,40 +168,130 @@ namespace projectsmember
         protected global::System.Web.UI.WebControls.TextBox txtDetailDescription;
 
         /// <summary>
-        /// Label1 control.
+        /// lblDetailsDescription control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label lblDetailsDescription;
 
         /// <summary>
-        /// CheckBoxList1 control.
+        /// txtDetailsDescription control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList CheckBoxList1;
+        protected global::System.Web.UI.WebControls.TextBox txtDetailsDescription;
 
         /// <summary>
-        /// Label6 control.
+        /// lblTeachSubject control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label6;
+        protected global::System.Web.UI.WebControls.Label lblTeachSubject;
 
         /// <summary>
-        /// CheckBoxList6 control.
+        /// txtTeachSubject control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList CheckBoxList6;
+        protected global::System.Web.UI.WebControls.TextBox txtTeachSubject;
+
+        /// <summary>
+        /// lblTeachVideo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTeachVideo;
+
+        /// <summary>
+        /// chbTeachVideo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBoxList chbTeachVideo;
+
+        /// <summary>
+        /// lblTeachTime control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTeachTime;
+
+        /// <summary>
+        /// txtTeachTime control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtTeachTime;
+
+        /// <summary>
+        /// lblTeachSubject2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTeachSubject2;
+
+        /// <summary>
+        /// txtTeachSubject2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtTeachSubject2;
+
+        /// <summary>
+        /// lblTeaching control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTeaching;
+
+        /// <summary>
+        /// chbTeaching control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBoxList chbTeaching;
+
+        /// <summary>
+        /// lblTeachTime2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTeachTime2;
+
+        /// <summary>
+        /// txtTeachTime2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtTeachTime2;
 
         /// <summary>
         /// lblBudget control.

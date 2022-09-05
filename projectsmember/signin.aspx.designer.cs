@@ -87,13 +87,22 @@ namespace projectsmember
         protected global::System.Web.UI.WebControls.RadioButtonList rbtnAparat;
 
         /// <summary>
-        /// btnRegStep1 control.
+        /// lblUrl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnRegStep1;
+        protected global::System.Web.UI.WebControls.Label lblUrl;
+
+        /// <summary>
+        /// txtUrl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtUrl;
 
         /// <summary>
         /// ckbVideoYuotube control.
@@ -112,15 +121,6 @@ namespace projectsmember
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBoxList ckbVideoAparat;
-
-        /// <summary>
-        /// btnRegStep2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnRegStep2;
 
         /// <summary>
         /// lblSojaSite control.
@@ -148,6 +148,15 @@ namespace projectsmember
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+
+        /// <summary>
+        /// lblSojaUserName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblSojaUserName;
 
         /// <summary>
         /// txtEmail control.

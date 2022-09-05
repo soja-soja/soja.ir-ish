@@ -11,6 +11,7 @@ namespace projectsmember.members
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            
             if (Session["status"] != null &&
                 Session["status"].ToString()== "signin")
             {
