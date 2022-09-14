@@ -19,6 +19,7 @@ namespace projectsmember
         protected void Page_Load(object sender, EventArgs e)
         {
             txtUsername.Attributes.Add("placeholder", "نام کاربری را وارد کنید");
+            txtPass.Attributes.Add("placeholder", "کلمه عبور را وارد کنید");
 
         }
 
@@ -26,12 +27,13 @@ namespace projectsmember
         {
 
             DataSet1TableAdapters.MembersTableAdapter dstaMem = new DataSet1TableAdapters.MembersTableAdapter();
-            int numberOfUsers = dstaMem.LoginQuery(txtUsername.Text).GetValueOrDefault();
+            int numberOfUsers = dstaMem.LoginQuery(txtUsername.Text).GetHashCode();
 
             if (numberOfUsers > 0)
             {
                 //Login successful !
                 Session.Add("status", "signin");
+                Session.Add("SojaID", txtUsername.Text);
                 Response.Redirect("members.aspx");
 
             }
@@ -58,7 +60,7 @@ namespace projectsmember
         protected void btnRegFinal_Click(object sender, EventArgs e)
         {
             
-            if (String.IsNullOrEmpty(RecaptchaWidget1.Response))
+           if (String.IsNullOrEmpty(RecaptchaWidget1.Response))
             {
                 lblErr.Text = "Captcha cannot be empty.";
             }
@@ -71,6 +73,7 @@ namespace projectsmember
                     txtSojaUserName.Text = txtEmail.Text = txtPhoneNumber.Text = "";
 
                     btnRegFinal.Text = "اطلاعات ثبت شد";
+
                 }
                 else
                 {
@@ -81,7 +84,6 @@ namespace projectsmember
                     //}
                 }
             }
-
             int vSubUtube = rbtnYouTube.SelectedIndex;
             int vSubApar = rbtnAparat.SelectedIndex;
             int vSub = vSubUtube + vSubApar;
@@ -89,44 +91,51 @@ namespace projectsmember
             string videoWatchAparat = "";
             for (int i = 0; i < ckbVideoYuotube.Items.Count; i++)
             {
-                if (videoWatchYtube == "")
-                {
-                    videoWatchYtube = ckbVideoYuotube.Items[i].Text;
-
-
-                }
-                else
+                if (ckbVideoYuotube.Items[i].Selected)
                 {
                     videoWatchYtube += "," + ckbVideoYuotube.Items[i].Text;
 
                 }
+
             }
             for (int j = 0; j < ckbVideoAparat.Items.Count; j++)
             {
-                if (videoWatchAparat == "")
-                {
-                    videoWatchAparat = ckbVideoAparat.Items[j].Text;
-
-                }
-                else
+                if (ckbVideoAparat.Items[j].Selected)
                 {
                     videoWatchAparat += "," + ckbVideoAparat.Items[j].Text;
-
                 }
+
             }
             string videoWatch = videoWatchYtube + "&&" + videoWatchAparat;
+
             DataSet1TableAdapters.MembersTableAdapter dsta = new DataSet1TableAdapters.MembersTableAdapter();
             dsta.Insert(
                 vSub, videoWatch, txtSojaUserName.Text, txtEmail.Text, txtPhoneNumber.Text, false, false, false, "", txtUrl.Text);
             txtUrl.Text = txtSojaUserName.Text = txtEmail.Text = txtPhoneNumber.Text = txtUrl.Text = "";
-            //step1.visible = false;
-            //final.Visible = true;
-            
-           btnRegFinal.Text = "اطلاعات ثبت شد";
-
+            btnRegFinal.Text = "اطلاعات ثبت شد";
+            multiViewReg.ActiveViewIndex = 3;
 
         }
 
 
+         protected void btnSendStep1_Click(object sender, EventArgs e)
+          {
+        multiViewReg.ActiveViewIndex = 1;
+        }
+
+       protected void btnSendStep2_Click(object sender, EventArgs e)
+       {
+            multiViewReg.ActiveViewIndex = 2;
+        }
+
+        protected void btnBackStep2_Click(object sender, EventArgs e)
+        {
+            multiViewReg.ActiveViewIndex =1;
+        }
+
+        protected void btnBackStep1_Click(object sender, EventArgs e)
+        {
+            multiViewReg.ActiveViewIndex = 0;
+        }
     }
 }

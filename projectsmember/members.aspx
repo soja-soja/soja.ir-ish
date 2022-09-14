@@ -60,7 +60,7 @@
             <div class="theme-bg-shapes-right"></div>
             <div class="theme-bg-shapes-left"></div>
             <div class="container">
-                <h1 class="page-heading single-col-max mx-auto ">خوش آمدی دوست عزیز</h1>
+                <asp:Label ID="lblWelcome" CssClass="page-heading single-col-max mx-auto" runat="server" Text="عزیز ، خوش آمدی !"></asp:Label>
                 <div class="page-intro single-col-max mx-auto">برای محک شما چالش هایی در نظر گرفتیم تا بتونید به توانایی های خودتون پی ببرید.</div>
                 <div class="page-intro single-col-max mx-auto">با کامل کردن هر چالش و کسب امتیاز مورد نیاز چالش بعدی برای شما نمایان خواهد شد .</div>
                 <!-- <div class="main-search-box pt-3 d-block mx-auto">
@@ -88,7 +88,7 @@
                                         <span class="card-title-text">آموزش گیت و گیت هاب</span>
                                     </h5>
                                     <div class="card-text ">
-                                        اگر اهل کار تیمی هستید و مشتاقید از تجربه‌ی دیگران در کارهای خود بهره ببرید به بستری مناسب برای رسیدن به این هدف نیاز خواهید داشت. GitHub یکی از معروف‌ترین وب‌سایت‌های زبانزد کاربران مشتاق تکنولوژی است که البته احتمالاً بسیاری از افراد با آن و کاربردهایش آشنایی ندارند.
+                                  دوست عزیز در اولین چالش شما باید رزومه خود را در قالب فایل html تهیه کرده و با توجه به توضیحات راهنمای گیت و گیت هاب که در این بخش آمده است ، رزومه خود را برای ما بفرستید .
 
 							   
                                     </div>
