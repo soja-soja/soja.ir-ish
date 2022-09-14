@@ -1,0 +1,6 @@
+﻿User-agent:*
+Disallow:/Admin-Dashboard.aspx
+Disallow:/billing.aspx
+Disallow:/notifications.aspx
+Disallow:/tables.aspx
+Disallow:/login_admin.aspx
