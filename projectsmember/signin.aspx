@@ -83,9 +83,10 @@
                                             </div>
                                             <div class="form-group">
                                                 <asp:TextBox ID="txtUrl" TextMode="MultiLine" CssClass="form-control " runat="server"></asp:TextBox>
+                                                <asp:RequiredFieldValidator ID="ValidatorTextUrl" runat="server"  Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" ErrorMessage="لطفا جهت آشنایی بیشتر با شما و مهارت هایتان  آدرس های خواسته شده را وارد کنید." ControlToValidate="txtUrl" ValidationGroup="filErr"  ></asp:RequiredFieldValidator>
                                             </div>
                                             <div class="form-group">
-                                                <asp:Button ID="btnSendStep1" runat="server" Text="مرحله بعد" OnClick="btnSendStep1_Click" CssClass="btnRegister" ClientIDMode="Static" />
+                                                <asp:Button ID="btnSendStep1" runat="server" Text="مرحله بعد" OnClick="btnSendStep1_Click" CssClass="btnRegister" ClientIDMode="Static"  ValidationGroup="filErr" />
                                             </div>
 
                                         </div>
@@ -120,14 +121,15 @@
                                     </div>
                                     <div class="col-md-6 ">
                                         <asp:CheckBoxList ID="ckbVideoAparat" TextAlign="Right" CssClass="form-check form-check-reverse" runat="server">
-                                            <asp:ListItem Text="آموزش ASP.NET" Value="0">آموزش ASP.NET</asp:ListItem>
+                                            <asp:ListItem  Text="آموزش ASP.NET"  Value="0">آموزش ASP.NET</asp:ListItem>
                                             <asp:ListItem Text="طراحی بازی با JAvaScript سطح مقدماتی" Value="1">طراحی بازی با JAvaScript سطح مقدماتی</asp:ListItem>
                                             <asp:ListItem Text="طراحی بازی با JAvaScript سطح متوسط" Value="2">طراحی بازی با JAvaScript سطح متوسط</asp:ListItem>
                                             <asp:ListItem Text="آموزش نصب و استفاده از GIT" Value="3">آموزش نصب و استفاده از GIT</asp:ListItem>
 
                                         </asp:CheckBoxList>
+                                       
                                         <div>
-                                            <asp:Button ID="btnSendStep2" runat="server" Text="مرحله آخر" OnClick="btnSendStep2_Click" CssClass="btnRegister" ClientIDMode="Static" />
+                                            <asp:Button ID="btnSendStep2" runat="server" Text="مرحله آخر" OnClick="btnSendStep2_Click" CssClass="btnRegister" ClientIDMode="Static" ValidationGroup="g3" />
                                             <asp:Button ID="btnBackStep1" runat="server" Text="مرحله قبل" CssClass="btnRegister" ClientIDMode="Static" OnClick="btnBackStep1_Click"  />
 
                                         </div>
@@ -158,11 +160,14 @@
                                         </div>
                                         <div class="form-group">
                                             <!-- <input type="email" class="form-control" placeholder="Email *" value="" />-->
-                                            <asp:TextBox ID="txtEmail" TextMode="Email" class="form-control" placeholder="آدرس ایمیل" value="" runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="txtEmail" TextMode="Email" class="form-control" placeholder="example@Email.com" value="" runat="server"></asp:TextBox>
+                                            <asp:RequiredFieldValidator ID="validEmail" runat="server" ErrorMessage="وارد کردن ایمیل معتبر الزامیست." Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" Visible="true" ControlToValidate="txtEmail" ValidationGroup="g1" ></asp:RequiredFieldValidator>
+
                                         </div>
                                         <div class="form-group">
                                             <!-- <input type="text" maxlength="10" minlength="10" class="form-control" placeholder="Phone *" value="" />-->
-                                            <asp:TextBox ID="txtPhoneNumber" class="form-control" placeholder="شماره تماس*" value="" runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="txtPhoneNumber" class="form-control" placeholder="09xxxxxxxxx" value="" runat="server"></asp:TextBox>
+                                            <asp:RequiredFieldValidator ID="ValidPhone" runat="server" ErrorMessage="وارد کردن شماره همراه الزامیست." Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" Visible="true" ControlToValidate="txtPhoneNumber" ValidationGroup="g1" ></asp:RequiredFieldValidator>
                                         </div>
 
 

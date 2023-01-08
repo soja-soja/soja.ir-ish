@@ -24,6 +24,15 @@ namespace projectsmember
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// lblRegisterOk control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblRegisterOk;
+
+        /// <summary>
         /// lblWhere control.
         /// </summary>
         /// <remarks>
@@ -49,6 +58,15 @@ namespace projectsmember
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtOther;
+
+        /// <summary>
+        /// validOther control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator validOther;
 
         /// <summary>
         /// lblProjectType control.
@@ -78,6 +96,15 @@ namespace projectsmember
         protected global::System.Web.UI.WebControls.TextBox txtOtherProject;
 
         /// <summary>
+        /// validOtherProj control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator validOtherProj;
+
+        /// <summary>
         /// lblExmpWebPage control.
         /// </summary>
         /// <remarks>
@@ -96,6 +123,15 @@ namespace projectsmember
         protected global::System.Web.UI.WebControls.TextBox txtExmpWebPage;
 
         /// <summary>
+        /// validExmpWebPage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator validExmpWebPage;
+
+        /// <summary>
         /// lblTeachProficiency control.
         /// </summary>
         /// <remarks>
@@ -112,6 +148,15 @@ namespace projectsmember
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtTeachProficiency;
+
+        /// <summary>
+        /// validTeachProficiency control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator validTeachProficiency;
 
         /// <summary>
         /// lblFavMngment control.
@@ -150,24 +195,6 @@ namespace projectsmember
         protected global::System.Web.UI.WebControls.RadioButtonList rbtTech;
 
         /// <summary>
-        /// lblDetailDescription control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDetailDescription;
-
-        /// <summary>
-        /// txtDetailDescription control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDetailDescription;
-
-        /// <summary>
         /// lblDetailsDescription control.
         /// </summary>
         /// <remarks>
@@ -186,6 +213,15 @@ namespace projectsmember
         protected global::System.Web.UI.WebControls.TextBox txtDetailsDescription;
 
         /// <summary>
+        /// validDetailsDescription control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator validDetailsDescription;
+
+        /// <summary>
         /// lblTeachSubject control.
         /// </summary>
         /// <remarks>
@@ -202,6 +238,15 @@ namespace projectsmember
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtTeachSubject;
+
+        /// <summary>
+        /// validTeachSubject control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator validTeachSubject;
 
         /// <summary>
         /// lblTeachVideo control.
@@ -240,6 +285,15 @@ namespace projectsmember
         protected global::System.Web.UI.WebControls.TextBox txtTeachTime;
 
         /// <summary>
+        /// validTeachTime control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator validTeachTime;
+
+        /// <summary>
         /// lblTeachSubject2 control.
         /// </summary>
         /// <remarks>
@@ -256,6 +310,15 @@ namespace projectsmember
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtTeachSubject2;
+
+        /// <summary>
+        /// validTeachSubj2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator validTeachSubj2;
 
         /// <summary>
         /// lblTeaching control.
@@ -294,6 +357,15 @@ namespace projectsmember
         protected global::System.Web.UI.WebControls.TextBox txtTeachTime2;
 
         /// <summary>
+        /// validTeachTime2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator validTeachTime2;
+
+        /// <summary>
         /// lblBudget control.
         /// </summary>
         /// <remarks>
@@ -312,6 +384,15 @@ namespace projectsmember
         protected global::System.Web.UI.WebControls.TextBox txtBudget;
 
         /// <summary>
+        /// validBudget control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator validBudget;
+
+        /// <summary>
         /// lblDeliveryTime control.
         /// </summary>
         /// <remarks>
@@ -328,6 +409,69 @@ namespace projectsmember
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtDeliveryTime;
+
+        /// <summary>
+        /// validDeliverTime control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator validDeliverTime;
+
+        /// <summary>
+        /// lblEmailProj control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblEmailProj;
+
+        /// <summary>
+        /// txtEmailProj control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtEmailProj;
+
+        /// <summary>
+        /// validEmailProj control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator validEmailProj;
+
+        /// <summary>
+        /// lblPhoneProj control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblPhoneProj;
+
+        /// <summary>
+        /// txtPhoneProj control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtPhoneProj;
+
+        /// <summary>
+        /// validPhoneProj control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator validPhoneProj;
 
         /// <summary>
         /// RecaptchaWidget1 control.

@@ -88,29 +88,43 @@ namespace projectsmember
             int vSubApar = rbtnAparat.SelectedIndex;
             int vSub = vSubUtube + vSubApar;
             string videoWatchYtube = "";
-            string videoWatchAparat = "";
-            for (int i = 0; i < ckbVideoYuotube.Items.Count; i++)
+           string videoWatchAparat = "";
+            // for (int i = 0; i < ckbVideoYuotube.Items.Count; i++)
+            //{
+            //   if (ckbVideoYuotube.Items[i].Selected)
+            //  {
+            //     videoWatchYtube += "," + ckbVideoYuotube.Items[i].Text;
+
+            //  }
+
+            // }
+            // for (int j = 0; j < ckbVideoAparat.Items.Count; j++)
+            // {
+            //   if (ckbVideoAparat.Items[j].Selected)
+            //  {
+            //      videoWatchAparat += "," + ckbVideoAparat.Items[j].Text;
+            // }
+
+            // }
+            
+            foreach (ListItem chkY in ckbVideoYuotube.Items)
             {
-                if (ckbVideoYuotube.Items[i].Selected)
+                if(chkY.Selected)
                 {
-                    videoWatchYtube += "," + ckbVideoYuotube.Items[i].Text;
-
+                    videoWatchYtube += "\'" + chkY.Text;
                 }
-
             }
-            for (int j = 0; j < ckbVideoAparat.Items.Count; j++)
+           foreach(ListItem chkA in ckbVideoAparat.Items)
             {
-                if (ckbVideoAparat.Items[j].Selected)
+                if(chkA.Selected)
                 {
-                    videoWatchAparat += "," + ckbVideoAparat.Items[j].Text;
+                    videoWatchAparat += "\'" + chkA.Text;
                 }
-
             }
-            string videoWatch = videoWatchYtube + "&&" + videoWatchAparat;
+            string videoWatch = videoWatchYtube + videoWatchAparat;
 
             DataSet1TableAdapters.MembersTableAdapter dsta = new DataSet1TableAdapters.MembersTableAdapter();
-            dsta.Insert(
-                vSub, videoWatch, txtSojaUserName.Text, txtEmail.Text, txtPhoneNumber.Text, false, false, false, "", txtUrl.Text);
+            dsta.Insert(vSub, videoWatch, txtSojaUserName.Text, txtEmail.Text, txtPhoneNumber.Text, false, false, false, "", txtUrl.Text);
             txtUrl.Text = txtSojaUserName.Text = txtEmail.Text = txtPhoneNumber.Text = txtUrl.Text = "";
             btnRegFinal.Text = "اطلاعات ثبت شد";
             multiViewReg.ActiveViewIndex = 3;

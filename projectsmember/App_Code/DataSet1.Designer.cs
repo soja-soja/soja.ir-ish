@@ -734,9 +734,9 @@ namespace projectsmember.App_Code {
             
             private global::System.Data.DataColumn columnProjectFeatures;
             
-            private global::System.Data.DataColumn columnExtra1;
+            private global::System.Data.DataColumn columnEmail;
             
-            private global::System.Data.DataColumn columnExtra2;
+            private global::System.Data.DataColumn columnPhone;
             
             private global::System.Data.DataColumn columnchecked;
             
@@ -833,17 +833,17 @@ namespace projectsmember.App_Code {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Extra1Column {
+            public global::System.Data.DataColumn EmailColumn {
                 get {
-                    return this.columnExtra1;
+                    return this.columnEmail;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Extra2Column {
+            public global::System.Data.DataColumn PhoneColumn {
                 get {
-                    return this.columnExtra2;
+                    return this.columnPhone;
                 }
             }
             
@@ -932,7 +932,7 @@ namespace projectsmember.App_Code {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public ProjectsRow AddProjectsRow(int ReferralSource, int ProjectType, string Budget, string Timeline, string ProjectFeatures, string Extra1, string Extra2, bool _checked, bool contacted, bool engaged, bool offeredToMembers, string Owners, string Notes) {
+            public ProjectsRow AddProjectsRow(int ReferralSource, int ProjectType, string Budget, string Timeline, string ProjectFeatures, string Email, string Phone, bool _checked, bool contacted, bool engaged, bool offeredToMembers, string Owners, string Notes) {
                 ProjectsRow rowProjectsRow = ((ProjectsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -941,8 +941,8 @@ namespace projectsmember.App_Code {
                         Budget,
                         Timeline,
                         ProjectFeatures,
-                        Extra1,
-                        Extra2,
+                        Email,
+                        Phone,
                         _checked,
                         contacted,
                         engaged,
@@ -984,8 +984,8 @@ namespace projectsmember.App_Code {
                 this.columnBudget = base.Columns["Budget"];
                 this.columnTimeline = base.Columns["Timeline"];
                 this.columnProjectFeatures = base.Columns["ProjectFeatures"];
-                this.columnExtra1 = base.Columns["Extra1"];
-                this.columnExtra2 = base.Columns["Extra2"];
+                this.columnEmail = base.Columns["Email"];
+                this.columnPhone = base.Columns["Phone"];
                 this.columnchecked = base.Columns["checked"];
                 this.columncontacted = base.Columns["contacted"];
                 this.columnengaged = base.Columns["engaged"];
@@ -1009,10 +1009,10 @@ namespace projectsmember.App_Code {
                 base.Columns.Add(this.columnTimeline);
                 this.columnProjectFeatures = new global::System.Data.DataColumn("ProjectFeatures", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnProjectFeatures);
-                this.columnExtra1 = new global::System.Data.DataColumn("Extra1", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnExtra1);
-                this.columnExtra2 = new global::System.Data.DataColumn("Extra2", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnExtra2);
+                this.columnEmail = new global::System.Data.DataColumn("Email", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEmail);
+                this.columnPhone = new global::System.Data.DataColumn("Phone", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPhone);
                 this.columnchecked = new global::System.Data.DataColumn("checked", typeof(bool), null, global::System.Data.MappingType.Element);
                 this.columnchecked.ExtendedProperties.Add("Generator_ColumnPropNameInTable", "checkedColumn");
                 this.columnchecked.ExtendedProperties.Add("Generator_ColumnVarNameInTable", "columnchecked");
@@ -1039,8 +1039,8 @@ namespace projectsmember.App_Code {
                 this.columnBudget.MaxLength = 2147483647;
                 this.columnTimeline.MaxLength = 2147483647;
                 this.columnProjectFeatures.MaxLength = 2147483647;
-                this.columnExtra1.MaxLength = 2147483647;
-                this.columnExtra2.MaxLength = 2147483647;
+                this.columnEmail.MaxLength = 2147483647;
+                this.columnPhone.MaxLength = 2147483647;
                 this.columnOwners.MaxLength = 2147483647;
                 this.columnNotes.MaxLength = 2147483647;
             }
@@ -1582,33 +1582,33 @@ namespace projectsmember.App_Code {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Extra1 {
+            public string Email {
                 get {
                     try {
-                        return ((string)(this[this.tableProjects.Extra1Column]));
+                        return ((string)(this[this.tableProjects.EmailColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Extra1\' in table \'Projects\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Email\' in table \'Projects\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableProjects.Extra1Column] = value;
+                    this[this.tableProjects.EmailColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Extra2 {
+            public string Phone {
                 get {
                     try {
-                        return ((string)(this[this.tableProjects.Extra2Column]));
+                        return ((string)(this[this.tableProjects.PhoneColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Extra2\' in table \'Projects\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Phone\' in table \'Projects\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableProjects.Extra2Column] = value;
+                    this[this.tableProjects.PhoneColumn] = value;
                 }
             }
             
@@ -1770,26 +1770,26 @@ namespace projectsmember.App_Code {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsExtra1Null() {
-                return this.IsNull(this.tableProjects.Extra1Column);
+            public bool IsEmailNull() {
+                return this.IsNull(this.tableProjects.EmailColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetExtra1Null() {
-                this[this.tableProjects.Extra1Column] = global::System.Convert.DBNull;
+            public void SetEmailNull() {
+                this[this.tableProjects.EmailColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsExtra2Null() {
-                return this.IsNull(this.tableProjects.Extra2Column);
+            public bool IsPhoneNull() {
+                return this.IsNull(this.tableProjects.PhoneColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetExtra2Null() {
-                this[this.tableProjects.Extra2Column] = global::System.Convert.DBNull;
+            public void SetPhoneNull() {
+                this[this.tableProjects.PhoneColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2529,8 +2529,8 @@ namespace projectsmember.App_Code.DataSet1TableAdapters {
             tableMapping.ColumnMappings.Add("Budget", "Budget");
             tableMapping.ColumnMappings.Add("Timeline", "Timeline");
             tableMapping.ColumnMappings.Add("ProjectFeatures", "ProjectFeatures");
-            tableMapping.ColumnMappings.Add("Extra1", "Extra1");
-            tableMapping.ColumnMappings.Add("Extra2", "Extra2");
+            tableMapping.ColumnMappings.Add("Email", "Email");
+            tableMapping.ColumnMappings.Add("Phone", "Phone");
             tableMapping.ColumnMappings.Add("checked", "checked");
             tableMapping.ColumnMappings.Add("contacted", "contacted");
             tableMapping.ColumnMappings.Add("engaged", "engaged");
@@ -2545,15 +2545,15 @@ namespace projectsmember.App_Code.DataSet1TableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Projects] ([ReferralSource], [ProjectType], [Budget], [Timeline], [ProjectFeatures], [Extra1], [Extra2], [checked], [contacted], [engaged], [offeredToMembers], [Owners], [Notes]) VALUES (@ReferralSource, @ProjectType, @Budget, @Timeline, @ProjectFeatures, @Extra1, @Extra2, @checked, @contacted, @engaged, @offeredToMembers, @Owners, @Notes)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Projects] ([ReferralSource], [ProjectType], [Budget], [Timeline], [ProjectFeatures], [Email], [Phone], [checked], [contacted], [engaged], [offeredToMembers], [Owners], [Notes]) VALUES (@ReferralSource, @ProjectType, @Budget, @Timeline, @ProjectFeatures, @Email, @Phone, @checked, @contacted, @engaged, @offeredToMembers, @Owners, @Notes)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ReferralSource", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ReferralSource", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ProjectType", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProjectType", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Budget", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Budget", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Timeline", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Timeline", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ProjectFeatures", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProjectFeatures", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Extra1", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Extra1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Extra2", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Extra2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Email", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Email", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Phone", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Phone", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@checked", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "checked", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@contacted", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contacted", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@engaged", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "engaged", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -2562,15 +2562,15 @@ namespace projectsmember.App_Code.DataSet1TableAdapters {
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Notes", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Notes", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Projects] SET [ReferralSource] = @ReferralSource, [ProjectType] = @ProjectType, [Budget] = @Budget, [Timeline] = @Timeline, [ProjectFeatures] = @ProjectFeatures, [Extra1] = @Extra1, [Extra2] = @Extra2, [checked] = @checked, [contacted] = @contacted, [engaged] = @engaged, [offeredToMembers] = @offeredToMembers, [Owners] = @Owners, [Notes] = @Notes WHERE (([Id] = @Original_Id))";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Projects] SET [ReferralSource] = @ReferralSource, [ProjectType] = @ProjectType, [Budget] = @Budget, [Timeline] = @Timeline, [ProjectFeatures] = @ProjectFeatures, [Email] = @Email, [Phone] = @Phone, [checked] = @checked, [contacted] = @contacted, [engaged] = @engaged, [offeredToMembers] = @offeredToMembers, [Owners] = @Owners, [Notes] = @Notes WHERE (([Id] = @Original_Id))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ReferralSource", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ReferralSource", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ProjectType", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProjectType", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Budget", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Budget", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Timeline", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Timeline", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ProjectFeatures", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProjectFeatures", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Extra1", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Extra1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Extra2", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Extra2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Email", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Email", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Phone", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Phone", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@checked", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "checked", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@contacted", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "contacted", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@engaged", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "engaged", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -2593,9 +2593,9 @@ namespace projectsmember.App_Code.DataSet1TableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Id, ReferralSource, ProjectType, Budget, Timeline, ProjectFeatures, Extra1" +
-                ", Extra2, checked, contacted, engaged, offeredToMembers, Owners, Notes FROM dbo." +
-                "Projects";
+            this._commandCollection[0].CommandText = "SELECT Id, ReferralSource, ProjectType, Budget, Timeline, ProjectFeatures, Email," +
+                " Phone, checked, contacted, engaged, offeredToMembers, Owners, Notes FROM dbo.Pr" +
+                "ojects";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -2678,7 +2678,7 @@ namespace projectsmember.App_Code.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(global::System.Nullable<int> ReferralSource, global::System.Nullable<int> ProjectType, string Budget, string Timeline, string ProjectFeatures, string Extra1, string Extra2, global::System.Nullable<bool> _checked, global::System.Nullable<bool> contacted, global::System.Nullable<bool> engaged, global::System.Nullable<bool> offeredToMembers, string Owners, string Notes) {
+        public virtual int Insert(global::System.Nullable<int> ReferralSource, global::System.Nullable<int> ProjectType, string Budget, string Timeline, string ProjectFeatures, string Email, string Phone, global::System.Nullable<bool> _checked, global::System.Nullable<bool> contacted, global::System.Nullable<bool> engaged, global::System.Nullable<bool> offeredToMembers, string Owners, string Notes) {
             if ((ReferralSource.HasValue == true)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((int)(ReferralSource.Value));
             }
@@ -2709,17 +2709,17 @@ namespace projectsmember.App_Code.DataSet1TableAdapters {
             else {
                 this.Adapter.InsertCommand.Parameters[4].Value = ((string)(ProjectFeatures));
             }
-            if ((Extra1 == null)) {
+            if ((Email == null)) {
                 this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(Extra1));
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(Email));
             }
-            if ((Extra2 == null)) {
+            if ((Phone == null)) {
                 this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(Extra2));
+                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(Phone));
             }
             if ((_checked.HasValue == true)) {
                 this.Adapter.InsertCommand.Parameters[7].Value = ((bool)(_checked.Value));
@@ -2777,7 +2777,7 @@ namespace projectsmember.App_Code.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(global::System.Nullable<int> ReferralSource, global::System.Nullable<int> ProjectType, string Budget, string Timeline, string ProjectFeatures, string Extra1, string Extra2, global::System.Nullable<bool> _checked, global::System.Nullable<bool> contacted, global::System.Nullable<bool> engaged, global::System.Nullable<bool> offeredToMembers, string Owners, string Notes, int Original_Id) {
+        public virtual int Update(global::System.Nullable<int> ReferralSource, global::System.Nullable<int> ProjectType, string Budget, string Timeline, string ProjectFeatures, string Email, string Phone, global::System.Nullable<bool> _checked, global::System.Nullable<bool> contacted, global::System.Nullable<bool> engaged, global::System.Nullable<bool> offeredToMembers, string Owners, string Notes, int Original_Id) {
             if ((ReferralSource.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(ReferralSource.Value));
             }
@@ -2808,17 +2808,17 @@ namespace projectsmember.App_Code.DataSet1TableAdapters {
             else {
                 this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(ProjectFeatures));
             }
-            if ((Extra1 == null)) {
+            if ((Email == null)) {
                 this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Extra1));
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Email));
             }
-            if ((Extra2 == null)) {
+            if ((Phone == null)) {
                 this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Extra2));
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Phone));
             }
             if ((_checked.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[7].Value = ((bool)(_checked.Value));

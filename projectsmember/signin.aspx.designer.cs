@@ -132,6 +132,15 @@ namespace projectsmember
         protected global::System.Web.UI.WebControls.TextBox txtUrl;
 
         /// <summary>
+        /// ValidatorTextUrl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ValidatorTextUrl;
+
+        /// <summary>
         /// btnSendStep1 control.
         /// </summary>
         /// <remarks>
@@ -258,6 +267,15 @@ namespace projectsmember
         protected global::System.Web.UI.WebControls.TextBox txtEmail;
 
         /// <summary>
+        /// validEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator validEmail;
+
+        /// <summary>
         /// txtPhoneNumber control.
         /// </summary>
         /// <remarks>
@@ -265,6 +283,15 @@ namespace projectsmember
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtPhoneNumber;
+
+        /// <summary>
+        /// ValidPhone control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ValidPhone;
 
         /// <summary>
         /// RecaptchaWidget1 control.

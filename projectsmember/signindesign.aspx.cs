@@ -15,14 +15,17 @@ namespace projectsmember
     public partial class signindesign : System.Web.UI.Page
     {
         SqlConnection LOGConn = new SqlConnection(ConfigurationManager.ConnectionStrings["sojaIrishConnectionString"].ConnectionString);
-       
-         
+
+
         protected void Page_Load(object sender, EventArgs e)
         {
             txtOther.Attributes.Add("placeholder", "لطفا نحوه آشنایی را بنویسید.");
             txtOtherProject.Attributes.Add("placeholder", "نوع پروژه خود را بنویسید.");
             txtBudget.Attributes.Add("placeholder", "مبلغ به تومان ");
             txtDeliveryTime.Attributes.Add("placeholder", "زمان مورد نظر به روز ");
+            txtEmailProj.Attributes.Add("placeholder", "example@Email.com");
+            txtPhoneProj.Attributes.Add("placeholder", "09xxxxxxxxx");
+
 
         }
 
@@ -52,9 +55,10 @@ namespace projectsmember
             int vReff = ddlOther.SelectedIndex;
             int vProType = selProjectType.SelectedIndex;
             DataSet1TableAdapters.ProjectsTableAdapter dstaProj = new DataSet1TableAdapters.ProjectsTableAdapter();
-            dstaProj.Insert(vReff, vProType, txtBudget.Text, txtDeliveryTime.Text, ProjectFeatures, "", "", false, false, false, false, "", "");
+            dstaProj.Insert(vReff, vProType, txtBudget.Text, txtDeliveryTime.Text, ProjectFeatures, txtEmailProj.Text, txtPhoneProj.Text, false, false, false, false, "", "");
             txtBudget.Text = txtDeliveryTime.Text = "";
             btnSubmit.Text = "اطلاعات ثبت شد";
+            lblRegisterOk.Text = "اطلاعات شما با موفقیت ثبت شد . در کوتاهترین زمان با شما ارتباط خواهیم گرفت .";
 
         }
 
