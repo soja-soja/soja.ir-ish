@@ -16,6 +16,9 @@ namespace projectsmember.members
                 Session["status"].ToString()== "signin")
             {
                 //successful login1!
+                DataSet1TableAdapters.MembersTableAdapter dtaUsrWlcom = new DataSet1TableAdapters.MembersTableAdapter();
+                string userWelcom = dtaUsrWlcom.returnSojaUserID(Session["SojaID"].ToString());
+                lblWelcome.Text = userWelcom + lblWelcome.Text ;
             }
             else
             {

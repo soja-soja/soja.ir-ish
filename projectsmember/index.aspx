@@ -19,7 +19,7 @@
 
 
     <!-- Favicon-->
-    <link rel="icon" type="../image/x-icon" href="assets/favicon.ico" />
+    <link rel="icon" type="../image/x-icon" href="assets/img/soja.jpg" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Simple line icons-->
@@ -43,7 +43,7 @@
                 <li class="sidebar-nav-item"><a href="#steps">مراحل همکاری </a></li>
                 <li class="sidebar-nav-item"><a href="#services">مراحل ثبت سفارش</a></li>
                 <li class="sidebar-nav-item"><a href="#portfolio">نکات قابل توجه  </a></li>
-                <li class="sidebar-nav-item"><a href="#contact">فرم همکاری</a></li>
+               <!-- <li class="sidebar-nav-item"><a href="#contact">فرم همکاری</a></li>-->
             </ul>
         </nav>
         <!-- Header-->
@@ -144,7 +144,7 @@
                     <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
                         <span class="service-icon rounded-circle mx-auto mb-3"><a href="#portfolio"><i class="fa fa-registered "></i></a></span>
                         <h4><strong>مرحله سوم</strong></h4>
-                        <p class="text-faded mb-0">ثبت نام در سایت </p>
+                        <p class="text-faded mb-0">ثبت سفارش در سایت </p>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
                         <span class="service-icon rounded-circle mx-auto mb-3">
@@ -238,13 +238,13 @@
                 </div>
             </div>
         </section>
-        <!-- Call to Action-->
+        <!-- Call to Action
         <section class="content-section bg-primary text-white" id="contact">
             <div class="container px-4 px-lg-5 text-center">
                 <h2 class="mb-4">وقتی تمام مراحل کامل طی کردی برو برای ثبت نام </h2>
                 <a class="btn btn-xl btn-dark" href="signindesign.aspx">سفارش طراحی سایت </a>
             </div>
-        </section>
+        </section>-->
         <!-- Map
         <div class="map" id="contact">
             <iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
@@ -256,13 +256,13 @@
             <div class="container px-4 px-lg-5">
                 <ul class="list-inline mb-5">
                     <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-facebook"></i></a>
+                        <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com"><i class="icon-social-facebook"></i></a>
                     </li>
                     <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-twitter"></i></a>
+                        <a class="social-link rounded-circle text-white mr-3" href="https://twitter.com/"><i class="icon-social-twitter"></i></a>
                     </li>
                     <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
+                        <a class="social-link rounded-circle text-white" href="https://github.com/"><i class="icon-social-github"></i></a>
                     </li>
                 </ul>
                 <p dir="rtl" class="text-muted small mb-0">Copyright &copy; تمامی حقوق مادی و معنوی، متعلق به وب سایت سوال جواب (soja.ir) و تیم مدیریتی آن می باشد.</p>

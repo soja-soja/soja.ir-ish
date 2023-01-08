@@ -179,17 +179,43 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin-Dashboard.aspx" />
     <Content Include="assets\favicon.ico" />
+    <Content Include="assets\img\apple-icon.png" />
     <Content Include="assets\img\bg-callout.jpg" />
     <Content Include="assets\img\bg-masthead.jpg" />
     <Content Include="assets\img\chaleng.png" />
     <Content Include="assets\img\chalenge.png" />
+    <Content Include="assets\img\down-arrow-dark.svg" />
+    <Content Include="assets\img\down-arrow-white.svg" />
+    <Content Include="assets\img\down-arrow.svg" />
+    <Content Include="assets\img\favicon.png" />
+    <Content Include="assets\img\logo-ct-dark.png" />
+    <Content Include="assets\img\logo-ct.png" />
+    <Content Include="assets\img\marie.jpg" />
     <Content Include="assets\img\portfolio-1.jpg" />
     <Content Include="assets\img\portfolio-2.jpg" />
     <Content Include="assets\img\portfolio-3.jpg" />
     <Content Include="assets\img\portfolio-4.jpg" />
+    <Content Include="assets\img\shapes\pattern-lines.svg" />
+    <Content Include="assets\img\shapes\waves-white.svg" />
+    <Content Include="assets\img\small-logos\bootstrap.svg" />
+    <Content Include="assets\img\small-logos\creative-tim.svg" />
+    <Content Include="assets\img\small-logos\devto.svg" />
+    <Content Include="assets\img\small-logos\github.svg" />
+    <Content Include="assets\img\small-logos\google-webdev.svg" />
+    <Content Include="assets\img\small-logos\icon-bulb.svg" />
+    <Content Include="assets\img\small-logos\icon-sun-cloud.png" />
+    <Content Include="assets\img\small-logos\logo-asana.svg" />
+    <Content Include="assets\img\small-logos\logo-atlassian.svg" />
+    <Content Include="assets\img\small-logos\logo-invision.svg" />
+    <Content Include="assets\img\small-logos\logo-jira.svg" />
+    <Content Include="assets\img\small-logos\logo-slack.svg" />
+    <Content Include="assets\img\small-logos\logo-spotify.svg" />
+    <Content Include="assets\img\small-logos\logo-xd.svg" />
     <Content Include="assets\img\soja.jpg" />
     <Content Include="assets\img\yt.png" />
+    <Content Include="billing.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -211,13 +237,24 @@
     <Content Include="Core\Compression\Snappy\lib\win\snappy32.dll" />
     <Content Include="Core\Compression\Snappy\lib\win\snappy64.dll" />
     <Content Include="Core\Compression\Zstandard\lib\win\libzstd.dll" />
+    <Content Include="css\material-dashboard.css" />
+    <Content Include="css\nucleo-icons.css" />
+    <Content Include="css\nucleo-svg.css" />
     <Content Include="css\signinStyle.css" />
     <Content Include="css\styles.css" />
     <Content Include="css\StyleSign.css" />
     <Content Include="css\styleSteps.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="index.aspx" />
+    <Content Include="js\material-dashboard.min.js" />
+    <Content Include="js\plugins\bootstrap-notify.js" />
+    <Content Include="js\plugins\Chart.extension.js" />
+    <Content Include="js\plugins\chartjs.min.js" />
+    <Content Include="js\plugins\perfect-scrollbar.min.js" />
+    <Content Include="js\plugins\smooth-scrollbar.min.js" />
+    <Content Include="js\plugins\world.js" />
     <Content Include="js\scripts.js" />
+    <Content Include="login_admin.aspx" />
     <Content Include="members\assets\css\git-style.css" />
     <Content Include="members\assets\css\styleTopBtn.css" />
     <Content Include="members\assets\css\memberstyle.css" />
@@ -2343,7 +2380,8 @@
     <Content Include="members\favicon.ico" />
     <Content Include="git-doc.aspx" />
     <Content Include="members.aspx" />
-    <Content Include="mongocrypt.dll" />
+    <Content Include="notifications.aspx" />
+    <Content Include="robots.txt" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -2579,6 +2617,7 @@
     <Content Include="Core\Compression\Zstandard\lib\linux\libzstd.so" />
     <Content Include="Core\Compression\Snappy\lib\osx\libsnappy64.dylib" />
     <Content Include="Core\Compression\Snappy\lib\linux\libsnappy64.so" />
+    <Content Include="css\dashboard-free.css.map" />
     <None Include="DataSet1.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
@@ -2587,8 +2626,6 @@
     <Content Include="DataSet1.xss">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Content>
-    <Content Include="libmongocrypt.so" />
-    <Content Include="libmongocrypt.dylib" />
     <None Include="Properties\PublishProfiles\FTPProfile.pubxml" />
     <None Include="Scripts\jquery-3.6.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.6.0.js" />
@@ -2668,14 +2705,53 @@
     <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="signin.aspx" />
     <Content Include="signindesign.aspx" />
+    <Content Include="tables.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="login_admin.aspx.cs">
+      <DependentUpon>login_admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login_admin.aspx.designer.cs">
+      <DependentUpon>login_admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="notifications.aspx.cs">
+      <DependentUpon>notifications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="notifications.aspx.designer.cs">
+      <DependentUpon>notifications.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tables.aspx.cs">
+      <DependentUpon>tables.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tables.aspx.designer.cs">
+      <DependentUpon>tables.aspx</DependentUpon>
+    </Compile>
     <Content Include="App_Code\DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Content>
+    <Compile Include="Admin-Dashboard.aspx.cs">
+      <DependentUpon>Admin-Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin-Dashboard.aspx.designer.cs">
+      <DependentUpon>Admin-Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="billing.aspx.cs">
+      <DependentUpon>billing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="billing.aspx.designer.cs">
+      <DependentUpon>billing.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
