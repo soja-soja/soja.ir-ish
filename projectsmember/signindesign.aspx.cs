@@ -51,7 +51,14 @@ namespace projectsmember
                     //}
                 }
             }
-            string ProjectFeatures = txtOtherProject.Text + "|$|" + txtTeachProficiency.Text + "|$|" + txtExmpWebPage.Text + "|$|" + chbFavMngment.Text + "|$|" + rbtTech.Text + "|$|" + txtDetailsDescription.Text + "|$|" + txtTeachSubject.Text + "|$|" + chbTeachVideo.Text + "|$|" + txtTeachTime.Text + "|$|" + txtTeachSubject2.Text + "|$|" + chbTeaching.Text + "|$|" + txtTeachTime2.Text;
+            string ProjectFeatures = txtOtherProject.Text + "|$|" + txtTeachProficiency.Text
+                + "|$|" + txtExmpWebPage.Text + "|$|" + chbFavMngment.Text
+                + "|$|" + rbtTech.Text + "|$|" + txtDetailsDescription.Text
+                + "|$|" + txtTeachSubject.Text + "|$|" + chbTeachVideo.Text
+                + "|$|" + txtTeachTime.Text + "|$|" + txtTeachSubject2.Text
+                + "|$|" + chbTeaching.Text + "|$|" + txtTeachTime2.Text;
+
+
             int vReff = ddlOther.SelectedIndex;
             int vProType = selProjectType.SelectedIndex;
             DataSet1TableAdapters.ProjectsTableAdapter dstaProj = new DataSet1TableAdapters.ProjectsTableAdapter();

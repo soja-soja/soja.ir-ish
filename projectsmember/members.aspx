@@ -4,7 +4,9 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>صفحه کاربر</title>
+        <link rel="icon" type="image/png" href="assets/img/Puzzlefavicon.png">
+
+    <title>چالش ها</title>
 
 
     <!-- Theme CSS -->
