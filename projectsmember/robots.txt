@@ -1,0 +1,11 @@
+﻿User-agent:*
+Disallow:/login_admin.aspx
+Disallow:/Dashboard.aspx
+Disallow:/tables.aspx
+Disallow:/projectManagement.aspx
+Disallow:/MasterAdmin.aspx
+
+Disallow:/Login_User.aspx
+Disallow:/Profile.aspx
+Disallow:/UserTables.aspx
+Disallow:/notifications.aspx
