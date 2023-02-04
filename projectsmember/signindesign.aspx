@@ -6,6 +6,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <link rel="icon" type="image/png" href="assets/img/Formfavicon.png">
     <title>ثبت نام / ورود </title>
     <!--<link href="css/signinStyle.css" rel="stylesheet" />-->
     <link href="css/StyleSign.css" rel="stylesheet" />

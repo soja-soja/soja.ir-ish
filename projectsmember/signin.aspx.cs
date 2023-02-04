@@ -27,7 +27,7 @@ namespace projectsmember
         {
 
             DataSet1TableAdapters.MembersTableAdapter dstaMem = new DataSet1TableAdapters.MembersTableAdapter();
-            int numberOfUsers = dstaMem.LoginQuery(txtUsername.Text).GetHashCode();
+            int numberOfUsers = dstaMem.QueryLoginUser(txtUsername.Text, txtPass.Text).GetHashCode();
 
             if (numberOfUsers > 0)
             {
@@ -89,39 +89,39 @@ namespace projectsmember
             int vSub = vSubUtube + vSubApar;
             string videoWatchYtube = "";
            string videoWatchAparat = "";
-            // for (int i = 0; i < ckbVideoYuotube.Items.Count; i++)
-            //{
-            //   if (ckbVideoYuotube.Items[i].Selected)
-            //  {
-            //     videoWatchYtube += "," + ckbVideoYuotube.Items[i].Text;
+            for (int i = 0; i < ckbVideoYuotube.Items.Count; i++)
+            {
+                if (ckbVideoYuotube.Items[i].Selected)
+                {
+                    videoWatchYtube += "," + ckbVideoYuotube.Items[i].Text;
 
-            //  }
+                }
 
-            // }
-            // for (int j = 0; j < ckbVideoAparat.Items.Count; j++)
+            }
+            for (int j = 0; j < ckbVideoAparat.Items.Count; j++)
+            {
+                if (ckbVideoAparat.Items[j].Selected)
+                {
+                    videoWatchAparat += "," + ckbVideoAparat.Items[j].Text;
+                }
+
+            }
+
+            // foreach (ListItem chkY in ckbVideoYuotube.Items)
             // {
-            //   if (ckbVideoAparat.Items[j].Selected)
-            //  {
-            //      videoWatchAparat += "," + ckbVideoAparat.Items[j].Text;
+            //     if(chkY.Selected)
+            //     {
+            //         videoWatchYtube += "," + chkY.Text;
+            //     }
             // }
-
+            //foreach(ListItem chkA in ckbVideoAparat.Items)
+            // {
+            //     if(chkA.Selected)
+            //     {
+            //         videoWatchAparat += "," + chkA.Text;
+            //     }
             // }
-            
-            foreach (ListItem chkY in ckbVideoYuotube.Items)
-            {
-                if(chkY.Selected)
-                {
-                    videoWatchYtube += "\'" + chkY.Text;
-                }
-            }
-           foreach(ListItem chkA in ckbVideoAparat.Items)
-            {
-                if(chkA.Selected)
-                {
-                    videoWatchAparat += "\'" + chkA.Text;
-                }
-            }
-            string videoWatch = videoWatchYtube + videoWatchAparat;
+            string videoWatch = videoWatchYtube+ videoWatchAparat;
 
             DataSet1TableAdapters.MembersTableAdapter dsta = new DataSet1TableAdapters.MembersTableAdapter();
             dsta.Insert(vSub, videoWatch, txtSojaUserName.Text, txtEmail.Text, txtPhoneNumber.Text, false, false, false, "", txtUrl.Text);

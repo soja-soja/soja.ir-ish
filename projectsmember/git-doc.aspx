@@ -4,6 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+   <link rel="icon" type="image/png" href="members/gitfavicon.png">
    <title>راهنمای کار با گیت و گیت هاب</title>  
     <link href="members/assets/css/styleTopBtn.css" rel="stylesheet" />
    <link href="members/assets/css/git-style.css"  rel="stylesheet" />
