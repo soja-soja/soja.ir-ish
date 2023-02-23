@@ -114,10 +114,10 @@
                                     <div class="card-body">
                                         <form role="form" class="text-start">
                                             <div class="input-group input-group-outline my-3">
-                                                <asp:TextBox ID="txtUserName" class="form-control" runat="server"></asp:TextBox>
+                                                <asp:TextBox ID="txtUserName" class="form-control" placeholder="Username" runat="server"></asp:TextBox>
                                             </div>
                                             <div class="input-group input-group-outline mb-3">
-                                                <asp:TextBox ID="txtPass" type="password" class="form-control" runat="server"></asp:TextBox>
+                                                <asp:TextBox ID="txtPass" type="password" class="form-control" placeholder="Password" runat="server"></asp:TextBox>
                                             </div>
                                             <div class="form-check form-switch d-flex align-items-center mb-3">
                                                 <%--<input class="form-check-input" type="checkbox" id="rememberMe" checked>

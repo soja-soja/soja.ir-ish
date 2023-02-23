@@ -210,11 +210,11 @@
                                             <asp:CheckBoxField DataField="Checked" HeaderText="Checked" SortExpression="Checked"></asp:CheckBoxField>
                                             <asp:CheckBoxField DataField="Contacted" HeaderText="Contacted" SortExpression="Contacted"></asp:CheckBoxField>
                                             <asp:CheckBoxField DataField="Engaged" HeaderText="Engaged" SortExpression="Engaged"></asp:CheckBoxField>
-                                            <asp:BoundField DataField="ExtraData" HeaderText="ExtraData" SortExpression="ExtraData"></asp:BoundField>
+                                            <asp:BoundField DataField="Password" HeaderText="Password" SortExpression="Password"></asp:BoundField>
                                             <asp:BoundField DataField="URLs" HeaderText="URLs" SortExpression="URLs"></asp:BoundField>
                                         </Columns>
                                     </asp:GridView>
-                                    <asp:SqlDataSource runat="server" ID="SqlDataSourceFullMembers" ConnectionString='<%$ ConnectionStrings:db_a12df8_sojairishConnectionString3 %>' DeleteCommand="DELETE FROM [Members] WHERE [Id] = @Id" InsertCommand="INSERT INTO [Members] ([Subscribed], [WatchedVideos], [SojaID], [Email], [Phone], [Checked], [Contacted], [Engaged], [ExtraData], [URLs]) VALUES (@Subscribed, @WatchedVideos, @SojaID, @Email, @Phone, @Checked, @Contacted, @Engaged, @ExtraData, @URLs)" SelectCommand="SELECT * FROM [Members]" UpdateCommand="UPDATE [Members] SET [Subscribed] = @Subscribed, [WatchedVideos] = @WatchedVideos, [SojaID] = @SojaID, [Email] = @Email, [Phone] = @Phone, [Checked] = @Checked, [Contacted] = @Contacted, [Engaged] = @Engaged, [ExtraData] = @ExtraData, [URLs] = @URLs WHERE [Id] = @Id">
+                                    <asp:SqlDataSource runat="server" ID="SqlDataSourceFullMembers" ConnectionString='<%$ ConnectionStrings:db_a12df8_sojairishConnectionString3 %>' DeleteCommand="DELETE FROM [Members] WHERE [Id] = @Id" InsertCommand="INSERT INTO [Members] ([Subscribed], [WatchedVideos], [SojaID], [Email], [Phone], [Checked], [Contacted], [Engaged], [Password], [URLs]) VALUES (@Subscribed, @WatchedVideos, @SojaID, @Email, @Phone, @Checked, @Contacted, @Engaged, @Password, @URLs)" SelectCommand="SELECT * FROM [Members]" UpdateCommand="UPDATE [Members] SET [Subscribed] = @Subscribed, [WatchedVideos] = @WatchedVideos, [SojaID] = @SojaID, [Email] = @Email, [Phone] = @Phone, [Checked] = @Checked, [Contacted] = @Contacted, [Engaged] = @Engaged, [Password] = @Password, [URLs] = @URLs WHERE [Id] = @Id">
                                         <DeleteParameters>
                                             <asp:Parameter Name="Id" Type="Int32"></asp:Parameter>
                                         </DeleteParameters>
@@ -227,7 +227,7 @@
                                             <asp:Parameter Name="Checked" Type="Boolean"></asp:Parameter>
                                             <asp:Parameter Name="Contacted" Type="Boolean"></asp:Parameter>
                                             <asp:Parameter Name="Engaged" Type="Boolean"></asp:Parameter>
-                                            <asp:Parameter Name="ExtraData" Type="String"></asp:Parameter>
+                                            <asp:Parameter Name="Password" Type="String"></asp:Parameter>
                                             <asp:Parameter Name="URLs" Type="String"></asp:Parameter>
                                         </InsertParameters>
                                         <UpdateParameters>
@@ -239,7 +239,7 @@
                                             <asp:Parameter Name="Checked" Type="Boolean"></asp:Parameter>
                                             <asp:Parameter Name="Contacted" Type="Boolean"></asp:Parameter>
                                             <asp:Parameter Name="Engaged" Type="Boolean"></asp:Parameter>
-                                            <asp:Parameter Name="ExtraData" Type="String"></asp:Parameter>
+                                            <asp:Parameter Name="Password" Type="String"></asp:Parameter>
                                             <asp:Parameter Name="URLs" Type="String"></asp:Parameter>
                                             <asp:Parameter Name="Id" Type="Int32"></asp:Parameter>
                                         </UpdateParameters>

@@ -16,8 +16,7 @@ namespace projectsmember
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            txtUserName.Attributes.Add("placeholder", "Username");
-            txtPass.Attributes.Add("placeholder", "Password");
+
         }
 
         protected void btnLoginUser_Click(object sender, EventArgs e)
@@ -43,13 +42,24 @@ namespace projectsmember
                 }
             }
 
+
+
             DataSet1TableAdapters.MembersTableAdapter dstaMem = new DataSet1TableAdapters.MembersTableAdapter();
             int numberOfUsers = dstaMem.QueryLoginUser(txtUserName.Text, txtPass.Text).GetHashCode();
 
+
             if (numberOfUsers > 0)
             {
+
+                var allChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+                var random = new Random();
+                var resultToken = new string(Enumerable.Repeat(allChar, 5).Select(token => token[random.Next(token.Length)]).ToArray());
+                string autoToken = resultToken.ToString();
+                DataSet1TableAdapters.MembersTableAdapter dstaToken = new DataSet1TableAdapters.MembersTableAdapter();
+                dstaToken.UpdateQuery(autoToken, txtUserName.Text, txtPass.Text);
                 //Login successful !
-                Session.Add("status", "Login_User");
+                Session.Add("status", autoToken);
+                Session.Add("Name", txtUserName.Text);
                 Response.Redirect("Profile.aspx");
 
             }

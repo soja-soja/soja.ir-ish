@@ -17,13 +17,14 @@ namespace projectsmember
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            DataSet1TableAdapters.AdminTableAdapter dstAdminToken = new DataSet1TableAdapters.AdminTableAdapter();
+            string AdminRndToken = dstAdminToken.returnRndAdminTokenQuery(Session["Name"].ToString());
             if (Session["adminstatus"] != null &&
-                Session["adminstatus"].ToString() == "login_admin")
+                Session["adminstatus"].ToString() == AdminRndToken.Trim())
             {
                 //successful login1!
                 DataSet1TableAdapters.AdminTableAdapter dtaAdminName = new DataSet1TableAdapters.AdminTableAdapter();
                 string adminName = dtaAdminName.ReturnAdminName(Session["Name"].ToString()).ToString();
-                //dtaAdminName.ReturnAdminName(Session["Username"].ToString());
 
                 lblName.Text = adminName;
 
@@ -33,11 +34,6 @@ namespace projectsmember
                 Response.Redirect("login_admin.aspx");
             }
 
-            if (LOGConn.State == ConnectionState.Open)
-            {
-                LOGConn.Close();
-            }
-            LOGConn.Open();
             DataSet1TableAdapters.MembersTableAdapter dstaMemNotif = new DataSet1TableAdapters.MembersTableAdapter();
             DataSet1TableAdapters.ProjectsTableAdapter dstaProjNotif = new DataSet1TableAdapters.ProjectsTableAdapter();
             int numMemNotif = Convert.ToInt32(dstaMemNotif.QueryMemberNotif());
@@ -46,18 +42,13 @@ namespace projectsmember
 
             lblNotif.Text = Convert.ToString(numberOfNewRequest);
 
-            //DataSet1TableAdapters.MembersTableAdapter dstaNotif = new DataSet1TableAdapters.MembersTableAdapter();
             SqlDataAdapter sda = new SqlDataAdapter("select * from Members", LOGConn);
             DataTable dt = new DataTable();
             sda.Fill(dt);
             rptMsgNotif.DataSource = dt;
             rptMsgNotif.DataBind();
 
-            //SqlDataAdapter sda2 = new SqlDataAdapter("select ProjectType from Projects", LOGConn);
-            //DataTable dt2 = new DataTable();
-            //sda2.Fill(dt2);
-            //rptMsgNotif.DataSource = dt2;
-            //rptMsgNotif.DataBind();
+           
         }
 
         protected void GViewProject_RowDataBound(object sender, GridViewRowEventArgs e)
@@ -91,15 +82,6 @@ namespace projectsmember
 
             }
 
-            //string grv = e.Row.Cells[7].Text;
-            //if (grv == "0")
-            //{
-            //    e.Row.BackColor = System.Drawing.Color.Red;
-            //}
-            //else
-            //{
-            //    e.Row.BackColor = System.Drawing.Color.Green;
-            //}
 
         }
     }

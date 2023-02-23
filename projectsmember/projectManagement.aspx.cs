@@ -33,12 +33,6 @@ namespace projectsmember
             }
 
 
-            if (LOGConn.State == ConnectionState.Open)
-            {
-                LOGConn.Close();
-            }
-            LOGConn.Open();
-
             DataSet1TableAdapters.ProjectsTableAdapter dstaProjNotif2 = new DataSet1TableAdapters.ProjectsTableAdapter();
             int numProjNotif2 = Convert.ToInt32(dstaProjNotif2.QueryProjectNotif());
             lblNotif2.Text = Convert.ToString(numProjNotif2);
