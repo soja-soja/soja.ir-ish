@@ -11,9 +11,10 @@ namespace projectsmember.members
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            DataSet1TableAdapters.MembersTableAdapter dstToken = new DataSet1TableAdapters.MembersTableAdapter();
+            string MemToken = dstToken.returnRndTokenQuery(Session["SojaID"].ToString()).ToString();
             if (Session["status"] != null &&
-                Session["status"].ToString()== "signin")
+                Session["status"].ToString() == MemToken.Trim())
             {
                 //successful login1!
                 DataSet1TableAdapters.MembersTableAdapter dtaUsrWlcom = new DataSet1TableAdapters.MembersTableAdapter();

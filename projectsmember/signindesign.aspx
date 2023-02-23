@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="signindesign.aspx.cs" UnobtrusiveValidationMode="None" Inherits="projectsmember.signindesign" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="signinDesign.aspx.cs" UnobtrusiveValidationMode="None" Inherits="projectsmember.signindesign" %>
 
 <%@ Register Assembly="Recaptcha.Web" Namespace="Recaptcha.Web.UI.Controls" TagPrefix="cc1" %>
 
@@ -62,7 +62,7 @@
 
                             </div>
                             <div class="form-group" id="dvOther" style="display: none">
-                                <asp:TextBox ID="txtOther" CssClass="form-control " runat="server"></asp:TextBox>
+                                <asp:TextBox ID="txtOther" CssClass="form-control " placeholder="لطفا نحوه آشنایی را بنویسید." runat="server"></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="validOther" runat="server" ErrorMessage="از کجا با ما آشنا شدید؟" Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" Visible="true" ControlToValidate="txtOther" ValidationGroup="fillErr"></asp:RequiredFieldValidator>
 
                             </div>
@@ -79,7 +79,7 @@
 
                             </div>
                             <div class="form-group" id="dvOtherProject" style="display: none">
-                                <asp:TextBox ID="txtOtherProject" CssClass="form-control " runat="server"></asp:TextBox>
+                                <asp:TextBox ID="txtOtherProject" CssClass="form-control" placeholder="نوع پروژه خود را بنویسید." runat="server"></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="validOtherProj" runat="server" ErrorMessage="لطفا پروژه مورد نظر خود را شرح دهید." Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" Visible="true" ControlToValidate="txtOtherProject" ValidationGroup="fillErr"></asp:RequiredFieldValidator>
 
                             </div>
@@ -193,26 +193,26 @@
                         </div>
                         <div class="form-group">
                             <asp:Label ID="lblBudget" runat="server" Text="Label">حدود بودجه</asp:Label>
-                            <asp:TextBox ID="txtBudget" CssClass="form-control " runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtBudget" CssClass="form-control " placeholder="مبلغ به تومان" runat="server"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="validBudget" runat="server" ErrorMessage="لطفا بودجه مورد نظر خود را وارد کنید." Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" Visible="true" ControlToValidate="txtBudget" ValidationGroup="fillErr"></asp:RequiredFieldValidator>
 
                         </div>
                         <div class="form-group">
                             <asp:Label ID="lblDeliveryTime" runat="server" Text="Label">حداکثر زمان تحویل</asp:Label>
-                            <asp:TextBox ID="txtDeliveryTime" CssClass="form-control " runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtDeliveryTime" CssClass="form-control " placeholder="زمان مورد نظر به روز" runat="server"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="validDeliverTime" runat="server" ErrorMessage="لطفا حداکثر زمان تحویل را وارد نمایید." Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" Visible="true" ControlToValidate="txtDeliveryTime" ValidationGroup="fillErr"></asp:RequiredFieldValidator>
 
                         </div>
                         <div class="form-row">
                             <div class="col">
                                 <asp:Label ID="lblEmailProj" runat="server" Text="Label">آدرس ایمیل فعال جهت هماهنگی های بعدی</asp:Label>
-                                <asp:TextBox ID="txtEmailProj" TextMode="Email" CssClass="form-control ml-3" runat="server"></asp:TextBox>
+                                <asp:TextBox ID="txtEmailProj" TextMode="Email" CssClass="form-control ml-3" placeholder="example@Email.com" runat="server"></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="validEmailProj" runat="server" ErrorMessage="وارد کردن ایمیل معتبر الزامیست." Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" Visible="true" ControlToValidate="txtEmailProj" ValidationGroup="fillErr"></asp:RequiredFieldValidator>
 
                             </div>
                             <div class="col">
                                 <asp:Label ID="lblPhoneProj" runat="server" Text="Label">شماره همراه</asp:Label>
-                                <asp:TextBox ID="txtPhoneProj" TextMode="Phone" CssClass="form-control ml-3" runat="server"></asp:TextBox>
+                                <asp:TextBox ID="txtPhoneProj" TextMode="Phone" CssClass="form-control ml-3" placeholder="09xxxxxxxxx" runat="server"></asp:TextBox>
                                 <asp:RequiredFieldValidator ID="validPhoneProj" runat="server" ErrorMessage="وارد کردن شماره همراه الزامیست." Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" Visible="true" ControlToValidate="txtPhoneProj" ValidationGroup="fillErr"></asp:RequiredFieldValidator>
 
                             </div>

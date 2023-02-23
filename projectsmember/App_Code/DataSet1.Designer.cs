@@ -332,7 +332,7 @@ namespace projectsmember.App_Code {
             
             private global::System.Data.DataColumn columnEngaged;
             
-            private global::System.Data.DataColumn columnExtraData;
+            private global::System.Data.DataColumn columnPassword;
             
             private global::System.Data.DataColumn columnURLs;
             
@@ -443,9 +443,9 @@ namespace projectsmember.App_Code {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn ExtraDataColumn {
+            public global::System.Data.DataColumn PasswordColumn {
                 get {
-                    return this.columnExtraData;
+                    return this.columnPassword;
                 }
             }
             
@@ -494,7 +494,7 @@ namespace projectsmember.App_Code {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public MembersRow AddMembersRow(int Subscribed, string WatchedVideos, string SojaID, string Email, string Phone, bool Checked, bool Contacted, bool Engaged, string ExtraData, string URLs) {
+            public MembersRow AddMembersRow(int Subscribed, string WatchedVideos, string SojaID, string Email, string Phone, bool Checked, bool Contacted, bool Engaged, string Password, string URLs) {
                 MembersRow rowMembersRow = ((MembersRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -506,7 +506,7 @@ namespace projectsmember.App_Code {
                         Checked,
                         Contacted,
                         Engaged,
-                        ExtraData,
+                        Password,
                         URLs};
                 rowMembersRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowMembersRow);
@@ -546,7 +546,7 @@ namespace projectsmember.App_Code {
                 this.columnChecked = base.Columns["Checked"];
                 this.columnContacted = base.Columns["Contacted"];
                 this.columnEngaged = base.Columns["Engaged"];
-                this.columnExtraData = base.Columns["ExtraData"];
+                this.columnPassword = base.Columns["Password"];
                 this.columnURLs = base.Columns["URLs"];
             }
             
@@ -571,8 +571,8 @@ namespace projectsmember.App_Code {
                 base.Columns.Add(this.columnContacted);
                 this.columnEngaged = new global::System.Data.DataColumn("Engaged", typeof(bool), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnEngaged);
-                this.columnExtraData = new global::System.Data.DataColumn("ExtraData", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnExtraData);
+                this.columnPassword = new global::System.Data.DataColumn("Password", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPassword);
                 this.columnURLs = new global::System.Data.DataColumn("URLs", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnURLs);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
@@ -587,7 +587,7 @@ namespace projectsmember.App_Code {
                 this.columnSojaID.MaxLength = 20;
                 this.columnEmail.MaxLength = 300;
                 this.columnPhone.MaxLength = 20;
-                this.columnExtraData.MaxLength = 2147483647;
+                this.columnPassword.MaxLength = 2147483647;
                 this.columnURLs.MaxLength = 2147483647;
             }
             
@@ -1324,17 +1324,17 @@ namespace projectsmember.App_Code {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string ExtraData {
+            public string Password {
                 get {
                     try {
-                        return ((string)(this[this.tableMembers.ExtraDataColumn]));
+                        return ((string)(this[this.tableMembers.PasswordColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'ExtraData\' in table \'Members\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Password\' in table \'Members\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableMembers.ExtraDataColumn] = value;
+                    this[this.tableMembers.PasswordColumn] = value;
                 }
             }
             
@@ -1452,14 +1452,14 @@ namespace projectsmember.App_Code {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsExtraDataNull() {
-                return this.IsNull(this.tableMembers.ExtraDataColumn);
+            public bool IsPasswordNull() {
+                return this.IsNull(this.tableMembers.PasswordColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetExtraDataNull() {
-                this[this.tableMembers.ExtraDataColumn] = global::System.Convert.DBNull;
+            public void SetPasswordNull() {
+                this[this.tableMembers.PasswordColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2067,7 +2067,7 @@ namespace projectsmember.App_Code.DataSet1TableAdapters {
             tableMapping.ColumnMappings.Add("Checked", "Checked");
             tableMapping.ColumnMappings.Add("Contacted", "Contacted");
             tableMapping.ColumnMappings.Add("Engaged", "Engaged");
-            tableMapping.ColumnMappings.Add("ExtraData", "ExtraData");
+            tableMapping.ColumnMappings.Add("Password", "Password");
             tableMapping.ColumnMappings.Add("URLs", "URLs");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
@@ -2077,7 +2077,10 @@ namespace projectsmember.App_Code.DataSet1TableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Members] ([Subscribed], [WatchedVideos], [SojaID], [Email], [Phone], [Checked], [Contacted], [Engaged], [ExtraData], [URLs]) VALUES (@Subscribed, @WatchedVideos, @SojaID, @Email, @Phone, @Checked, @Contacted, @Engaged, @ExtraData, @URLs)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Members] ([Subscribed], [WatchedVideos], [SojaID], [Email], [P" +
+                "hone], [Checked], [Contacted], [Engaged], [Password], [URLs]) VALUES (@Subscribe" +
+                "d, @WatchedVideos, @SojaID, @Email, @Phone, @Checked, @Contacted, @Engaged, @Pas" +
+                "sword, @URLs)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Subscribed", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Subscribed", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@WatchedVideos", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "WatchedVideos", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -2087,11 +2090,11 @@ namespace projectsmember.App_Code.DataSet1TableAdapters {
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Checked", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Checked", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Contacted", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Contacted", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Engaged", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Engaged", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ExtraData", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ExtraData", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Password", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Password", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@URLs", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "URLs", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Members] SET [Subscribed] = @Subscribed, [WatchedVideos] = @WatchedVideos, [SojaID] = @SojaID, [Email] = @Email, [Phone] = @Phone, [Checked] = @Checked, [Contacted] = @Contacted, [Engaged] = @Engaged, [ExtraData] = @ExtraData, [URLs] = @URLs WHERE (([Id] = @Original_Id))";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Members] SET [Subscribed] = @Subscribed, [WatchedVideos] = @WatchedVideos, [SojaID] = @SojaID, [Email] = @Email, [Phone] = @Phone, [Checked] = @Checked, [Contacted] = @Contacted, [Engaged] = @Engaged, [Password] = @Password, [URLs] = @URLs WHERE (([Id] = @Original_Id))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Subscribed", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Subscribed", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@WatchedVideos", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "WatchedVideos", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -2101,7 +2104,7 @@ namespace projectsmember.App_Code.DataSet1TableAdapters {
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Checked", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Checked", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Contacted", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Contacted", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Engaged", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Engaged", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ExtraData", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ExtraData", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Password", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Password", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@URLs", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "URLs", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
@@ -2120,7 +2123,7 @@ namespace projectsmember.App_Code.DataSet1TableAdapters {
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT Id, Subscribed, WatchedVideos, SojaID, Email, Phone, Checked, Contacted, E" +
-                "ngaged, ExtraData, URLs FROM dbo.Members";
+                "ngaged, Password, URLs FROM dbo.Members";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
@@ -2208,7 +2211,7 @@ namespace projectsmember.App_Code.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(global::System.Nullable<int> Subscribed, string WatchedVideos, string SojaID, string Email, string Phone, global::System.Nullable<bool> Checked, global::System.Nullable<bool> Contacted, global::System.Nullable<bool> Engaged, string ExtraData, string URLs) {
+        public virtual int Insert(global::System.Nullable<int> Subscribed, string WatchedVideos, string SojaID, string Email, string Phone, global::System.Nullable<bool> Checked, global::System.Nullable<bool> Contacted, global::System.Nullable<bool> Engaged, string Password, string URLs) {
             if ((Subscribed.HasValue == true)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((int)(Subscribed.Value));
             }
@@ -2257,11 +2260,11 @@ namespace projectsmember.App_Code.DataSet1TableAdapters {
             else {
                 this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
-            if ((ExtraData == null)) {
+            if ((Password == null)) {
                 this.Adapter.InsertCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[8].Value = ((string)(ExtraData));
+                this.Adapter.InsertCommand.Parameters[8].Value = ((string)(Password));
             }
             if ((URLs == null)) {
                 this.Adapter.InsertCommand.Parameters[9].Value = global::System.DBNull.Value;
@@ -2289,7 +2292,7 @@ namespace projectsmember.App_Code.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(global::System.Nullable<int> Subscribed, string WatchedVideos, string SojaID, string Email, string Phone, global::System.Nullable<bool> Checked, global::System.Nullable<bool> Contacted, global::System.Nullable<bool> Engaged, string ExtraData, string URLs, int Original_Id) {
+        public virtual int Update(global::System.Nullable<int> Subscribed, string WatchedVideos, string SojaID, string Email, string Phone, global::System.Nullable<bool> Checked, global::System.Nullable<bool> Contacted, global::System.Nullable<bool> Engaged, string Password, string URLs, int Original_Id) {
             if ((Subscribed.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(Subscribed.Value));
             }
@@ -2338,11 +2341,11 @@ namespace projectsmember.App_Code.DataSet1TableAdapters {
             else {
                 this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
-            if ((ExtraData == null)) {
+            if ((Password == null)) {
                 this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(ExtraData));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Password));
             }
             if ((URLs == null)) {
                 this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;

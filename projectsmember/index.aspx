@@ -187,7 +187,7 @@
                     <h3 class="text-secondary mb-0">راستی قبل از اینکه ثبت نام کنی بگم که   </h3>
                     <h2 class="mb-5">هر طرحی دوست داشته باشی قابل اجراست
                         <br /><br />
-                <a class="btn btn-xl btn-dark" href="signindesign.aspx">سفارش طراحی سایت </a>
+                <a class="btn btn-xl btn-dark" href="signinDesign">سفارش طراحی سایت </a>
                         </h2>
                 </div>
                 <div class="row gx-0">
@@ -242,7 +242,7 @@
         <section class="content-section bg-primary text-white" id="contact">
             <div class="container px-4 px-lg-5 text-center">
                 <h2 class="mb-4">وقتی تمام مراحل کامل طی کردی برو برای ثبت نام </h2>
-                <a class="btn btn-xl btn-dark" href="signindesign.aspx">سفارش طراحی سایت </a>
+                <a class="btn btn-xl btn-dark" href="signinDesign">سفارش طراحی سایت </a>
             </div>
         </section>-->
         <!-- Map
