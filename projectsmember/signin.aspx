@@ -35,8 +35,8 @@
                 <div class="col-md-3 register-left">
                     <h3 style="margin-top: 60px">خوش آمدید</h3>
                     <p style="margin-top: 10px">3 مرحله تا ثبت نام کامل فاصله دارید!</p>
-                    <asp:TextBox ID="txtUsername" Font-Size="Small" Font-Names="byekan,tahoma" Font-Italic="true" runat="server"></asp:TextBox>
-                    <asp:TextBox ID="txtPass" Font-Size="Small" TextMode="Password" Font-Names="byekan,tahoma" Font-Italic="true" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtUsername" Font-Size="Small" Font-Names="byekan,tahoma" placeholder="نام کاربری را وارد کنید" Font-Italic="true" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtPass" Font-Size="Small" TextMode="Password" placeholder="کلمه عبور را وارد کنید" Font-Names="byekan,tahoma" Font-Italic="true" runat="server"></asp:TextBox>
                     <asp:Button ID="btnLogin" runat="server" name="" value="Login" OnClick="btnLogin_Click" Font-Names="broya" Font-Bold="true" Text="ورود" /><br />
                     <asp:Label ID="lblErr" runat="server" Font-Names="byakan" Font-Size="Small" Font-Bold="true" ForeColor="#ff0000" Text=""></asp:Label>
                 </div>

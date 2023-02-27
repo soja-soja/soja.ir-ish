@@ -18,9 +18,7 @@ namespace projectsmember
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            txtUsername.Attributes.Add("placeholder", "نام کاربری را وارد کنید");
-            txtPass.Attributes.Add("placeholder", "کلمه عبور را وارد کنید");
-
+            
         }
 
         protected void btnLogin_Click(object sender, EventArgs e)
@@ -31,8 +29,17 @@ namespace projectsmember
 
             if (numberOfUsers > 0)
             {
+                var allChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+                var random = new Random();
+                var resultToken = new string(
+                   Enumerable.Repeat(allChar, 5)
+                   .Select(token => token[random.Next(token.Length)]).ToArray());
+
+                string authToken = resultToken.ToString();
+                DataSet1TableAdapters.MembersTableAdapter dstaToken = new DataSet1TableAdapters.MembersTableAdapter();
+                dstaToken.UpdateQuery(authToken, txtUsername.Text, txtPass.Text);
                 //Login successful !
-                Session.Add("status", "signin");
+                Session.Add("status", authToken);
                 Session.Add("SojaID", txtUsername.Text);
                 Response.Redirect("members.aspx");
 

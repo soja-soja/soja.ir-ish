@@ -2727,7 +2727,7 @@
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="signin.aspx" />
-    <Content Include="signindesign.aspx" />
+    <Content Include="signinDesign.aspx" />
     <Content Include="tables.aspx" />
     <Content Include="UserTables.aspx" />
     <Content Include="Web.config" />
@@ -2845,12 +2845,12 @@
     <Compile Include="signin.aspx.designer.cs">
       <DependentUpon>signin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="signindesign.aspx.cs">
-      <DependentUpon>signindesign.aspx</DependentUpon>
+    <Compile Include="signinDesign.aspx.cs">
+      <DependentUpon>signinDesign.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="signindesign.aspx.designer.cs">
-      <DependentUpon>signindesign.aspx</DependentUpon>
+    <Compile Include="signinDesign.aspx.designer.cs">
+      <DependentUpon>signinDesign.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -19,12 +19,7 @@ namespace projectsmember
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            txtOther.Attributes.Add("placeholder", "لطفا نحوه آشنایی را بنویسید.");
-            txtOtherProject.Attributes.Add("placeholder", "نوع پروژه خود را بنویسید.");
-            txtBudget.Attributes.Add("placeholder", "مبلغ به تومان ");
-            txtDeliveryTime.Attributes.Add("placeholder", "زمان مورد نظر به روز ");
-            txtEmailProj.Attributes.Add("placeholder", "example@Email.com");
-            txtPhoneProj.Attributes.Add("placeholder", "09xxxxxxxxx");
+            
 
 
         }
