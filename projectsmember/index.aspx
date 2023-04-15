@@ -53,7 +53,7 @@
                 <h3 class="mb-2">برای عضویت در تیم ما و همکاری با ما</h3>
                 <h3 class="mb-5">یا برای سفارش پروژه های جدید</h3>
                 <a class="btn btn-primary btn-xl" href="#about">می خوام همکارتون بشم</a>
-                <a class="btn btn-primary btn-xl" href="#portfolio">سفارش طراحی پروژه </a>
+                <a class="btn btn-primary btn-xl" href="#portfolio">سفارش  پروژه </a>
             </div>
         </header>
         <!-- About-->
@@ -177,7 +177,7 @@
                     <em>همکار</em>
                     بشیم
                 </h2>
-                <a class="btn btn-primary btn-xl" href="members.aspx">وقتشه ثبت نام کنی </a>
+                <a class="btn btn-primary btn-xl" href="Pages/CooperationRequest/signin.aspx">وقتشه ثبت نام کنی </a>
             </div>
         </section>
         <!-- Portfolio-->
@@ -187,7 +187,7 @@
                     <h3 class="text-secondary mb-0">راستی قبل از اینکه ثبت نام کنی بگم که   </h3>
                     <h2 class="mb-5">هر طرحی دوست داشته باشی قابل اجراست
                         <br /><br />
-                <a class="btn btn-xl btn-dark" href="signinDesign">سفارش طراحی سایت </a>
+                <a class="btn btn-xl btn-dark" href="Pages/ProjectRegister/signinDesign.aspx">ثبت سفارش پروژه </a>
                         </h2>
                 </div>
                 <div class="row gx-0">
@@ -195,8 +195,8 @@
                         <a class="portfolio-item" href="#!">
                             <div class="caption">
                                 <div class="caption-content ">
-                                    <div dir="rtl" class="h2">طراحی پویا (Responsive)</div>
-                                    <p dir="rtl" class="mb-0">طراحی وب سایت کاملا سازگار با صفحه های نمایش موبایل و تبلت و با رویکرد رسپانسیو </p>
+                                    <div dir="rtl" class="h2">پروژه های داده محور</div>
+                                    <p dir="rtl" class="mb-0"> مشاوره ، جمع آوری داده ، پردازش داده به روشهای تحلیلی  Analytics  و یادگیری ماشین Machine Learning </p>
                                 </div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio-1.jpg" alt="..." />
@@ -206,8 +206,8 @@
                         <a class="portfolio-item" href="#!">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <div dir="rtl" class="h2">دسته بندی خدمات</div>
-                                    <p dir="rtl" class="mb-0">بدون هیچ محدودیتی در ارائه طرح های متنوع و متناسب سفارش شما  </p>
+                                    <div dir="rtl" class="h5">طراحی وب سایت (Website Design)</div>
+                                    <p dir="rtl" class="mb-0">طراحی انواع وب سایت با آخرین استاندارد های جهانی ، مطابق با سلیقه و کارکرد های مورد نظر شما  </p>
                                 </div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio-2.jpg" alt="..." />
@@ -217,8 +217,8 @@
                         <a class="portfolio-item" href="#!">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <div dir="rtl" class="h2">پشتیبانی فنی</div>
-                                    <p dir="rtl" class="mb-0">پشتیبانی کامل در صورت هرگونه خرابی ، مشکلات نرم افزاری </p>
+                                    <div dir="rtl" class="h4">Sky is the limit</div>
+                                    <p dir="rtl" class="mb-0">پروژه دیگه ای مدنظر داری ؟ نیاز به مشاوره و یا تخمین قیمت داری؟ با ما در میان  بذار </p>
                                 </div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio-3.jpg" alt="..." />
@@ -228,8 +228,8 @@
                         <a class="portfolio-item" href="#!">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <div dir="rtl" class="h2">مدت زمان اجرای پروژه</div>
-                                    <p dir="rtl" class="mb-0">مدت زمان اجرای پروژه بر اساس حجم کاری شما تعیین می گردد</p>
+                                    <div dir="rtl" class="h4">Mentorship</div>
+                                    <p dir="rtl" class="mb-0">شامل مشاوره نقشه راه ، تدریس خصوصی و رفع اشکال پروژه محور برای آمادگی در بازار کار</p>
                                 </div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio-4.jpg" alt="..." />

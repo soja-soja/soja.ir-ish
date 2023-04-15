@@ -7,19 +7,18 @@ using System.Web.UI.WebControls;
 
 namespace projectsmember
 {
-    public partial class UserTables : System.Web.UI.Page
+    public partial class Profile : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
             DataSet1TableAdapters.MembersTableAdapter dstToken = new DataSet1TableAdapters.MembersTableAdapter();
-            string MemTableLogToken = dstToken.returnRndTokenQuery(Session["Name"].ToString()).ToString();
+            string MemLogToken = dstToken.returnRndTokenQuery(Session["Name"].ToString()).ToString();
 
             if (Session["status"] != null &&
-                Session["status"].ToString() == MemTableLogToken.Trim())
+                Session["status"].ToString() == MemLogToken.Trim())
             {
                 //successful login1!
-
+                
             }
             else
             {
