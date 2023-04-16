@@ -9,3 +9,6 @@ Disallow:/Login_User.aspx
 Disallow:/Profile.aspx
 Disallow:/UserTables.aspx
 Disallow:/notifications.aspx
+
+Disallow:/AdminPages/
+Disallow:/UserAdminPages/

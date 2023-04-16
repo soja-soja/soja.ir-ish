@@ -261,7 +261,7 @@
     <Content Include="css\styles.css" />
     <Content Include="css\StyleSign.css" />
     <Content Include="css\styleSteps.css" />
-    <Content Include="Dashboard.aspx" />
+    <Content Include="Pages\AdminPages\Dashboard.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="index.aspx" />
     <Content Include="js\material-dashboard.min.js" />
@@ -272,9 +272,9 @@
     <Content Include="js\plugins\smooth-scrollbar.min.js" />
     <Content Include="js\plugins\world.js" />
     <Content Include="js\scripts.js" />
-    <Content Include="login_admin.aspx" />
-    <Content Include="Login_User.aspx" />
-    <Content Include="MasterAdmin.aspx" />
+    <Content Include="Pages\AdminPages\login_admin.aspx" />
+    <Content Include="Pages\UserAdminPages\Login_User.aspx" />
+    <Content Include="Pages\AdminPages\MasterAdmin.aspx" />
     <Content Include="members\assets\css\git-style.css" />
     <Content Include="members\assets\css\styleTopBtn.css" />
     <Content Include="members\assets\css\memberstyle.css" />
@@ -2396,14 +2396,13 @@
     <Content Include="members\assets\plugins\simplelightbox\simple-lightbox.min.js" />
     <Content Include="members\assets\plugins\simplelightbox\simple-lightbox.modules.js" />
     <Content Include="members\assets\plugins\smoothscroll.min.js" />
-    <Content Include="docs-page.aspx" />
     <Content Include="members\favicon.ico" />
-    <Content Include="git-doc.aspx" />
-    <Content Include="members.aspx" />
+    <Content Include="Pages\CooperationRequest\git-doc.aspx" />
+    <Content Include="Pages\CooperationRequest\members.aspx" />
     <Content Include="members\gitfavicon.png" />
-    <Content Include="notifications.aspx" />
-    <Content Include="Profile.aspx" />
-    <Content Include="projectManagement.aspx" />
+    <Content Include="Pages\UserAdminPages\notifications.aspx" />
+    <Content Include="Pages\UserAdminPages\Profile.aspx" />
+    <Content Include="Pages\AdminPages\projectManagement.aspx" />
     <Content Include="robots.txt" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -2726,77 +2725,82 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
-    <Content Include="signin.aspx" />
-    <Content Include="signinDesign.aspx" />
-    <Content Include="tables.aspx" />
-    <Content Include="UserTables.aspx" />
+    <Content Include="Pages\CooperationRequest\signin.aspx" />
+    <Content Include="Pages\ProjectRegister\signinDesign.aspx" />
+    <Content Include="Pages\AdminPages\tables.aspx" />
+    <Content Include="Pages\UserAdminPages\UserTables.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dashboard.aspx.cs">
+    <Compile Include="Pages\AdminPages\Dashboard.aspx.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dashboard.aspx.designer.cs">
+    <Compile Include="Pages\AdminPages\Dashboard.aspx.designer.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
     </Compile>
     <Compile Include="DataSet1.cs">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="login_admin.aspx.cs">
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\login_admin.aspx.cs">
       <DependentUpon>login_admin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="login_admin.aspx.designer.cs">
+    <Compile Include="Pages\AdminPages\login_admin.aspx.designer.cs">
       <DependentUpon>login_admin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Login_User.aspx.cs">
+    <Compile Include="Pages\UserAdminPages\Login_User.aspx.cs">
       <DependentUpon>Login_User.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Login_User.aspx.designer.cs">
+    <Compile Include="Pages\UserAdminPages\Login_User.aspx.designer.cs">
       <DependentUpon>Login_User.aspx</DependentUpon>
     </Compile>
-    <Compile Include="MasterAdmin.aspx.cs">
+    <Compile Include="Pages\AdminPages\MasterAdmin.aspx.cs">
       <DependentUpon>MasterAdmin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MasterAdmin.aspx.designer.cs">
+    <Compile Include="Pages\AdminPages\MasterAdmin.aspx.designer.cs">
       <DependentUpon>MasterAdmin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="notifications.aspx.cs">
+    <Compile Include="Pages\UserAdminPages\notifications.aspx.cs">
       <DependentUpon>notifications.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="notifications.aspx.designer.cs">
+    <Compile Include="Pages\UserAdminPages\notifications.aspx.designer.cs">
       <DependentUpon>notifications.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Profile.aspx.cs">
+    <Compile Include="Pages\UserAdminPages\Profile.aspx.cs">
       <DependentUpon>Profile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Profile.aspx.designer.cs">
+    <Compile Include="Pages\UserAdminPages\Profile.aspx.designer.cs">
       <DependentUpon>Profile.aspx</DependentUpon>
     </Compile>
-    <Compile Include="projectManagement.aspx.cs">
+    <Compile Include="Pages\AdminPages\projectManagement.aspx.cs">
       <DependentUpon>projectManagement.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="projectManagement.aspx.designer.cs">
+    <Compile Include="Pages\AdminPages\projectManagement.aspx.designer.cs">
       <DependentUpon>projectManagement.aspx</DependentUpon>
     </Compile>
-    <Compile Include="tables.aspx.cs">
+    <Compile Include="Pages\AdminPages\tables.aspx.cs">
       <DependentUpon>tables.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="tables.aspx.designer.cs">
+    <Compile Include="Pages\AdminPages\tables.aspx.designer.cs">
       <DependentUpon>tables.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UserTables.aspx.cs">
+    <Compile Include="Pages\UserAdminPages\UserTables.aspx.cs">
       <DependentUpon>UserTables.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UserTables.aspx.designer.cs">
+    <Compile Include="Pages\UserAdminPages\UserTables.aspx.designer.cs">
       <DependentUpon>UserTables.aspx</DependentUpon>
     </Compile>
     <Content Include="App_Code\DataSet1.Designer.cs">
@@ -2804,11 +2808,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Content>
-    <Compile Include="DataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2816,40 +2815,33 @@
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="docs-page.aspx.cs">
-      <DependentUpon>docs-page.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="docs-page.aspx.designer.cs">
-      <DependentUpon>docs-page.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="git-doc.aspx.cs">
+    <Compile Include="Pages\CooperationRequest\git-doc.aspx.cs">
       <DependentUpon>git-doc.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="git-doc.aspx.designer.cs">
+    <Compile Include="Pages\CooperationRequest\git-doc.aspx.designer.cs">
       <DependentUpon>git-doc.aspx</DependentUpon>
     </Compile>
-    <Compile Include="members.aspx.cs">
+    <Compile Include="Pages\CooperationRequest\members.aspx.cs">
       <DependentUpon>members.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="members.aspx.designer.cs">
+    <Compile Include="Pages\CooperationRequest\members.aspx.designer.cs">
       <DependentUpon>members.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="signin.aspx.cs">
+    <Compile Include="Pages\CooperationRequest\signin.aspx.cs">
       <DependentUpon>signin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="signin.aspx.designer.cs">
+    <Compile Include="Pages\CooperationRequest\signin.aspx.designer.cs">
       <DependentUpon>signin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="signinDesign.aspx.cs">
+    <Compile Include="Pages\ProjectRegister\signinDesign.aspx.cs">
       <DependentUpon>signinDesign.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="signinDesign.aspx.designer.cs">
+    <Compile Include="Pages\ProjectRegister\signinDesign.aspx.designer.cs">
       <DependentUpon>signinDesign.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
