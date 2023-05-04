@@ -42,6 +42,15 @@ namespace projectsmember
         protected global::System.Web.UI.WebControls.TextBox txtPass;
 
         /// <summary>
+        /// RecaptchaWidget2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Recaptcha.Web.UI.Controls.RecaptchaWidget RecaptchaWidget2;
+
+        /// <summary>
         /// btnLogin control.
         /// </summary>
         /// <remarks>
@@ -186,15 +195,6 @@ namespace projectsmember
         protected global::System.Web.UI.WebControls.CheckBoxList ckbVideoAparat;
 
         /// <summary>
-        /// btnSendStep2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSendStep2;
-
-        /// <summary>
         /// btnBackStep1 control.
         /// </summary>
         /// <remarks>
@@ -202,6 +202,15 @@ namespace projectsmember
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnBackStep1;
+
+        /// <summary>
+        /// btnSendStep2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSendStep2;
 
         /// <summary>
         /// View3 control.

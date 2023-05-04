@@ -150,15 +150,6 @@ namespace projectsmember
         protected global::System.Web.UI.WebControls.TextBox txtTeachProficiency;
 
         /// <summary>
-        /// validTeachProficiency control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator validTeachProficiency;
-
-        /// <summary>
         /// lblFavMngment control.
         /// </summary>
         /// <remarks>
@@ -384,15 +375,6 @@ namespace projectsmember
         protected global::System.Web.UI.WebControls.TextBox txtBudget;
 
         /// <summary>
-        /// validBudget control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator validBudget;
-
-        /// <summary>
         /// lblDeliveryTime control.
         /// </summary>
         /// <remarks>
@@ -409,15 +391,6 @@ namespace projectsmember
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtDeliveryTime;
-
-        /// <summary>
-        /// validDeliverTime control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator validDeliverTime;
 
         /// <summary>
         /// lblEmailProj control.
@@ -463,15 +436,6 @@ namespace projectsmember
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtPhoneProj;
-
-        /// <summary>
-        /// validPhoneProj control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator validPhoneProj;
 
         /// <summary>
         /// RecaptchaWidget1 control.

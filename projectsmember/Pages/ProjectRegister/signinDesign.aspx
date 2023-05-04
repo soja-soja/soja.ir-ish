@@ -63,7 +63,7 @@
                             </div>
                             <div class="form-group" id="dvOther" style="display: none">
                                 <asp:TextBox ID="txtOther" CssClass="form-control " placeholder="لطفا نحوه آشنایی را بنویسید." runat="server"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="validOther" runat="server" ErrorMessage="از کجا با ما آشنا شدید؟" Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" Visible="true" ControlToValidate="txtOther" ValidationGroup="fillErr"></asp:RequiredFieldValidator>
+                                <asp:RequiredFieldValidator ID="validOther" runat="server" ErrorMessage="از کجا با ما آشنا شدید؟" Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" Visible="true" ControlToValidate="txtOther" ValidationGroup="XG"></asp:RequiredFieldValidator>
 
                             </div>
                             <div class="form-group">
@@ -80,20 +80,19 @@
                             </div>
                             <div class="form-group" id="dvOtherProject" style="display: none">
                                 <asp:TextBox ID="txtOtherProject" CssClass="form-control" placeholder="نوع پروژه خود را بنویسید." runat="server"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="validOtherProj" runat="server" ErrorMessage="لطفا پروژه مورد نظر خود را شرح دهید." Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" Visible="true" ControlToValidate="txtOtherProject" ValidationGroup="fillErr"></asp:RequiredFieldValidator>
+                                <asp:RequiredFieldValidator ID="validOtherProj" runat="server" ErrorMessage="لطفا پروژه مورد نظر خود را شرح دهید." Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" Visible="true" ControlToValidate="txtOtherProject" ValidationGroup="other"></asp:RequiredFieldValidator>
 
                             </div>
                             <div class="form-group" id="dvExmpWebPage" style="display: none">
                                 <asp:Label ID="lblExmpWebPage" CssClass="text-break " runat="server" Text="Label">نمونه وب سایت های مشابه که از نظر ظاهری می پسندی و مایلی پروژه نهایی شبیهشون باشه (حداقل ۲ تا)</asp:Label>
                                 <asp:TextBox ID="txtExmpWebPage" CssClass="form-control " TextMode="MultiLine" runat="server"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="validExmpWebPage" runat="server" ErrorMessage="پروژه های مشابه مورد نظر خود را نام ببرید." Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" Visible="true" ControlToValidate="txtExmpWebPage" ValidationGroup="fillErr"></asp:RequiredFieldValidator>
+                                <asp:RequiredFieldValidator ID="validExmpWebPage" runat="server" ErrorMessage="پروژه های مشابه مورد نظر خود را نام ببرید." Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" Visible="true" ControlToValidate="txtExmpWebPage" ValidationGroup="web"></asp:RequiredFieldValidator>
 
 
                             </div>
                             <div class="form-group" id="dvSubject" style="display: none">
                                 <asp:Label ID="lblTeachProficiency" runat="server" Text="Label">چه موضوع/موضوعاتی در نظر داری؟</asp:Label>
                                 <asp:TextBox ID="txtTeachProficiency" CssClass="form-control " TextMode="MultiLine" runat="server"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="validTeachProficiency" runat="server" ErrorMessage="موضوعات مورد نظر خود را بیان کنید." Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" Visible="true" ControlToValidate="txtTeachProficiency" ValidationGroup="fillErr"></asp:RequiredFieldValidator>
 
                             </div>
 
@@ -126,7 +125,7 @@
                             <div class="form-group">
                                 <asp:Label ID="lblDetailsDescription" CssClass="form-label" runat="server" Text="Label">ویژگی های پروژه رو با جزییات فنی توضیح بدید:</asp:Label>
                                 <asp:TextBox ID="txtDetailsDescription" CssClass="form-control " TextMode="MultiLine" Rows="7" runat="server"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="validDetailsDescription" runat="server" ErrorMessage="توضیح جزییات پروژه الزامیست." Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" Visible="true" ControlToValidate="txtDetailsDescription" ValidationGroup="fillErr"></asp:RequiredFieldValidator>
+                                <asp:RequiredFieldValidator ID="validDetailsDescription" runat="server" ErrorMessage="توضیح جزییات پروژه الزامیست." Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" Visible="true" ControlToValidate="txtDetailsDescription" ValidationGroup="data"></asp:RequiredFieldValidator>
 
                             </div>
 
@@ -138,7 +137,7 @@
                             <div class="form-group">
                                 <asp:Label ID="lblTeachSubject" CssClass="form-label" runat="server" Text="Label">چقدر روی موضوع/موضوعات تسلط داری؟</asp:Label>
                                 <asp:TextBox ID="txtTeachSubject" CssClass="form-control " TextMode="MultiLine" runat="server"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="validTeachSubject" runat="server" ErrorMessage="میزان تسلط؟؟؟؟" Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" Visible="true" ControlToValidate="txtTeachSubject" ValidationGroup="fillErr"></asp:RequiredFieldValidator>
+                                <asp:RequiredFieldValidator ID="validTeachSubject" runat="server" ErrorMessage="میزان تسلط؟؟؟؟" Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" Visible="true" ControlToValidate="txtTeachSubject" ValidationGroup="bug"></asp:RequiredFieldValidator>
 
 
 
@@ -155,7 +154,7 @@
                             <div class="form-group">
                                 <asp:Label ID="lblTeachTime" CssClass="form-label" runat="server" Text="Label">فکر میکنی چقدر زمان لازم داری؟</asp:Label>
                                 <asp:TextBox ID="txtTeachTime" CssClass="form-control " TextMode="MultiLine" runat="server"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="validTeachTime" runat="server" ErrorMessage="زمان مورد نظر؟؟؟؟" Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" Visible="true" ControlToValidate="txtTeachTime" ValidationGroup="fillErr"></asp:RequiredFieldValidator>
+                                <asp:RequiredFieldValidator ID="validTeachTime" runat="server" ErrorMessage="زمان مورد نظر؟؟؟؟" Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" Visible="true" ControlToValidate="txtTeachTime" ValidationGroup="bug"></asp:RequiredFieldValidator>
 
                             </div>
 
@@ -166,7 +165,7 @@
                             <div class="form-group">
                                 <asp:Label ID="lblTeachSubject2" CssClass="form-label" runat="server" Text="Label">چقدر روی موضوع/موضوعات تسلط داری؟</asp:Label>
                                 <asp:TextBox ID="txtTeachSubject2" CssClass="form-control " TextMode="MultiLine" runat="server"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="validTeachSubj2" runat="server" ErrorMessage="میزان تسلط؟؟؟؟" Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" Visible="true" ControlToValidate="txtTeachSubject2" ValidationGroup="fillErr"></asp:RequiredFieldValidator>
+                                <asp:RequiredFieldValidator ID="validTeachSubj2" runat="server" ErrorMessage="میزان تسلط؟؟؟؟" Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" Visible="true" ControlToValidate="txtTeachSubject2" ValidationGroup="teach"></asp:RequiredFieldValidator>
 
 
 
@@ -183,7 +182,7 @@
                             <div class="form-group">
                                 <asp:Label ID="lblTeachTime2" CssClass="form-label" runat="server" Text="Label">فکر میکنی چقدر زمان لازم داری؟</asp:Label>
                                 <asp:TextBox ID="txtTeachTime2" CssClass="form-control " TextMode="MultiLine" runat="server"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="validTeachTime2" runat="server" ErrorMessage="زمان مورد نظر؟؟؟؟" Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" Visible="true" ControlToValidate="txtTeachTime2" ValidationGroup="fillErr"></asp:RequiredFieldValidator>
+                                <asp:RequiredFieldValidator ID="validTeachTime2" runat="server" ErrorMessage="زمان مورد نظر؟؟؟؟" Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" Visible="true" ControlToValidate="txtTeachTime2" ValidationGroup="teach"></asp:RequiredFieldValidator>
 
 
                             </div>
@@ -194,33 +193,30 @@
                         <div class="form-group">
                             <asp:Label ID="lblBudget" runat="server" Text="Label">حدود بودجه</asp:Label>
                             <asp:TextBox ID="txtBudget" CssClass="form-control " placeholder="مبلغ به تومان" runat="server"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="validBudget" runat="server" ErrorMessage="لطفا بودجه مورد نظر خود را وارد کنید." Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" Visible="true" ControlToValidate="txtBudget" ValidationGroup="fillErr"></asp:RequiredFieldValidator>
 
                         </div>
                         <div class="form-group">
                             <asp:Label ID="lblDeliveryTime" runat="server" Text="Label">حداکثر زمان تحویل</asp:Label>
                             <asp:TextBox ID="txtDeliveryTime" CssClass="form-control " placeholder="زمان مورد نظر به روز" runat="server"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="validDeliverTime" runat="server" ErrorMessage="لطفا حداکثر زمان تحویل را وارد نمایید." Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" Visible="true" ControlToValidate="txtDeliveryTime" ValidationGroup="fillErr"></asp:RequiredFieldValidator>
 
                         </div>
                         <div class="form-row">
                             <div class="col">
                                 <asp:Label ID="lblEmailProj" runat="server" Text="Label">آدرس ایمیل فعال جهت هماهنگی های بعدی</asp:Label>
                                 <asp:TextBox ID="txtEmailProj" TextMode="Email" CssClass="form-control ml-3" placeholder="example@Email.com" runat="server"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="validEmailProj" runat="server" ErrorMessage="وارد کردن ایمیل معتبر الزامیست." Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" Visible="true" ControlToValidate="txtEmailProj" ValidationGroup="fillErr"></asp:RequiredFieldValidator>
+                                <asp:RequiredFieldValidator ID="validEmailProj" runat="server" ErrorMessage="وارد کردن ایمیل معتبر الزامیست." Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" Visible="true" ControlToValidate="txtEmailProj" ValidationGroup="XG"></asp:RequiredFieldValidator>
 
                             </div>
                             <div class="col">
                                 <asp:Label ID="lblPhoneProj" runat="server" Text="Label">شماره همراه</asp:Label>
                                 <asp:TextBox ID="txtPhoneProj" TextMode="Phone" CssClass="form-control ml-3" placeholder="09xxxxxxxxx" runat="server"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="validPhoneProj" runat="server" ErrorMessage="وارد کردن شماره همراه الزامیست." Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" Visible="true" ControlToValidate="txtPhoneProj" ValidationGroup="fillErr"></asp:RequiredFieldValidator>
 
                             </div>
                         </div>
                         <div>
                             <cc1:RecaptchaWidget ID="RecaptchaWidget1" RenderApiScript="false" runat="server" />
                             <asp:Label ID="lblErr" runat="server" Text="" ForeColor="Red"></asp:Label>
-                            <asp:Button ID="btnSubmit" type="submit" OnClick="btnSubmit_Click" runat="server" class="btnRegister" Style="margin-top: -70px; margin-right: 400px;" Text="ثبت اطلاعات" ValidationGroup="fillErr" />
+                            <asp:Button ID="btnSubmit" type="submit" OnClick="btnSubmit_Click" runat="server" class="btnRegister" Style="margin-top: -70px; margin-right: 400px;" Text="ثبت اطلاعات" ValidationGroup="XG" />
 
                         </div>
                     </div>
@@ -230,7 +226,7 @@
             </div>
         </div>
     </form>
-    <script src="js/signDesign.js?v1"></script>
+    <script src="../../js/signDesign.js?1"></script>
 
 </body>
 </html>

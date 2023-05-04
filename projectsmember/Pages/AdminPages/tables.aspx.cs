@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Configuration;
-using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
-using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -17,19 +14,26 @@ namespace projectsmember
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            DataSet1TableAdapters.AdminTableAdapter dstAdminToken = new DataSet1TableAdapters.AdminTableAdapter();
-            string AdminRnnndToken = dstAdminToken.returnRndAdminTokenQuery(Session["Name"].ToString());
-            if (Session["adminstatus"] != null &&
-                Session["adminstatus"].ToString() == AdminRnnndToken.Trim())
+            try
             {
-                //successful login1!
-                DataSet1TableAdapters.AdminTableAdapter dtaAdminName = new DataSet1TableAdapters.AdminTableAdapter();
-                string adminName = dtaAdminName.ReturnAdminName(Session["Name"].ToString()).ToString();
+                App_Code.DataSet1TableAdapters.AdminTableAdapter dstAdminToken = new App_Code.DataSet1TableAdapters.AdminTableAdapter();
+                string AdminRnnndToken = dstAdminToken.returnRndAdminTokenQuery(Session["Name"].ToString());
+                if (Session["adminstatus"] != null &&
+                    Session["adminstatus"].ToString() == AdminRnnndToken.Trim())
+                {
+                    //successful login1!
+                    App_Code.DataSet1TableAdapters.AdminTableAdapter dtaAdminName = new App_Code.DataSet1TableAdapters.AdminTableAdapter();
+                    string adminName = dtaAdminName.ReturnAdminName(Session["Name"].ToString()).ToString();
 
-                lblName.Text = adminName;
+                    lblName.Text = adminName;
 
+                }
+                else
+                {
+                    Response.Redirect("login_admin.aspx");
+                }
             }
-            else
+            catch (Exception)
             {
                 Response.Redirect("login_admin.aspx");
             }
