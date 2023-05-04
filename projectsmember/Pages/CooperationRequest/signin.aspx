@@ -26,6 +26,11 @@
 
     <%--https://github.com/tanveery/recaptcha-net--%>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <style type="text/css">
+        input[type="checkbox"] {
+          margin-left: 10px;
+        }
+    </style>
 
 </head>
 <body dir="rtl" style="font-family: bmitra">
@@ -37,6 +42,7 @@
                     <p style="margin-top: 10px">3 مرحله تا ثبت نام کامل فاصله دارید!</p>
                     <asp:TextBox ID="txtUsername" Font-Size="Small" Font-Names="byekan,tahoma" placeholder="نام کاربری را وارد کنید" Font-Italic="true" runat="server"></asp:TextBox>
                     <asp:TextBox ID="txtPass" Font-Size="Small" TextMode="Password" placeholder="کلمه عبور را وارد کنید" Font-Names="byekan,tahoma" Font-Italic="true" runat="server"></asp:TextBox>
+                    <cc1:RecaptchaWidget ID="RecaptchaWidget2" RenderApiScript="false" runat="server" />
                     <asp:Button ID="btnLogin" runat="server" name="" value="Login" OnClick="btnLogin_Click" Font-Names="broya" Font-Bold="true" Text="ورود" /><br />
                     <asp:Label ID="lblErr" runat="server" Font-Names="byakan" Font-Size="Small" Font-Bold="true" ForeColor="#ff0000" Text=""></asp:Label>
                 </div>
@@ -79,7 +85,7 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group ">
-                                                <asp:Label ID="lblUrl" runat="server" Text="">آدرس های مربوط به صفحات اجتماعی و وب سایت های خود را وارد کنید.</asp:Label>
+                                                <asp:Label ID="lblUrl" runat="server" Text="">نمونه کار اگر داری برامون آدرسش رو بنویس: (صفحات اجتماعی، سایت، ...(</asp:Label>
 
                                             </div>
                                             <div class="form-group">
@@ -123,15 +129,15 @@
                                     <div class="col-md-6 ">
                                         <asp:CheckBoxList ID="ckbVideoAparat" TextAlign="Right" CssClass="form-check form-check-reverse" runat="server">
                                             <asp:ListItem  Text="آموزش ASP.NET"  Value="0">آموزش ASP.NET</asp:ListItem>
-                                            <asp:ListItem Text="طراحی بازی با JAvaScript سطح مقدماتی" Value="1">طراحی بازی با JAvaScript سطح مقدماتی</asp:ListItem>
-                                            <asp:ListItem Text="طراحی بازی با JAvaScript سطح متوسط" Value="2">طراحی بازی با JAvaScript سطح متوسط</asp:ListItem>
+                                            <asp:ListItem Text="طراحی بازی با JavaScript سطح مقدماتی" Value="1">طراحی بازی با JavaScript سطح مقدماتی</asp:ListItem>
+                                            <asp:ListItem Text="طراحی بازی با JavaScript سطح متوسط" Value="2">طراحی بازی با JavaScript سطح متوسط</asp:ListItem>
                                             <asp:ListItem Text="آموزش نصب و استفاده از GIT" Value="3">آموزش نصب و استفاده از GIT</asp:ListItem>
 
                                         </asp:CheckBoxList>
                                        
                                         <div>
-                                            <asp:Button ID="btnSendStep2" runat="server" Text="مرحله آخر" OnClick="btnSendStep2_Click" CssClass="btnRegister" ClientIDMode="Static" ValidationGroup="g3" />
                                             <asp:Button ID="btnBackStep1" runat="server" Text="مرحله قبل" CssClass="btnRegister" ClientIDMode="Static" OnClick="btnBackStep1_Click"  />
+                                            <asp:Button ID="btnSendStep2" runat="server" Text="مرحله آخر" OnClick="btnSendStep2_Click" CssClass="btnRegister" ClientIDMode="Static" ValidationGroup="g3" />
 
                                         </div>
                                     </div>

@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace projectsmember
 {
@@ -11,14 +6,14 @@ namespace projectsmember
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            DataSet1TableAdapters.MembersTableAdapter dstToken = new DataSet1TableAdapters.MembersTableAdapter();
+            App_Code.DataSet1TableAdapters.MembersTableAdapter dstToken = new App_Code.DataSet1TableAdapters.MembersTableAdapter();
             string MemLogToken = dstToken.returnRndTokenQuery(Session["Name"].ToString()).ToString();
 
             if (Session["status"] != null &&
                 Session["status"].ToString() == MemLogToken.Trim())
             {
                 //successful login1!
-                
+
             }
             else
             {

@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Data.SqlClient;
 using System.Configuration;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 using System.Data;
-using MongoDB.Driver.Core.Configuration;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Web.UI;
 
 namespace projectsmember
 {
@@ -31,53 +27,39 @@ namespace projectsmember
                 var result = RecaptchaWidget2.Verify();
                 if (result.Success)
                 {
-                    // Response.Redirect("Admin-Dashboard.aspx");
+
+                    App_Code.DataSet1TableAdapters.AdminTableAdapter dstaAdmin = new App_Code.DataSet1TableAdapters.AdminTableAdapter();
+
+                    int numberOfAdminUsers = dstaAdmin.AdminLoginQuery(txtAdminUserName.Text, txtAdminPass.Text).GetHashCode();
+
+                    if (numberOfAdminUsers > 0)
+                    {
+                        var allChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+                        var random = new Random();
+                        var resultToken = new string(Enumerable.Repeat(allChar, 5).Select(token => token[random.Next(token.Length)]).ToArray());
+                        string autoAdToken = resultToken.ToString();
+                        //App_Code.DataSet1TableAdapters.AdminTableAdapter dstAdmin = new App_Code.DataSet1TableAdapters.AdminTableAdapter();
+                        dstaAdmin.UpdateAdminQuery(autoAdToken, txtAdminUserName.Text, txtAdminPass.Text);
+                        //Login successful !
+                        Session.Add("adminstatus", autoAdToken);
+                        Session.Add("Name", txtAdminUserName.Text);
+                        Response.Redirect("Dashboard.aspx");
+
+
+
+
+                    }
                 }
                 else
                 {
-                    lblMessage.Text = "رباتی؟ ";
-                    //foreach (var err in result.ErrorCodes)
-                    //{
-                    //   lblMessage.Text = lblMessage.Text + err;
-                    //}
+                    //Login failed
+                    txtAdminUserName.Text = txtAdminPass.Text = "";
+                    lblMessage.Text = "username or password is incorrect";
+                    lblMessage.ForeColor = System.Drawing.Color.Red;
+                    txtAdminPass.BorderColor = System.Drawing.Color.Red;
+                    txtAdminUserName.BorderColor = System.Drawing.Color.Red;
                 }
             }
-            DataSet1TableAdapters.AdminTableAdapter dstaAdmin = new DataSet1TableAdapters.AdminTableAdapter();
-
-            int numberOfAdminUsers = dstaAdmin.AdminLoginQuery(txtAdminUserName.Text, txtAdminPass.Text).GetHashCode();
-
-            if (numberOfAdminUsers > 0)
-            {
-                var allChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-                var random = new Random();
-                var resultToken = new string(Enumerable.Repeat(allChar, 5).Select(token => token[random.Next(token.Length)]).ToArray());
-                string autoAdToken = resultToken.ToString();
-                //DataSet1TableAdapters.AdminTableAdapter dstAdmin = new DataSet1TableAdapters.AdminTableAdapter();
-                dstaAdmin.UpdateAdminQuery(autoAdToken, txtAdminUserName.Text, txtAdminPass.Text);
-                //Login successful !
-                Session.Add("adminstatus", autoAdToken);
-                Session.Add("Name", txtAdminUserName.Text);
-                Response.Redirect("Dashboard.aspx");
-
-                
-
-
-            }
-
-            else
-            {
-                //Login failed
-
-                txtAdminUserName.Text = txtAdminPass.Text = "";
-                lblMessage.Text = "username or password is incorrect";
-                lblMessage.ForeColor = System.Drawing.Color.Red;
-                txtAdminPass.BorderColor = System.Drawing.Color.Red;
-                txtAdminUserName.BorderColor = System.Drawing.Color.Red;
-            }
-
-
-
-
 
         }
     }

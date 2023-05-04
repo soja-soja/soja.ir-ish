@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-        <link rel="icon" type="image/png" href="../../assets/img/Puzzlefavicon.png">
+    <link rel="icon" type="image/png" href="../../assets/img/Puzzlefavicon.png">
 
     <title>چالش ها</title>
 
@@ -79,6 +79,49 @@
             <div class="container">
                 <div class="docs-overview py-5">
                     <div class="row justify-content-center">
+                        <div class="col-12 col-lg-8 py-3">
+                            <div class="card shadow-sm" aria-hidden="true">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-3  placeholder-glow ">
+                                        <span class="theme-icon-holder card-icon-holder me-2">
+                                            <i class="fab fa-github fa-fw "></i>
+                                        </span>
+                                        <!--//card-icon-holder-->
+                                        <span class="card-title-text">چالش اول: ارسال رزومه با گیت</span>
+                                    </h5>
+                                    <div class="card-text placeholder-glow  ">
+                                        این چالش دو هدف رو دنبال می کنه: 
+                                        <br />
+                                        اول: نشون میده تو دنبال یادگیری هستی، می تونی از پس یادگرفتن ابزارهای جدید و پیدا کردن راه و چاه بر بیای،
+                                        دوم: ما همیشه از گیت برای اشتراک کد ها استفاده می کنیم! این راهیه برای اینکه تو یاد بگیری چجوری کدهای جدیدت رو با ما به اشتراک بذاری
+                                        <br />
+                                        برای این کار مراحل زیر رو لازمه که طی کنی: 
+                                        <br />
+                                        1. آوردن پروژه از گیت به کامپیوتر خودت
+                                       <br />
+                                        <code>git pull https://github.com/soja-soja/soja.ir-ish.git </code>
+                                        <br />
+                                        2. ایجاد تعییرات مورد نظر (برای این چالش، منظور فایل های مربوط به رزومه شماست)
+                                        حداقل لازمه که یک فایل html جدید در مسیر زیر ایجاد کنید:
+                                       <br />
+                                        <code>Pages/CooperationRequest/Profiles/{YourName}.html</code>
+                                        <br />
+                                        ظاهر صفحه ای که می سازی هم برای ما مهمه، پس هرچیزی بلدی رو با حوصله و هنرمندی بهمون نشون بده.
+                                        <br />
+                                        3. آپلود کردن تغییرات روی گیت و ایجاد یک pull request
+                                        <br />
+                                        اگر هر کدوم از این مراحل رو نمی دونی، می تونی بخش مربوط به گیت رو توی همین صفحه دنبال کنی
+                                        یا <a href="https://www.youtube.com/watch?v=cUc_O7dn2uA&t=2292s&ab_channel=SOJA">ویدیوی آموزشی ما در مورد گیت</a> رو ببینی. 
+                                        
+                                   
+                                    </div>
+                                    <!--<a class="card-link-mask" href="docs-page.aspx#section-2"></a>-->
+                                </div>
+                                <!--//card-body-->
+                            </div>
+                            <!--//card-->
+                        </div>
+                        <!--//col-->
                         <div class="col-12 col-lg-4 py-3">
                             <div class="card shadow-sm">
                                 <div class="card-body">
@@ -90,59 +133,12 @@
                                         <span class="card-title-text">آموزش گیت و گیت هاب</span>
                                     </h5>
                                     <div class="card-text ">
-                                  دوست عزیز در اولین چالش شما باید رزومه خود را در قالب فایل html تهیه کرده و با توجه به توضیحات راهنمای گیت و گیت هاب که در این بخش آمده است ، رزومه خود را برای ما بفرستید .
+                                        دوست عزیز در اولین چالش شما باید رزومه خود را در قالب فایل html تهیه کرده و با توجه به توضیحات راهنمای گیت و گیت هاب که در این بخش آمده است ، رزومه خود را برای ما بفرستید .
 
 							   
+                                   
                                     </div>
                                     <a class="card-link-mask" href="git-doc.aspx#section-1"></a>
-                                </div>
-                                <!--//card-body-->
-                            </div>
-                            <!--//card-->
-                        </div>
-                        <!--//col-->
-                        <div class="col-12 col-lg-4 py-3">
-                            <div class="card shadow-sm" aria-hidden="true">
-                                <div class="card-body">
-                                    <h5 class="card-title mb-3  placeholder-glow ">
-                                        <span class="theme-icon-holder card-icon-holder placeholder-glow  me-2 "></span>
-                                        <span class=" card-title-text placeholder-glow  col-6  mb  ">
-                                            <span class="placeholder col-6"></span>
-                                        </span>
-                                    </h5>
-                                    <div class="card-text placeholder-glow  ">
-                                        <span class="placeholder col-12  "></span>
-                                        <span class="placeholder col-12"></span>
-                                        <span class="placeholder col-12"></span>
-                                        <span class="placeholder col-12"></span>
-                                        <span class="placeholder col-6"></span>
-
-                                    </div>
-                                    <!--<a class="card-link-mask" href="docs-page.aspx#section-2"></a>-->
-                                </div>
-                                <!--//card-body-->
-                            </div>
-                            <!--//card-->
-                        </div>
-                        <!--//col-->
-                        <div class="col-12 col-lg-4 py-3">
-                            <div class="card shadow-sm" aria-hidden="true">
-                                <div class="card-body">
-                                    <h5 class="card-title mb-3  placeholder-glow">
-                                        <span class="theme-icon-holder card-icon-holder placeholder-glow  me-2 "></span>
-                                        <span class=" card-title-text placeholder-glow  col-6  ">
-                                            <span class="placeholder col-5"></span>
-                                        </span>
-                                    </h5>
-                                    <div class="card-text placeholder-glow  ">
-                                        <span class="placeholder col-12  "></span>
-                                        <span class="placeholder col-12"></span>
-                                        <span class="placeholder col-12"></span>
-                                        <span class="placeholder col-9"></span>
-                                        <span class="placeholder col-4"></span>
-
-                                    </div>
-                                    <!-- <a class="card-link-mask" href="docs-page.aspx#section-2"></a>-->
                                 </div>
                                 <!--//card-body-->
                             </div>
@@ -302,7 +298,7 @@
         </div>
         <!--//page-content-->
 
-       <%-- <section class="cta-section text-center py-5 theme-bg-dark position-relative">
+        <%-- <section class="cta-section text-center py-5 theme-bg-dark position-relative">
             <div class="theme-bg-shapes-right"></div>
             <div class="theme-bg-shapes-left"></div>
             <div class="container">
