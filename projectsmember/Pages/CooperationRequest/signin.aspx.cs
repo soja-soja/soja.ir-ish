@@ -14,65 +14,6 @@ namespace projectsmember
         {
 
         }
-
-        protected void btnLogin_Click(object sender, EventArgs e)
-        {
-            if (txtUsername.Text.Length > 0 && txtPass.Text.Length > 0)
-            {
-                if (String.IsNullOrEmpty(RecaptchaWidget2.Response))
-                {
-                    lblErr.Text = "Captcha cannot be empty.";
-                }
-                else
-                {
-                    var result = RecaptchaWidget2.Verify();
-                    if (result.Success)
-                    {
-                        App_Code.DataSet1TableAdapters.MembersTableAdapter dstaMem = new App_Code.DataSet1TableAdapters.MembersTableAdapter();
-                        int numberOfUsers = dstaMem.QueryLoginUser(txtUsername.Text, txtPass.Text).GetHashCode();
-
-                        if (numberOfUsers > 0)
-                        {
-                            var allChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-                            var random = new Random();
-                            var resultToken = new string(
-                               Enumerable.Repeat(allChar, 5)
-                               .Select(token => token[random.Next(token.Length)]).ToArray());
-
-                            string authToken = resultToken.ToString();
-                            App_Code.DataSet1TableAdapters.MembersTableAdapter dstaToken = new App_Code.DataSet1TableAdapters.MembersTableAdapter();
-                            dstaToken.UpdateQuery(authToken, txtUsername.Text, txtPass.Text);
-                            //Login successful !
-                            Session.Add("status", authToken);
-                            Session.Add("SojaID", txtUsername.Text);
-                            Response.Redirect("members.aspx");
-
-                        }
-                        else
-                        {
-                            //Login failed
-                            txtUsername.Text = "";
-                            lblErr.Text = "نام کاربری یافت نشد";
-                            lblErr.ForeColor = System.Drawing.Color.Red;
-                        }
-                    }
-                    else
-                    {
-                        //Login failed
-                        txtUsername.Text = "";
-                        lblErr.Text = " ورود موفقیت آمیز نبود!";
-                        lblErr.ForeColor = System.Drawing.Color.Red;
-                    }
-                }
-            }
-            else
-            {
-                //Login failed
-                txtUsername.Text = "";
-                lblErr.Text = " کلمه عبور و نام کاربری را وارد کنید";
-                lblErr.ForeColor = System.Drawing.Color.Red;
-            }
-        }
         protected void btnRegFinal_Click(object sender, EventArgs e)
         {
 

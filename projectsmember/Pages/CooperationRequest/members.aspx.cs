@@ -9,13 +9,13 @@ namespace projectsmember.members
             try
             {
                 App_Code.DataSet1TableAdapters.MembersTableAdapter dstToken = new App_Code.DataSet1TableAdapters.MembersTableAdapter();
-                string MemToken = dstToken.returnRndTokenQuery(Session["SojaID"].ToString()).ToString();
+                string MemToken = dstToken.returnRndTokenQuery(Session["Name"].ToString()).ToString();
                 if (Session["status"] != null &&
                     Session["status"].ToString() == MemToken.Trim())
                 {
                     //successful login!
                     App_Code.DataSet1TableAdapters.MembersTableAdapter dtaUsrWlcom = new App_Code.DataSet1TableAdapters.MembersTableAdapter();
-                    string userWelcom = dtaUsrWlcom.returnSojaUserID(Session["SojaID"].ToString());
+                    string userWelcom = dtaUsrWlcom.returnSojaUserID(Session["Name"].ToString());
                     lblWelcome.Text = userWelcom + lblWelcome.Text;
                 }
                 else
