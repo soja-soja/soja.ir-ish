@@ -4,31 +4,35 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-   <link rel="icon" type="image/png" href="../../members/gitfavicon.png">
+   <link rel="icon" type="image/png" href="../../Content/Image/git-img/gitfavicon.png">
    <title>راهنمای کار با گیت و گیت هاب</title>  
-    <link href="../../members/assets/css/styleTopBtn.css" rel="stylesheet" />
-   <link href="../../members/assets/css/git-style.css"  rel="stylesheet" />
-    <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
-    <script src="../../Scripts/jquery-3.6.0.slim.min.js"></script>
-    <script src="../../Scripts/popper.min.js"></script>
-    <script src="../../Scripts/bootstrap.min.js"></script>
-    <script src="../../members/assets/fontawesome/js/fontawesome.min.js"></script>
-    <script src="../../members/assets/js/scriptTopBtn.js"></script>
+    <link href="../../Content/CSS/MemCss/styleTopBtn.css" rel="stylesheet" />
+    <link href="../../Content/CSS/MemCss/git-style.css"  rel="stylesheet" />
+    <link href="../../Content/Bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../Content/Bootstrap/font-awesome.min.css" rel="stylesheet" />
+    <script src="../../Content/Scripts/jquery-3.6.0.slim.min.js"></script>
+    <script src="../../Content/Scripts/popper.min.js"></script>
+    <script src="../../Content/Scripts/bootstrap.min.js"></script>
+    <script src="../../Content/Font/fontawesome/js/fontawesome.min.js"></script>
+    <script src="../../Content/JS/MemJS/scriptTopBtn.js"></script>
+    <script src="../../Content/Font/fontawesome/js/all.min.js"></script>
+
    
     <style >
         h1 {
-    font-size: 60px ;
-    text-align: center;
-    color: darkcyan ;
-    text-shadow : 1px 1px 5px; 
-    font-family: bmitra,Tahoma,'Times New Roman';
-    font-weight: bold;
-    display: block;
-    margin-top: 0.67em;
-    margin-bottom: 0.67em;
-    
-}
-
+            font-size: 60px;
+            text-align: center;
+            color: darkcyan;
+            text-shadow: 1px 1px 5px;
+            font-family: bmitra,Tahoma,'Times New Roman';
+            font-weight: bold;
+            display: block;
+            margin-top: 0.67em;
+            margin-bottom: 0.67em;
+        }
+         .green-color {
+        color: darkcyan;
+    }
     </style>
 </head>
     <body dir ="rtl"  >
@@ -112,16 +116,16 @@ github کار کردن روی کدها را بسیار ساده کرده است.
            <p>پس از  دانلود و نصب Git لازم است که روی Github.com عضو شوید و یک حساب کاربری برای خود ایجاد کنید. این کار به سادگی عضویت در هر شبکه‌ی اجتماعی دیگریست. ایمیلی که عضو می‌شید را به خاطر داشته باشید، به زودی به سراغش خواهیم آمد. <br/><br/>
 اگر می‌خواهید که روی کامپیوتر خودتان روی پروژه‌ تان کار کنید، لازم است که اول گیت را روی آن نصب کنید. در حقیقت گیت‌هاب روی کامپیوتر شما کار نخواهد کرد اگر گیت را نصب نکنید. <br/><br/>
 به GitHub.com بروید و روی آیکون + کوچکی که کنار نام کاربری‌ تان قرار دارد کلیک کنید. یا اینکه مستقیما به بخش New Repository   بروید. <br/><br/>
-             <img src="../../members/assets/images/git-img/new_repository.jpg"  alt="New Repository" ><br /><br />
+             <img src="../../Content/Image/git-img/new_repository.jpg"  alt="New Repository" ><br /><br />
 برای مخزن‌ خود نامی که به خاطرتان خواهد ماند انتخاب کنید و  توضیح کوتاهی وارد کنید، پایین تر بروید و آن را بسازید . (Creat Repository) <br/><br/>
-           <img src="../../members/assets/images/git-img/creat repository.jpg"  alt ="ReadMe file" " >    <br /><br />
+           <img src="../../Content/Image/git-img/creat repository.jpg"  alt ="ReadMe file" " >    <br /><br />
                می توانید مخزن خود را بصورت public و یا  private تعریف کنید . در صورتیکه می خواهید مشارکت روی پروژه خود داشته باشید بهتر است گزینه public را انتخاب کنید . <br/><br/>
 در صورت تمایل می توانید گزینه Add a Readme File  را هم انتخاب کنید که در آن توضیحات پروژه خود را درج کنید . <br/><br/>
 درصورتیکه  Import Repository را انتخاب کردید یعنی پروژهای غیر از پروژه خود را می خواهید داشته باشید و روی آن کار کنید . در این حالت باید در بخش Your old repository’s clone URL لینک پروژه مورد نظر خود را وارد) paste ( کنید  و سپس در انتها دکمه Being Import را بزنید . <br/><br/>
-             <img alt ="Import Repository"  src="../../members/assets/images/git-img/import repository.jpg" ><br /><br />
+             <img alt ="Import Repository"  src="../../Content/Image/git-img/import repository.jpg" ><br /><br />
 تا اینجای کار شما  اولین مخزن آنلاین خود را ایجاد کرده اید . <br/><br/>
 برای بدست آوردن آدرس پروژه دیگران برای Import کردن (clone ) گرفتن ، ابتدا وارد صفحه گیت هاب توسعه دهنده اصلی شده و پس از باز کردن پروژه مورد نظرتان روی دکمه سبز رنگ Code زده و در بخش باز شده از http آدرسی را که میبینید کپی کنید. <br/><br/>
-              <img alt ="Clone Http Address"  src="../../members/assets/images/git-img/code copy address.jpg" ><br /><br />
+              <img alt ="Clone Http Address"  src="../../Content/Image/git-img/code copy address.jpg" ><br /><br />
 
 
 </p>    
@@ -138,7 +142,7 @@ github کار کردن روی کدها را بسیار ساده کرده است.
 
             <h2 id="c5">ارسال درخواست و به اشتراک‌گذاری(pull Request) </h2>
 <p>اگر دوست داشتید تغییراتی را که در پروژه اعمال کردید به گوش توسعه‌دهندگان اصلی برسانید، به‌راحتی می‌توانید با استفاده از گزینه‌ی Pull Request، درخواست خود را برای آن‌ها ارسال کنید. آن‌ها هم پس از بررسی کار شما در صورت تمایل، تغییرات مدنظرتان را به نسخه‌ی اصلی اضافه خواهند کرد. گیت‌هاب با این ویژگی، پل ارتباطی شما و توسعه‌دهندگان اصلی پروژه خواهد بود. <br/><br/>
-           <img alt ="pull Request"  src="../../members/assets/images/git-img/pull request.jpg" ><br /><br />
+           <img alt ="pull Request"  src="../../Content/Image/git-img/pull request.jpg" ><br /><br />
     بر روی تب pull requests کلیک کنید  سپس در مرحله بعد بر روی new pull request کلیک می کنیم تا یک درخواست جدید ایجاد کنیم.  با زدن بر روی new pull request به مخزن اصلی پروژه در اکانت توسعه دهنده اصلی منتقل می شوید تا در آنجا پیام pull request خودتون را برای کاربر ی که نقش مدیر پروژه را دارد ثبت کنید. <br/><br/>
 کاربر مورد نظر پیام شما را خوانده و در صورت صلاحدید می تواند تغییرات شما را بر روی پروژه اعمال کند.<br/><br/>
 GitHub نیز بسیار هوشمند است. اگر مدت کوتاهی پس از فشار دادن یک commit به فورک مخزن خود بروید، اغلب پیامی مانند «شاخه‌های اخیراً pull شده شما » را مشاهده خواهید کرد. با کلیک بر روی آن به طور خودکار درخواست pull Request شما ایجاد می شود که باید نام مناسبی برای آن انتخاب کنید .<br/><br/>
@@ -226,7 +230,7 @@ init  مخفف “initialize.” هست. وقتی این دستور رو وار�
 با دستور cd وارد پوشه test شده و با دستور ls می‌بینیم که در پوشه test دو فایل readme  و index وجود دارد <br/>.
 توجه کنید که پس از وارد شدن به پوشه test عبارت (main) در انتهای خط اضافه  شد  و این نشان می‌دهد که پوشه test یک فولدر ساده نیست و یک  git Repository هست . <br/><br/>
 
-       <img alt ="command line"  src="../../members/assets/images/git-img/cd-ls-mkdir.jpg" style ="align-content :center ;" ><br /><br />
+       <img alt ="command line"  src="../../Content/Image/git-img/cd-ls-mkdir.jpg" style ="align-content :center ;" ><br /><br />
 
 </p>     
                     <hr />
@@ -240,22 +244,22 @@ init  مخفف “initialize.” هست. وقتی این دستور رو وار�
 <h5>vim index.html</h5> <br/>
 پس از اجرای این دستور پنجره زیر باز خواهد شد  
 <br /><br />
-<img alt ="vim command"  src="../../members/assets/images/git-img/vim.jpg" ><br /><br />
+<img alt ="vim command"  src="../../Content/Image/git-img/vim.jpg" ><br /><br />
                 این پنجره مانند notepad است و می‌توانیم محتویات آن را ببینیم و یا متن به آن اضافه کنیم . برای تغییرات باید ابتدا کلید i از کیبورد را بزنیم در این صورت کلمه INSERT در پایین پنجره نوشته خواهد شد و نشان می‌دهد که آماده تایپ هستیم. با استفاده از دکمه های بالا و پایین کیبورد (Arrow Key) می‌توانیم به خط مورد نظر رفته و شروع به تایپ محتوای مورد نظرمان  کنیم . <br/> <br/>
-<img alt ="Insert"  src="../../members/assets/images/git-img/insert.jpg" ><br /><br />
+<img alt ="Insert"  src="../../Content/Image/git-img/insert.jpg" ><br /><br />
                 در اینجا footer  را با استفاده از فرمت برنامه نویسی html به این فایل اضافه می‌کنیم . <br/> <br/>
-<img alt ="footer added"  src="../../members/assets/images/git-img/footer add.jpg" ><br /><br />
+<img alt ="footer added"  src="../../Content/Image/git-img/footer add.jpg" ><br /><br />
 مراحل فوق را می‌توانیم با استفاده از ویندوز اکسپلورر هم انجام دهیم . بطوریکه با تایپ دستور pwd در خط فرمان گیت ، مسیر پوشه مورد نظر را پیدا می کنیم و سپس با استفاده از ادیتورهای دیگری نظیر sublime می توانیم دستورات مورد نظر را نوشته و ذخیره کنیم . <br/> <br/>
-<img alt ="pwd command"  src="../../members/assets/images/git-img/pwd.jpg" ><br /><br />
+<img alt ="pwd command"  src="../../Content/Image/git-img/pwd.jpg" ><br /><br />
 حال برای اینکه بفهمیم که چه تغییراتی ایجاد شده، از دستور git status  استفاده می‌کنیم . باتایپ این دستور اطلاعاتی به ما نشان داده خواهد شد . <br/> <br/>
-<img alt ="git status not staged"  src="../../members/assets/images/git-img/git status red.jpg" ><br /><br />
+<img alt ="git status not staged"  src="../../Content/Image/git-img/git status red.jpg" ><br /><br />
 خط اول و دوم نشان می‌دهد که در شاخه اصلی (On branch main)   هستیم. که اسمش origin/ main است . <br/>
 در ادامه میبینیم تغییرات stage نشده داریم که با قرمز و عبارت ( modified:    index.html  )  نشان داده شده است. <br/> <br/>
 راهنمایی داده شده را توجه کنید. گفته شده :  برای اضافه کردن تغییرات از دستور git add “file”  و برای صرفنظر از اعمال تغییر دستور git restore “file”  را بکار برید . <br/> <br/>
 نکته : اگر فایل index.html از اول در پوشه ریپازیتوری وجود نداشت و با دستور touch آن را ایجاد کنید با زدن git status به عبارت untracked file مواجه خواهید شد که با دستور git add “file” می‌توانید آن را نیز ذخیره کنید. 
 <br /><br />
 با اجرای دستور git add و مجدد تایپ دستور git status  اطلاعات زیر را مشاهده خواهید کرد : <br/> <br/>
-<img alt ="git status staged"  src="../../members/assets/images/git-img/git status green.jpg" ><br /><br />
+<img alt ="git status staged"  src="../../Content/Image/git-img/git status green.jpg" ><br /><br />
 مشاهده می‌کنید که عبارت تایید تغییرات به رنگ سبز (  modified:   index.html)   نشان داده شده است. <br/> <br/>
 پس از اضافه کردن تغییرات ، نوبت به commit کردن آن می‌رسد . پیش تر گفتیم که برای این مورد از دستور زیر استفاده می‌کنیم. <br/>
 <h5>git commit -m "message here" </h5> <br/>
@@ -263,11 +267,11 @@ init  مخفف “initialize.” هست. وقتی این دستور رو وار�
 
 توجه کنید که پیام و متنی که برای commit در نظر می‌گیرید گویای  تغییراتی باشد که ایجاد کرده اید .بعنوان مثال در اینجا متن commit را بصورت “footer added” در نظر می‌گیریم که نشان‌دهنده اضافه شدن footer به فایل است. <br/> <br/>
 
-<img alt ="commit add" src="../../members/assets/images/git-img/git commit.jpg" ><br /><br />
+<img alt ="commit add" src="../../Content/Image/git-img/git commit.jpg" ><br /><br />
 پس از اجرای دستور اطلاعاتی را نمایش می‌دهد که بیانگر اسم commit و تعداد فایل های تغییر داده شده و تعداد خطوط اضافه  شده است . <br/> <br/>
  هدف ما ایجاد تغییر در ریپازیتوری و ارسال آن به توسعه دهنده اصلی در گیت هاب بود . <br/>
 برای این کار باید از دستور git push استفاده کنیم . پس از اجرای دستور  git pushدر بار اول از شما یوزر‌نیم و پسورد گیت هاب را میپرسد. <br/> <br/>
-<img alt ="git push"  src="../../members/assets/images/git-img/git push done.jpg" /><br /><br />
+<img alt ="git push"  src="../../Content/Image/git-img/git push done.jpg" /><br /><br />
 </p>
                     <hr />
 
@@ -297,9 +301,23 @@ init  مخفف “initialize.” هست. وقتی این دستور رو وار�
         </div> 
        
        </div>
+        <footer class="footer">
+
+            <div class="footer-bottom text-center py-5">
+
+                <ul class="social-list list-unstyled pb-4 mb-0">
+                    <li class="list-inline-item"><a href="https://github.com/soja-soja/soja.ir-ish"><i class="fab fa-github green-color fa-fw"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.youtube.com/channel/UCgMjLuov_-BhSOXjmyFmOtQ"><i class="fab fa-youtube green-color fa-fw"></i></a></li>
+                    <li class="list-inline-item"><a href="https://soja.ir"><i class="fa fa-link green-color"></i></a></li>
+                </ul>
+                <p dir="rtl" class="text-muted small mb-0">Copyright &copy; تمامی حقوق مادی و معنوی، متعلق به <a href="https://soja.ir" style="color:darkcyan !important;">وب سایت سوال جواب</a> (soja.ir) و تیم مدیریتی آن می باشد.</p>
+
+            </div>
+
+        </footer>
         </form>
         <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
-
+        
 </body>
 
 </html>

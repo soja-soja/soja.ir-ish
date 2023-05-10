@@ -5,21 +5,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>مراحل عضوگیری پروژه</title>
-    <link href="../css/styleSteps.css?2" rel="stylesheet" />
 
-    <link href="Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="Content/Bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/Bootstrap/font-awesome.min.css" rel="stylesheet" />
 
-    <script src="Scripts/jquery-3.6.0.slim.min.js"></script>
-    <script src="Scripts/popper.min.js"></script>
-    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Content/Scripts/jquery-3.6.0.slim.min.js"></script>
+    <script src="Content/Scripts/popper.min.js"></script>
+    <script src="Content/Scripts/bootstrap.min.js"></script>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+    
 
     <!-- Favicon-->
-    <link rel="icon" type="../image/x-icon" href="assets/img/soja.jpg" />
+    <link rel="icon" type="../image/x-icon" href="Content/Image/img/soja.jpg" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Simple line icons-->
@@ -27,9 +26,8 @@
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="../css/styles.css" rel="stylesheet" />
-
-
+    <link href="Content/CSS/css/styles.css" rel="stylesheet" />
+    
 </head>
 <body>
     <form id="form1" runat="server">
@@ -39,10 +37,10 @@
             <ul class="sidebar-nav">
                 <li class="sidebar-brand"><a href="#page-top">سفارش و همکاری </a></li>
                 <li class="sidebar-nav-item"><a href="#page-top">مقدمه </a></li>
-                <li class="sidebar-nav-item"><a href="#about">نحوه همکاری</a></li>
-                <li class="sidebar-nav-item"><a href="#steps">مراحل همکاری </a></li>
-                <li class="sidebar-nav-item"><a href="#services">مراحل ثبت سفارش</a></li>
-                <li class="sidebar-nav-item"><a href="#portfolio">نکات قابل توجه  </a></li>
+                <li class="sidebar-nav-item"><a href="#services">نحوه همکاری</a></li>
+<%--                <li class="sidebar-nav-item"><a href="#steps">مراحل همکاری </a></li>--%>
+                <li class="sidebar-nav-item"><a href="#portfolio"> ثبت سفارش</a></li>
+<%--                <li class="sidebar-nav-item"><a href="#portfolio">نکات قابل توجه  </a></li>--%>
             </ul>
         </nav>
         <!-- Header-->
@@ -83,7 +81,7 @@
                     <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
                         <span class="service-icon rounded-circle mx-auto mb-3">
                             <a href="https://soja.ir/Signup.aspx">
-                                <img src="assets/img/soja.jpg" alt="soja.ir" width="60px" height="60px" /></a></span>
+                                <img src="Content/Image/img/soja.jpg" alt="soja.ir" width="60px" height="60px" /></a></span>
                         <h4><strong>مرحله دوم</strong></h4>
                         <p class="text-faded mb-0">
                             عضویت توی سایت سوال و جواب
@@ -92,7 +90,7 @@
                     <div class="col-lg-3 col-md-6">
                         <span class="service-icon rounded-circle mx-auto mb-3">
                             <a href="https://www.youtube.com/c/SOJAA">
-                                <img src="assets/img/yt.png" alt="youtube" width="60px" height="60px" /></a></span>
+                                <img src="Content/Image/img/yt.png" alt="youtube" width="60px" height="60px" /></a></span>
                         <h4><strong>مرحله اول</strong></h4>
                         <p class="text-faded mb-0">عضویت توی کانال یوتیوب یا آپارات</p>
                     </div>
@@ -145,7 +143,7 @@
                                     <p dir="rtl" class="mb-0">مشاوره ، جمع آوری داده ، پردازش داده به روشهای تحلیلی  Analytics  و یادگیری ماشین Machine Learning </p>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio-1.jpg" alt="...">
+                            <img class="img-fluid" src="Content/Image/img/portfolio-1.jpg" alt="...">
                         </a>
                     </div>
                     <div class="col-lg-6">
@@ -156,7 +154,7 @@
                                     <p dir="rtl" class="mb-0">طراحی انواع وب سایت با آخرین استاندارد های جهانی ، مطابق با سلیقه و کارکرد های مورد نظر شما  </p>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio-2.jpg" alt="...">
+                            <img class="img-fluid" src="Content/Image/img/portfolio-2.jpg" alt="...">
                         </a>
                     </div>
                     <div class="col-lg-6">
@@ -167,7 +165,7 @@
                                     <p dir="rtl" class="mb-0">پروژه دیگه ای مدنظر داری ؟ نیاز به مشاوره و یا تخمین قیمت داری؟ با ما در میان  بذار </p>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio-3.jpg" alt="...">
+                            <img class="img-fluid" src="Content/Image/img/portfolio-3.jpg" alt="...">
                         </a>
                     </div>
                     <div class="col-lg-6">
@@ -178,7 +176,7 @@
                                     <p dir="rtl" class="mb-0">شامل مشاوره نقشه راه ، تدریس خصوصی و رفع اشکال پروژه محور برای آمادگی در بازار کار</p>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio-4.jpg" alt="...">
+                            <img class="img-fluid" src="Content/Image/img/portfolio-4.jpg" alt="...">
                         </a>
                     </div>
                 </div>
@@ -208,7 +206,7 @@
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
-    <script src="../js/scripts.js">  </script>
+    <script src="Content/JS/js/scripts.js">  </script>
 
 </body>
 </html>

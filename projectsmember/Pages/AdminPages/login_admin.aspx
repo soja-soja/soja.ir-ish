@@ -4,19 +4,19 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-        <link rel="icon" type="image/png" href="../../assets/img/signInfavicon.png">
+        <link rel="icon" type="image/png" href="../../Content/Image/img/signInfavicon.png">
     <title>SignIn</title>
     <!--     Fonts and icons     -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
     <!-- Nucleo Icons -->
-    <link href="../../css/nucleo-icons.css" rel="stylesheet" />
-    <link href="../../css/nucleo-svg.css" rel="stylesheet" />
+    <link href="../../Content/CSS/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="../../Content/CSS/css/nucleo-svg.css" rel="stylesheet" />
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <!-- CSS Files -->
-    <link id="pagestyle" href="../../css/material-dashboard.css?v=3.0.4" rel="stylesheet" />
+    <link id="pagestyle" href="../../Content/CSS/css/material-dashboard.css?v=3.0.4" rel="stylesheet" />
       <%--https://github.com/tanveery/recaptcha-net--%>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
@@ -40,18 +40,18 @@
                                             <h4 class="text-white font-weight-bolder text-center mt-2 mb-0">Sign in</h4>
                                             <div class="row mt-3">
                                                 <div class="col-2 text-center ms-auto">
-                                                    <a class="btn btn-link px-3" href="https://www.facebook.com">
-                                                        <i class="fa fa-facebook text-white text-lg"></i>
+                                                    <a class="btn btn-link px-3" href="https://soja.ir">
+                                                        <i class="fa fa-link text-white text-lg"></i>
                                                     </a>
                                                 </div>
                                                 <div class="col-2 text-center px-1">
-                                                    <a class="btn btn-link px-3" href="https://github.com/">
+                                                    <a class="btn btn-link px-3" href="https://github.com/soja-soja/soja.ir-ish">
                                                         <i class="fa fa-github text-white text-lg"></i>
                                                     </a>
                                                 </div>
                                                 <div class="col-2 text-center me-auto">
-                                                    <a class="btn btn-link px-3" href="https://google.com/">
-                                                        <i class="fa fa-google text-white text-lg"></i>
+                                                    <a class="btn btn-link px-3" href="https://www.youtube.com/channel/UCgMjLuov_-BhSOXjmyFmOtQ">
+                                                        <i class="fa fa-youtube text-white text-lg"></i>
                                                     </a>
                                                 </div>
                                             </div>
@@ -98,11 +98,11 @@
             </div>
         </main>
         <!--   Core JS Files   -->
-        <script src="../../Scripts/popper.min.js"></script>
-        <script src="../../Scripts/bootstrap.min.js"></script>
-        <script src="../../assets/plugins/perfect-scrollbar.min.js"></script>
-        <script src="../../assets/plugins/smooth-scrollbar.min.js"></script>
-        <script src="../../assets/plugins/chartjs.min.js"></script>
+        <script src="../../Content/Scripts/popper.min.js"></script>
+        <script src="../../Content/Scripts/bootstrap.min.js"></script>
+        <script src="../../Content/Scripts/perfect-scrollbar.min.js"></script>
+        <script src="../../Content/Scripts/smooth-scrollbar.min.js"></script>
+        <script src="../../Content/Scripts/chartjs.min.js"></script>
         <script>
             var win = navigator.platform.indexOf('Win') > -1;
             if (win && document.querySelector('#sidenav-scrollbar')) {
@@ -115,7 +115,7 @@
         <!-- Github buttons -->
         <script async defer src="https://buttons.github.io/buttons.js"></script>
         <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
-        <script src="../../js/material-dashboard.min.js?v=3.0.4"></script>
+        <script src="../../Content/JS/js/material-dashboard.min.js?v=3.0.4"></script>
     </form>
 </body>
 </html>

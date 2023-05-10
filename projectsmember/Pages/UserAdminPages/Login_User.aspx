@@ -5,19 +5,19 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <link rel="icon" type="image/png" href="../../assets/img/signInfavicon.png">
+    <link rel="icon" type="image/png" href="../../Content/Image/img/signInfavicon.png">
     <title>ورود به بخش کاربری</title>
     <!--     Fonts and icons     -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
     <!-- Nucleo Icons -->
-    <link href="../../css/nucleo-icons.css" rel="stylesheet" />
-    <link href="../../css/nucleo-svg.css" rel="stylesheet" />
+    <link href="../../Content/CSS/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="../../Content/CSS/css/nucleo-svg.css" rel="stylesheet" />
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <!-- CSS Files -->
-    <link id="pagestyle" href="../../css/material-dashboard.css?v=3.0.4" rel="stylesheet" />
+    <link id="pagestyle" href="../../Content/CSS/css/material-dashboard.css?v=3.0.4" rel="stylesheet" />
     <%--https://github.com/tanveery/recaptcha-net--%>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
@@ -35,7 +35,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 start-0 text-center justify-content-center flex-column">
-                                <div class="position-relative bg-gradient-primary h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center" style="background-image: url('../../assets/img/illustration-signin.jpg'); background-size: cover;">
+                                <div class="position-relative bg-gradient-primary h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center" style="background-image: url('../../Content/Image/img/illustration-signin.jpg'); background-size: cover;">
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-5 col-md-7 d-flex flex-column ms-auto me-auto ms-lg-auto me-lg-5">
@@ -93,11 +93,11 @@
             </section>
         </main>
         <!--   Core JS Files   -->
-        <script src="../../Scripts/popper.min.js"></script>
-        <script src="../../Scripts/bootstrap.min.js"></script>
-        <script src="../../assets/plugins/perfect-scrollbar.min.js"></script>
-        <script src="../../assets/plugins/smooth-scrollbar.min.js"></script>
-        <script src="../../assets/plugins/chartjs.min.js"></script>
+        <script src="../../Content/Scripts/popper.min.js"></script>
+        <script src="../../Content/Scripts/bootstrap.min.js"></script>
+        <script src="../../Content/Scripts/perfect-scrollbar.min.js"></script>
+        <script src="../../Content/Scripts/smooth-scrollbar.min.js"></script>
+        <script src="../../Content/Scripts/chartjs.min.js"></script>
         <script>
             var win = navigator.platform.indexOf('Win') > -1;
             if (win && document.querySelector('#sidenav-scrollbar')) {
@@ -110,7 +110,7 @@
         <!-- Github buttons -->
         <script async defer src="https://buttons.github.io/buttons.js"></script>
         <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
-        <script src="../../js/material-dashboard.min.js?v=3.0.4"></script>
+        <script src="../../Content/JS/js/material-dashboard.min.js?v=3.0.4"></script>
     </form>
 </body>
 </html>

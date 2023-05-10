@@ -4,21 +4,21 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-     <link rel="icon" type="image/png" href="../../assets/img/NinjaUserfavicon.png">
+     <link rel="icon" type="image/png" href="../../Content/Image/img/NinjaUserfavicon.png">
     <title>Admin</title>
     <!--     Fonts and icons     -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
     <!-- Nucleo Icons -->
-    <link href="../../css/nucleo-icons.css" rel="stylesheet" />
-    <link href="../../css/nucleo-svg.css" rel="stylesheet" />
+    <link href="../../Content/CSS/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="../../Content/CSS/css/nucleo-svg.css" rel="stylesheet" />
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <!-- CSS Files -->
    
-    <link rel="stylesheet" href="../../css/adminlte.min.css">
-     <link id="pagestyle" href="../../css/material-dashboard.css?v=3.0.4" rel="stylesheet" />
+    <link rel="stylesheet" href="../../Content/CSS/css/adminlte.min.css">
+     <link id="pagestyle" href="../../Content/CSS/css/material-dashboard.css?v=3.0.4" rel="stylesheet" />
 </head>
 <body>
    <body class="g-sidenav-show  bg-gray-200">
@@ -27,7 +27,7 @@
             <div class="sidenav-header">
                 <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
                <div class="navbar-brand m-0">
-                    <img src="../../assets/img/434-4349876_profile-icon-vector-png.png" class="navbar-brand-img  h-100" style="border-radius: 50%" alt="main_logo">
+                    <img src="../../Content/Image/img/434-4349876_profile-icon-vector-png.png" class="navbar-brand-img  h-100" style="border-radius: 50%" alt="main_logo">
 
                     <asp:Label ID="lblName" class="ms-1 font-weight-bold text-white" runat="server" Text="Management panel"></asp:Label>
 
@@ -314,16 +314,16 @@
                       <td>
                           <ul class="list-inline">
                               <li class="list-inline-item">
-                                  <img alt="Avatar" class="table-avatar" src="../../assets/img/avatar.png">
+                                  <img alt="Avatar" class="table-avatar" src="../../Content/Image/img/avatar.png">
                               </li>
                               <li class="list-inline-item">
-                                  <img alt="Avatar" class="table-avatar" src="../../assets/img/avatar2.png">
+                                  <img alt="Avatar" class="table-avatar" src="../../Content/Image/img/avatar2.png">
                               </li>
                               <li class="list-inline-item">
-                                  <img alt="Avatar" class="table-avatar" src="../../assets/img/avatar3.png">
+                                  <img alt="Avatar" class="table-avatar" src="../../Content/Image/img/avatar3.png">
                               </li>
                               <li class="list-inline-item">
-                                  <img alt="Avatar" class="table-avatar" src="../../assets/img/avatar4.png">
+                                  <img alt="Avatar" class="table-avatar" src="../../Content/Image/img/avatar4.png">
                               </li>
                           </ul>
                       </td>
@@ -373,10 +373,10 @@
                       <td>
                           <ul class="list-inline">
                               <li class="list-inline-item">
-                                  <img alt="Avatar" class="table-avatar" src="../../assets/img/avatar.png">
+                                  <img alt="Avatar" class="table-avatar" src="../../Content/Image/img/avatar.png">
                               </li>
                               <li class="list-inline-item">
-                                  <img alt="Avatar" class="table-avatar" src="../../assets/img/avatar2.png">
+                                  <img alt="Avatar" class="table-avatar" src="../../Content/Image/img/avatar2.png">
                               </li>
                           </ul>
                       </td>
@@ -426,13 +426,13 @@
                       <td>
                           <ul class="list-inline">
                               <li class="list-inline-item">
-                                  <img alt="Avatar" class="table-avatar" src="../../assets/img/avatar.png">
+                                  <img alt="Avatar" class="table-avatar" src="../../Content/Image/img/avatar.png">
                               </li>
                               <li class="list-inline-item">
-                                  <img alt="Avatar" class="table-avatar" src="../../assets/img/avatar2.png">
+                                  <img alt="Avatar" class="table-avatar" src="../../Content/Image/img/avatar2.png">
                               </li>
                               <li class="list-inline-item">
-                                  <img alt="Avatar" class="table-avatar" src="../../assets/img/avatar3.png">
+                                  <img alt="Avatar" class="table-avatar" src="../../Content/Image/img/avatar3.png">
                               </li>
                           </ul>
                       </td>
@@ -482,16 +482,16 @@
                       <td>
                           <ul class="list-inline">
                               <li class="list-inline-item">
-                                  <img alt="Avatar" class="table-avatar" src="../../assets/img/avatar.png">
+                                  <img alt="Avatar" class="table-avatar" src="../../Content/Image/img/avatar.png">
                               </li>
                               <li class="list-inline-item">
-                                  <img alt="Avatar" class="table-avatar" src="../../assets/img/avatar2.png">
+                                  <img alt="Avatar" class="table-avatar" src="../../Content/Image/img/avatar2.png">
                               </li>
                               <li class="list-inline-item">
-                                  <img alt="Avatar" class="table-avatar" src="../../assets/img/avatar3.png">
+                                  <img alt="Avatar" class="table-avatar" src="../../Content/Image/img/avatar3.png">
                               </li>
                               <li class="list-inline-item">
-                                  <img alt="Avatar" class="table-avatar" src="../../assets/img/avatar4.png">
+                                  <img alt="Avatar" class="table-avatar" src="../../Content/Image/img/avatar4.png">
                               </li>
                           </ul>
                       </td>
@@ -541,13 +541,13 @@
                       <td>
                           <ul class="list-inline">
                               <li class="list-inline-item">
-                                  <img alt="Avatar" class="table-avatar" src="../../assets/img/avatar.png">
+                                  <img alt="Avatar" class="table-avatar" src="../../Content/Image/img/avatar.png">
                               </li>
                               <li class="list-inline-item">
-                                  <img alt="Avatar" class="table-avatar" src="../../assets/img/avatar4.png">
+                                  <img alt="Avatar" class="table-avatar" src="../../Content/Image/img/avatar4.png">
                               </li>
                               <li class="list-inline-item">
-                                  <img alt="Avatar" class="table-avatar" src="../../assets/img/avatar5.png">
+                                  <img alt="Avatar" class="table-avatar" src="../../Content/Image/img/avatar5.png">
                               </li>
                           </ul>
                       </td>
@@ -597,16 +597,16 @@
                       <td>
                           <ul class="list-inline">
                               <li class="list-inline-item">
-                                  <img alt="Avatar" class="table-avatar" src="../../assets/img/avatar.png">
+                                  <img alt="Avatar" class="table-avatar" src="../../Content/Image/img/avatar.png">
                               </li>
                               <li class="list-inline-item">
-                                  <img alt="Avatar" class="table-avatar" src="../../assets/img/avatar2.png">
+                                  <img alt="Avatar" class="table-avatar" src="../../Content/Image/img/avatar2.png">
                               </li>
                               <li class="list-inline-item">
-                                  <img alt="Avatar" class="table-avatar" src="../../assets/img/avatar3.png">
+                                  <img alt="Avatar" class="table-avatar" src="../../Content/Image/img/avatar3.png">
                               </li>
                               <li class="list-inline-item">
-                                  <img alt="Avatar" class="table-avatar" src="../../assets/img/avatar4.png">
+                                  <img alt="Avatar" class="table-avatar" src="../../Content/Image/img/avatar4.png">
                               </li>
                           </ul>
                       </td>
@@ -656,10 +656,10 @@
                       <td>
                           <ul class="list-inline">
                               <li class="list-inline-item">
-                                  <img alt="Avatar" class="table-avatar" src="../../assets/img/avatar4.png">
+                                  <img alt="Avatar" class="table-avatar" src="../../Content/Image/img/avatar4.png">
                               </li>
                               <li class="list-inline-item">
-                                  <img alt="Avatar" class="table-avatar" src="../../assets/img/avatar5.png">
+                                  <img alt="Avatar" class="table-avatar" src="../../Content/Image/img/avatar5.png">
                               </li>
                           </ul>
                       </td>
@@ -709,13 +709,13 @@
                       <td>
                           <ul class="list-inline">
                               <li class="list-inline-item">
-                                  <img alt="Avatar" class="table-avatar" src="../../assets/img/avatar.png">
+                                  <img alt="Avatar" class="table-avatar" src="../../Content/Image/img/avatar.png">
                               </li>
                               <li class="list-inline-item">
-                                  <img alt="Avatar" class="table-avatar" src="../../assets/img/avatar3.png">
+                                  <img alt="Avatar" class="table-avatar" src="../../Content/Image/img/avatar3.png">
                               </li>
                               <li class="list-inline-item">
-                                  <img alt="Avatar" class="table-avatar" src="../../assets/img/avatar4.png">
+                                  <img alt="Avatar" class="table-avatar" src="../../Content/Image/img/avatar4.png">
                               </li>
                           </ul>
                       </td>
@@ -765,16 +765,16 @@
                       <td>
                           <ul class="list-inline">
                               <li class="list-inline-item">
-                                  <img alt="Avatar" class="table-avatar" src="../../assets/img/avatar.png">
+                                  <img alt="Avatar" class="table-avatar" src="../../Content/Image/img/avatar.png">
                               </li>
                               <li class="list-inline-item">
-                                  <img alt="Avatar" class="table-avatar" src="../../assets/img/avatar3.png">
+                                  <img alt="Avatar" class="table-avatar" src="../../Content/Image/img/avatar3.png">
                               </li>
                               <li class="list-inline-item">
-                                  <img alt="Avatar" class="table-avatar" src="../../assets/img/avatar4.png">
+                                  <img alt="Avatar" class="table-avatar" src="../../Content/Image/img/avatar4.png">
                               </li>
                               <li class="list-inline-item">
-                                  <img alt="Avatar" class="table-avatar" src="../../assets/img/avatar5.png">
+                                  <img alt="Avatar" class="table-avatar" src="../../Content/Image/img/avatar5.png">
                               </li>
                           </ul>
                       </td>
@@ -917,10 +917,10 @@
             </div>
         </div>
         <!--   Core JS Files   -->
-        <script src="../../Scripts/popper.min.js"></script>
-        <script src="../../Scripts/bootstrap.min.js"></script>
-        <script src="../../assets/plugins/perfect-scrollbar.min.js"></script>
-        <script src="../../assets/plugins/smooth-scrollbar.min.js"></script>
+        <script src="../../Content/Scripts/popper.min.js"></script>
+        <script src="../../Content/Scripts/bootstrap.min.js"></script>
+        <script src="../../Content/Scripts/perfect-scrollbar.min.js"></script>
+        <script src="../../Content/Scripts/smooth-scrollbar.min.js"></script>
 
          <script>
     var win = navigator.platform.indexOf('Win') > -1;
@@ -934,7 +934,7 @@
   <!-- Github buttons -->
         <script async defer src="https://buttons.github.io/buttons.js"></script>
         <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
-          <script src="../../js/material-dashboard.min.js?v=3.0.4"></script>
+          <script src="../../Content/JS/js/material-dashboard.min.js?v=3.0.4"></script>
     </form>
 </body>
 </body>

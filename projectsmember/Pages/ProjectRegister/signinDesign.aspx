@@ -6,14 +6,14 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <link rel="icon" type="image/png" href="../../assets/img/Formfavicon.png">
+    <link rel="icon" type="image/png" href="../../Content/Image/img/Formfavicon.png">
     <title>ثبت نام / ورود </title>
     <!--<link href="css/signinStyle.css" rel="stylesheet" />-->
-    <link href="../../css/StyleSign.css" rel="stylesheet" />
-    <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
-    <script src="../../Scripts/jquery-3.6.0.slim.min.js"></script>
-    <script src="../../Scripts/popper.min.js"></script>
-    <script src="../../Scripts/bootstrap.min.js"></script>
+    <link href="../../Content/CSS/css/StyleSign.css" rel="stylesheet" />
+    <link href="../../Content/Bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <script src="../../Content/Scripts/jquery-3.6.0.slim.min.js"></script>
+    <script src="../../Content/Scripts/popper.min.js"></script>
+    <script src="../../Content/Scripts/bootstrap.min.js"></script>
 
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" />
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
@@ -63,7 +63,7 @@
                             </div>
                             <div class="form-group" id="dvOther" style="display: none">
                                 <asp:TextBox ID="txtOther" CssClass="form-control " placeholder="لطفا نحوه آشنایی را بنویسید." runat="server"></asp:TextBox>
-                                <asp:RequiredFieldValidator ID="validOther" runat="server" ErrorMessage="از کجا با ما آشنا شدید؟" Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" Visible="true" ControlToValidate="txtOther" ValidationGroup="XG"></asp:RequiredFieldValidator>
+                                <asp:RequiredFieldValidator ID="validOther" runat="server" ErrorMessage="از کجا با ما آشنا شدید؟" Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" Visible="true" ControlToValidate="txtOther" ValidationGroup=""></asp:RequiredFieldValidator>
 
                             </div>
                             <div class="form-group">
@@ -216,7 +216,7 @@
                         <div>
                             <cc1:RecaptchaWidget ID="RecaptchaWidget1" RenderApiScript="false" runat="server" />
                             <asp:Label ID="lblErr" runat="server" Text="" ForeColor="Red"></asp:Label>
-                            <asp:Button ID="btnSubmit" type="submit" OnClick="btnSubmit_Click" runat="server" class="btnRegister" Style="margin-top: -70px; margin-right: 400px;" Text="ثبت اطلاعات" ValidationGroup="XG" />
+                            <asp:Button ID="btnSubmit" type="submit" OnClick="btnSubmit_Click" runat="server" class="btnRegister" Style="margin-top: -70px; margin-right: 400px;width: 30%;" Text="ثبت اطلاعات" ValidationGroup="XG" />
 
                         </div>
                     </div>
@@ -226,7 +226,7 @@
             </div>
         </div>
     </form>
-    <script src="../../js/signDesign.js?1"></script>
+    <script src="../../Content/JS/js/signDesign.js?1"></script>
 
 </body>
 </html>

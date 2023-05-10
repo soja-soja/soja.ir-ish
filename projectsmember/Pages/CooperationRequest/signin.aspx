@@ -6,14 +6,14 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <link rel="icon" type="image/png" href="../../assets/img/BlueSignInfavicon.png">
+    <link rel="icon" type="image/png" href="../../Content/Image/img/BlueSignInfavicon.png">
     <title>ثبت نام / ورود </title>
     <!-- <link href="css/signinStyle.css" rel="stylesheet" />-->
-    <link href="../../css/StyleSign.css" rel="stylesheet" />
-    <link href="Content/bootstrap.min.css" rel="stylesheet" />
-    <script src="../../Scripts/jquery-3.6.0.slim.min.js"></script>
-    <script src="../../Scripts/popper.min.js"></script>
-    <script src="../../Scripts/bootstrap.min.js"></script>
+    <link href="../../Content/CSS/css/StyleSign.css" rel="stylesheet" />
+    <link href="Content/Bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <script src="../../Content/Scripts/jquery-3.6.0.slim.min.js"></script>
+    <script src="../../Content/Scripts/popper.min.js"></script>
+    <script src="../../Content/Scripts/bootstrap.min.js"></script>
 
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" />
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>

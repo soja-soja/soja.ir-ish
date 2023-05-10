@@ -4,20 +4,19 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <link rel="icon" type="image/png" href="../../assets/img/Puzzlefavicon.png">
+    <link rel="icon" type="image/png" href="../../Content/Image/img/Puzzlefavicon.png">
 
     <title>چالش ها</title>
 
-
     <!-- Theme CSS -->
-    <link rel="stylesheet" href="../../members/assets/css/memberstyle.css" />
-    <link href="../../Content/font-awesome.min.css" rel="stylesheet" />
-    <script src="../../Scripts/jquery-3.6.0.slim.min.js"></script>
-    <script src="../../Scripts/popper.min.js"></script>
-    <script src="../../Scripts/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../Content/CSS/MemCss/memberstyle.css" />
+    <link href="../../Content/Bootstrap/font-awesome.min.css" rel="stylesheet" />
+    <script src="../../Content/Scripts/jquery-3.6.0.slim.min.js"></script>
+    <script src="../../Content/Scripts/popper.min.js"></script>
+    <script src="../../Content/Scripts/bootstrap.min.js"></script>
 
     <!-- FontAwesome JS-->
-    <script src="../../members/assets/fontawesome/js/all.min.js"></script>
+    <script src="../../Content/Font/fontawesome/js/all.min.js"></script>
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/placeholder-loading/dist/css/placeholder-loading.min.css" />
@@ -39,11 +38,9 @@
                     <div class="docs-top-utilities d-flex justify-content-end align-items-center">
 
                         <ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
-                            <!-- <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>-->
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-youtube  fa-fw"></i></a></li>
+                            <li class="list-inline-item text-center"><a href="https://github.com/soja-soja/soja.ir-ish"><i class="fab fa-github fa-fw"></i></a></li>
+                            <li class="list-inline-item text-center"><a href="https://www.youtube.com/channel/UCgMjLuov_-BhSOXjmyFmOtQ"><i class="fab fa-youtube  fa-fw"></i></a></li>
+                            <li class="list-inline-item"><a href="https://soja.ir"><i class="fa fa-link"></i></a></li>
 
                         </ul>
                         <!--//social-list-->
@@ -91,24 +88,30 @@
                                     </h5>
                                     <div class="card-text placeholder-glow  ">
                                         این چالش دو هدف رو دنبال می کنه: 
+                                       
                                         <br />
                                         اول: نشون میده تو دنبال یادگیری هستی، می تونی از پس یادگرفتن ابزارهای جدید و پیدا کردن راه و چاه بر بیای،
                                         دوم: ما همیشه از گیت برای اشتراک کد ها استفاده می کنیم! این راهیه برای اینکه تو یاد بگیری چجوری کدهای جدیدت رو با ما به اشتراک بذاری
+                                       
                                         <br />
                                         برای این کار مراحل زیر رو لازمه که طی کنی: 
+                                       
                                         <br />
                                         1. آوردن پروژه از گیت به کامپیوتر خودت
-                                       <br />
+                                      
+                                        <br />
                                         <code>git pull https://github.com/soja-soja/soja.ir-ish.git </code>
                                         <br />
                                         2. ایجاد تعییرات مورد نظر (برای این چالش، منظور فایل های مربوط به رزومه شماست)
                                         حداقل لازمه که یک فایل html جدید در مسیر زیر ایجاد کنید:
-                                       <br />
+                                      
+                                        <br />
                                         <code>Pages/CooperationRequest/Profiles/{YourName}.html</code>
                                         <br />
                                         ظاهر صفحه ای که می سازی هم برای ما مهمه، پس هرچیزی بلدی رو با حوصله و هنرمندی بهمون نشون بده.
                                         <br />
                                         3. آپلود کردن تغییرات روی گیت و ایجاد یک pull request
+                                       
                                         <br />
                                         اگر هر کدوم از این مراحل رو نمی دونی، می تونی بخش مربوط به گیت رو توی همین صفحه دنبال کنی
                                         یا <a href="https://www.youtube.com/watch?v=cUc_O7dn2uA&t=2292s&ab_channel=SOJA">ویدیوی آموزشی ما در مورد گیت</a> رو ببینی. 
@@ -316,37 +319,25 @@
             <div class="footer-bottom text-center py-5">
 
                 <ul class="social-list list-unstyled pb-4 mb-0">
-                    <li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fab fa-youtube  fa-fw"></i></a></li>
-                    <!-- <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>-->
-                    <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>
+                    <li class="list-inline-item"><a href="https://github.com/soja-soja/soja.ir-ish"><i class="fab fa-github fa-fw"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.youtube.com/channel/UCgMjLuov_-BhSOXjmyFmOtQ"><i class="fab fa-youtube  fa-fw"></i></a></li>
+                    <li class="list-inline-item"><a href="https://soja.ir"><i class="fa fa-link"></i></a></li>
                 </ul>
-                <!--//social-list-->
-
-                <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-                <!--   <small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart" style="color: #fb866a;"></i> by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>-->
-                <small class="copyright">تمامی حقوق مادی و معنوی، متعلق به وب سایت سوال جواب (soja.ir) و تیم مدیریتی آن می باشد.
-
-                </small>
+                <p dir="rtl" class="text-muted small mb-0">Copyright &copy; تمامی حقوق مادی و معنوی، متعلق به <a href="https://soja.ir" style="color: #3dd584 !important;">وب سایت سوال جواب</a> (soja.ir) و تیم مدیریتی آن می باشد.</p>
 
             </div>
-
+            <script src="../../Content/Scripts/bootstrap.min.js"></script>
         </footer>
         <!-- Javascript -->
-        <script src="../../members/assets/plugins/popper.min.js"></script>
-        <script src="../../members/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src="../../Content/Scripts/popper.min.js"></script>
+        <script src="../../Content/Scripts/bootstrap.min.js"></script>
 
         <!-- Page Specific JS -->
-        <script src="../../members/assets/plugins/smoothscroll.min.js"></script>
+        <script src="../../Content/Scripts/smoothscroll.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
-        <script src="../../members/assets/js/highlight-custom.js"></script>
-        <script src="../../members/assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
-        <script src="../../members/assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
-        <script src="../../members/assets/js/docs.js"></script>
-
+        <script src="../../Content/JS/MemJS/highlight-custom.js"></script>
+        <script src="../../Content/Scripts/simplelightbox/simple-lightbox.min.js"></script>
+        <script src="../../Content/Scripts/gumshoe/gumshoe.polyfills.min.js"></script>
 
     </form>
 
