@@ -4,13 +4,13 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-     <link rel="icon" type="image/png" href="../../assets/img/Notiffavicon.png">
+     <link rel="icon" type="image/png" href="../../Content/Image/img/Notiffavicon.png">
          <title>Notifications</title>
     <!--     Fonts and icons     -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
     <!-- Nucleo Icons -->
-    <link href="../../css/nucleo-icons.css" rel="stylesheet" />
-    <link href="../../css/nucleo-svg.css" rel="stylesheet" />
+    <link href="../../Content/CSS/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="../../Content/CSS/css/nucleo-svg.css" rel="stylesheet" />
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
     <!-- Material Icons -->
@@ -18,14 +18,14 @@
     <!-- CSS Files -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />
 
-    <link id="pagestyle" href="../../css/material-dashboard.css" rel="stylesheet" />  
+    <link id="pagestyle" href="../../Content/CSS/css/material-dashboard.css" rel="stylesheet" />  
 </head>
 <body class="g-sidenav-show bg-gray-200">
   <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3   bg-gradient-dark" id="sidenav-main">
     <div class="sidenav-header">
       <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
       <a class="navbar-brand m-0" href=" https://demos.creative-tim.com/material-dashboard/pages/dashboard " target="_blank">
-       <img src="../../assets/img/434-4349876_profile-icon-vector-png.png" class="navbar-brand-img  h-100" style="border-radius: 50%" alt="main_logo">
+       <img src="../../Content/Image/img/434-4349876_profile-icon-vector-png.png" class="navbar-brand-img  h-100" style="border-radius: 50%" alt="main_logo">
         <span class="ms-1 font-weight-bold text-white">Account Details</span>
       </a>
     </div>
@@ -182,7 +182,7 @@
                   <a class="dropdown-item border-radius-md" href="javascript:;">
                     <div class="d-flex py-1">
                       <div class="my-auto">
-                        <img src="../../assets/img/small-logos/logo-spotify.svg" class="avatar avatar-sm bg-gradient-dark  me-3 ">
+                        <img src="../../Content/Image/img/small-logos/logo-spotify.svg" class="avatar avatar-sm bg-gradient-dark  me-3 ">
                       </div>
                       <div class="d-flex flex-column justify-content-center">
                         <h6 class="text-sm font-weight-normal mb-1">
@@ -324,11 +324,11 @@
     </div>
   </div>
   <!--   Core JS Files   -->
-        <script src="../../Scripts/popper.min.js"></script>
-        <script src="../../Scripts/bootstrap.min.js"></script>
-        <script src="../../assets/plugins/perfect-scrollbar.min.js"></script>
-        <script src="../../assets/plugins/smooth-scrollbar.min.js"></script>
-        <script src="../../assets/plugins/chartjs.min.js"></script>
+        <script src="../../Content/Scripts/popper.min.js"></script>
+        <script src="../../Content/Scripts/bootstrap.min.js"></script>
+        <script src="../../Content/Scripts/perfect-scrollbar.min.js"></script>
+        <script src="../../Content/Scripts/smooth-scrollbar.min.js"></script>
+        <script src="../../Content/Scripts/chartjs.min.js"></script>
   <script>
       var win = navigator.platform.indexOf('Win') > -1;
       if (win && document.querySelector('#sidenav-scrollbar')) {
@@ -341,6 +341,6 @@
   <!-- Github buttons -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
-  <script src="../../js/material-dashboard.min.js?v=3.0.4"></script>
+  <script src="../../Content/JS/js/material-dashboard.min.js?v=3.0.4"></script>
 </body>
 </html>

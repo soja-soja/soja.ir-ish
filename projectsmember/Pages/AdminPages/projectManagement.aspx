@@ -4,19 +4,19 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <link rel="icon" type="image/png" href="../../assets/img/Taskfavicon.png">
+    <link rel="icon" type="image/png" href="../../Content/Image/img/Taskfavicon.png">
     <title>Project Management</title>
     <!--     Fonts and icons     -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
     <!-- Nucleo Icons -->
-    <link href="../../css/nucleo-icons.css" rel="stylesheet" />
-    <link href="../../css/nucleo-svg.css" rel="stylesheet" />
+    <link href="../../Content/CSS/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="../../Content/CSS/css/nucleo-svg.css" rel="stylesheet" />
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <!-- CSS Files -->
-    <link id="pagestyle" href="../../css/material-dashboard.css?v=3.0.4" rel="stylesheet" />
+    <link id="pagestyle" href="../../Content/CSS/css/material-dashboard.css?v=3.0.4" rel="stylesheet" />
 </head>
 <body class="g-sidenav-show  bg-gray-200">
     <form id="form1" runat="server">
@@ -24,7 +24,7 @@
             <div class="sidenav-header">
                 <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
                 <div class="navbar-brand m-0">
-                    <img src="../../assets/img/434-4349876_profile-icon-vector-png.png" class="navbar-brand-img  h-100" style="border-radius: 50%" alt="main_logo">
+                    <img src="../../Content/Image/img/434-4349876_profile-icon-vector-png.png" class="navbar-brand-img  h-100" style="border-radius: 50%" alt="main_logo">
 
                     <asp:Label ID="lblName" class="ms-1 font-weight-bold text-white" runat="server" Text="Management panel"></asp:Label>
 
@@ -149,7 +149,7 @@
                             <div class="col-xl-6 mb-xl-0 mb-4">
                                 <div class="card bg-transparent shadow-xl">
                                     <div class="overflow-hidden position-relative border-radius-xl">
-                                        <img src="../../assets/img/illustrations/pattern-tree.svg" class="position-absolute opacity-2 start-0 top-0 w-100 z-index-1 h-100" alt="pattern-tree">
+                                        <img src="../../Content/Image/img/illustrations/pattern-tree.svg" class="position-absolute opacity-2 start-0 top-0 w-100 z-index-1 h-100" alt="pattern-tree">
                                         <span class="mask bg-gradient-dark opacity-10"></span>
                                         <div class="card-body position-relative z-index-1 p-3">
                                             <i class="material-icons text-white p-2">wifi</i>
@@ -166,7 +166,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="ms-auto w-20 d-flex align-items-end justify-content-end">
-                                                    <img class="w-60 mt-2" src="../../assets/img/logos/mastercard.png" alt="logo">
+                                                    <img class="w-60 mt-2" src="../../Content/Image/img/logos/mastercard.png" alt="logo">
                                                 </div>
                                             </div>
                                         </div>
@@ -530,10 +530,10 @@
             </div>
         </div>
         <!--   Core JS Files   -->
-        <script src="../../Scripts/popper.min.js"></script>
-        <script src="../../Scripts/bootstrap.min.js"></script>
-        <script src="../../assets/plugins/perfect-scrollbar.min.js"></script>
-        <script src="../../assets/plugins/smooth-scrollbar.min.js"></script>
+        <script src="../../Content/Scripts/popper.min.js"></script>
+        <script src="../../Content/Scripts/bootstrap.min.js"></script>
+        <script src="../../Content/Scripts/perfect-scrollbar.min.js"></script>
+        <script src="../../Content/Scripts/smooth-scrollbar.min.js"></script>
         <script>
             var win = navigator.platform.indexOf('Win') > -1;
             if (win && document.querySelector('#sidenav-scrollbar')) {
@@ -546,7 +546,7 @@
         <!-- Github buttons -->
         <script async defer src="https://buttons.github.io/buttons.js"></script>
         <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
-        <script src="../../js/material-dashboard.min.js?v=3.0.4"></script>
+        <script src="../../Content/JS/js/material-dashboard.min.js?v=3.0.4"></script>
     </form>
 </body>
 </html>
