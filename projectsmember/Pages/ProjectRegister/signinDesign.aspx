@@ -7,7 +7,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <link rel="icon" type="image/png" href="../../Content/Image/img/Formfavicon.png">
-    <title>ثبت نام / ورود </title>
+    <title>ثبت و سفارش پروژه </title>
     <!--<link href="css/signinStyle.css" rel="stylesheet" />-->
     <link href="../../Content/CSS/css/StyleSign.css" rel="stylesheet" />
     <link href="../../Content/Bootstrap/bootstrap.min.css" rel="stylesheet" />
@@ -25,11 +25,21 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
     <%--https://github.com/tanveery/recaptcha-net--%>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
+    <style type="text/css">
+        input[type="checkbox"] {
+            margin-left: 10px;
+        }
+         input[type="radio"] {
+        margin-left: 10px;
+    }
+    </style>
 </head>
 <body dir="rtl" style="font-family: bmitra">
     <form id="form1" runat="server">
-        <div class="container register" style="margin-top: 0; display: block; overflow:auto; padding: 70px 50px 50px 50px;  max-width: 100%; height: vmax; margin-left: 0; margin-right: 0;">
+        <div class="container register" style="margin-top: 0; display: block; overflow: auto; padding: 70px 50px 50px 50px; max-width: 100%; height: vmax; margin-left: 0; margin-right: 0;">
+            <div class="row">
+                <a href="../../default.aspx" dir="ltr" style="color: white">صفحه اصلی ></a>
+            </div>
             <div class="row">
                 <div class="col-md-3 register-left">
                     <br />
@@ -45,7 +55,7 @@
                     <br />
                     <asp:Label ID="lblRegisterOk" runat="server" Text="" Font-Bold="True" ForeColor="Aqua"></asp:Label>
                 </div>
-                <div class="col-md-9 register-right  "  >
+                <div class="col-md-9 register-right  ">
                     <div class="row register-form mt-0 p-lg-5 ">
 
                         <div class="col-md-6">
@@ -144,11 +154,11 @@
                             </div>
                             <div class="form-group">
                                 <asp:Label ID="lblTeachVideo" runat="server" CssClass="form-control text-center text-primary  border-0 " Text="Label">کدوم ویدیوهامونو دیدی؟ </asp:Label>
-                                <asp:CheckBoxList ID="chbTeachVideo" CssClass="form-check " TextAlign="Left" RepeatColumns="2" RepeatDirection="Horizontal" runat="server">
-                                    <asp:ListItem Text="asp" Value="0">ASP.NET</asp:ListItem>
-                                    <asp:ListItem Text="bootstrap" Value="1">Bootstrap</asp:ListItem>
-                                    <asp:ListItem Text="python" Value="2">Pythone</asp:ListItem>
-                                    <asp:ListItem Text="wordpress" Value="3"> Wordpress</asp:ListItem>
+                                <asp:CheckBoxList ID="chbTeachVideo" CssClass="form-check " style="padding-left: 10px;padding-right: 20px;" TextAlign="right" RepeatColumns="2" RepeatDirection="Horizontal"  runat="server">
+                                    <asp:ListItem Text="asp" style="padding-left: 10px;padding-right: 20px;" Value="0">ASP.NET</asp:ListItem>
+                                    <asp:ListItem Text="bootstrap" style="padding-left: 10px;padding-right: 20px;" Value="1">Bootstrap</asp:ListItem>
+                                    <asp:ListItem Text="python" style="padding-left: 10px;padding-right: 20px;" Value="2">Pythone</asp:ListItem>
+                                    <asp:ListItem Text="wordpress" style="padding-left: 10px;padding-right: 20px;" Value="3"> Wordpress</asp:ListItem>
                                 </asp:CheckBoxList>
                             </div>
                             <div class="form-group">
@@ -172,11 +182,11 @@
                             </div>
                             <div class="form-group">
                                 <asp:Label ID="lblTeaching" runat="server" CssClass="form-control text-center text-primary  border-0 " Text="Label">کدوم ویدیوهامونو دیدی؟ </asp:Label>
-                                <asp:CheckBoxList ID="chbTeaching" TextAlign="left" CssClass="form-check " RepeatColumns="2" RepeatDirection="Horizontal" runat="server">
-                                    <asp:ListItem Text="ASP" Value="0">ASP.NET</asp:ListItem>
-                                    <asp:ListItem Text="Bootstrap" Value="1">Bootstrap</asp:ListItem>
-                                    <asp:ListItem Text="Python" Value="2">Pythone</asp:ListItem>
-                                    <asp:ListItem Text="Wordpress" Value="3"> Wordpress</asp:ListItem>
+                                <asp:CheckBoxList ID="chbTeaching" style="padding-right: 20px;padding-left: 20px;" TextAlign="right"  CssClass="form-check " RepeatColumns="2" RepeatDirection="Horizontal" runat="server">
+                                    <asp:ListItem Text="ASP" style="padding-left: 10px;padding-right: 20px;" Value="0">ASP.NET</asp:ListItem>
+                                    <asp:ListItem Text="Bootstrap" style="padding-left: 10px;padding-right: 20px;" Value="1">Bootstrap</asp:ListItem>
+                                    <asp:ListItem Text="Python" style="padding-left: 10px;padding-right: 20px;" Value="2">Pythone</asp:ListItem>
+                                    <asp:ListItem Text="Wordpress" style="padding-left: 10px;padding-right: 20px;" Value="3"> Wordpress</asp:ListItem>
                                 </asp:CheckBoxList>
                             </div>
                             <div class="form-group">
@@ -216,7 +226,7 @@
                         <div>
                             <cc1:RecaptchaWidget ID="RecaptchaWidget1" RenderApiScript="false" runat="server" />
                             <asp:Label ID="lblErr" runat="server" Text="" ForeColor="Red"></asp:Label>
-                            <asp:Button ID="btnSubmit" type="submit" OnClick="btnSubmit_Click" runat="server" class="btnRegister" Style="margin-top: -70px; margin-right: 400px;width: 30%;" Text="ثبت اطلاعات" ValidationGroup="XG" />
+                            <asp:Button ID="btnSubmit" type="submit" OnClick="btnSubmit_Click" runat="server" class="btnRegister" Style="margin-top: -70px; margin-right: 400px; width: 30%;" Text="ثبت اطلاعات" ValidationGroup="XG" />
 
                         </div>
                     </div>

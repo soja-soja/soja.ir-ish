@@ -28,14 +28,20 @@
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <style type="text/css">
         input[type="checkbox"] {
-          margin-left: 10px;
+            margin-left: 10px;
         }
+         input[type="radio"] {
+        margin-left: 10px;
+    }
     </style>
 
 </head>
 <body dir="rtl" style="font-family: bmitra">
     <form id="form1" runat="server">
         <div class="container register" style="margin-top: 0; padding: 150px 50px 50px 50px; position: ; max-width: 100%; height: vmax; margin-left: 0; margin-right: 0;">
+            <div class="row">
+                    <a href="../../default.aspx" dir="ltr" style="color:white" >صفحه اصلی ></a>
+            </div>
             <div class="row">
                 <div class="col-md-3 register-left">
                     <h3 style="margin-top: 60px">خوش آمدید</h3>
@@ -47,7 +53,7 @@
                     <asp:View ID="View1" runat="server">
 
                         <div class="col-md-9 register-right">
-                         <!--   <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                            <!--   <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
                                 <li class="nav-item" style="font-family: byekan,tahoma">مرحله اول
                                 </li>
 
@@ -63,9 +69,9 @@
                                                 <asp:Label ID="lblYouTube" runat="server" Text="">کانال یوتیوب به آدرس :Youtube.com/SOJAA</asp:Label>
                                             </div>
                                             <div class="form-group ">
-                                                <asp:RadioButtonList ID="rbtnYouTube" RepeatDirection="Horizontal" runat="server">
-                                                    <asp:ListItem Text="بله" Value="0"></asp:ListItem>
-                                                    <asp:ListItem Text="خیر" Value="1"></asp:ListItem>
+                                                <asp:RadioButtonList ID="rbtnYouTube" RepeatDirection="Horizontal"  Width="30%" runat="server">
+                                                    <asp:ListItem Text="بله"  Value="0">  </asp:ListItem>
+                                                    <asp:ListItem Text="خیر" Value="1">  </asp:ListItem>
 
                                                 </asp:RadioButtonList>
                                             </div>
@@ -73,7 +79,7 @@
                                                 <asp:Label ID="lblAparat" runat="server" Text="">کانال آپارات به آدرس :aparat.com/sojaa</asp:Label>
                                             </div>
                                             <div class="form-group">
-                                                <asp:RadioButtonList ID="rbtnAparat" RepeatDirection="Horizontal" runat="server">
+                                                <asp:RadioButtonList ID="rbtnAparat" RepeatDirection="Horizontal" Width="30%" runat="server">
                                                     <asp:ListItem Text="بله" Value="0"></asp:ListItem>
                                                     <asp:ListItem Text="خیر" Value="1"></asp:ListItem>
 
@@ -82,15 +88,15 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group ">
-                                                <asp:Label ID="lblUrl" runat="server" Text="">نمونه کار اگر داری برامون آدرسش رو بنویس: (صفحات اجتماعی، سایت، ...(</asp:Label>
+                                                <asp:Label ID="lblUrl" runat="server" Text="">نمونه کار اگه داری آدرسش رو بنویس : (صفحات اجتماعی ، سایت و ....)</asp:Label>
 
                                             </div>
                                             <div class="form-group">
                                                 <asp:TextBox ID="txtUrl" TextMode="MultiLine" CssClass="form-control " runat="server"></asp:TextBox>
-                                                <asp:RequiredFieldValidator ID="ValidatorTextUrl" runat="server"  Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" ErrorMessage="لطفا جهت آشنایی بیشتر با شما و مهارت هایتان  آدرس های خواسته شده را وارد کنید." ControlToValidate="txtUrl" ValidationGroup="filErr"  ></asp:RequiredFieldValidator>
+                                                <asp:RequiredFieldValidator ID="ValidatorTextUrl" runat="server" Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" ErrorMessage="لطفا جهت آشنایی بیشتر با شما و مهارت هایتان  آدرس های خواسته شده را وارد کنید." ControlToValidate="txtUrl" ValidationGroup="filErr"></asp:RequiredFieldValidator>
                                             </div>
                                             <div class="form-group">
-                                                <asp:Button ID="btnSendStep1" runat="server" Text="مرحله بعد" OnClick="btnSendStep1_Click" CssClass="btnRegister" ClientIDMode="Static"  ValidationGroup="filErr" />
+                                                <asp:Button ID="btnSendStep1" runat="server" Text="مرحله بعد" OnClick="btnSendStep1_Click" CssClass="btnRegister" ClientIDMode="Static" ValidationGroup="filErr" />
                                             </div>
 
                                         </div>
@@ -106,7 +112,7 @@
                     </asp:View>
                     <asp:View ID="View2" runat="server">
                         <div class="col-md-9 register-right">
-                        <!--    <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                            <!--    <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
                                 <li class="nav-item" style="font-family: byekan,tahoma">مرحله دوم
                                 </li>
                             </ul>-->
@@ -125,15 +131,15 @@
                                     </div>
                                     <div class="col-md-6 ">
                                         <asp:CheckBoxList ID="ckbVideoAparat" TextAlign="Right" CssClass="form-check form-check-reverse" runat="server">
-                                            <asp:ListItem  Text="آموزش ASP.NET"  Value="0">آموزش ASP.NET</asp:ListItem>
+                                            <asp:ListItem Text="آموزش ASP.NET" Value="0">آموزش ASP.NET</asp:ListItem>
                                             <asp:ListItem Text="طراحی بازی با JavaScript سطح مقدماتی" Value="1">طراحی بازی با JavaScript سطح مقدماتی</asp:ListItem>
                                             <asp:ListItem Text="طراحی بازی با JavaScript سطح متوسط" Value="2">طراحی بازی با JavaScript سطح متوسط</asp:ListItem>
                                             <asp:ListItem Text="آموزش نصب و استفاده از GIT" Value="3">آموزش نصب و استفاده از GIT</asp:ListItem>
 
                                         </asp:CheckBoxList>
-                                       
+
                                         <div>
-                                            <asp:Button ID="btnBackStep1" runat="server" Text="مرحله قبل" CssClass="btnRegister" ClientIDMode="Static" OnClick="btnBackStep1_Click"  />
+                                            <asp:Button ID="btnBackStep1" runat="server" Text="مرحله قبل" CssClass="btnBack" ClientIDMode="Static" OnClick="btnBackStep1_Click" />
                                             <asp:Button ID="btnSendStep2" runat="server" Text="مرحله آخر" OnClick="btnSendStep2_Click" CssClass="btnRegister" ClientIDMode="Static" ValidationGroup="g3" />
 
                                         </div>
@@ -145,7 +151,7 @@
                     </asp:View>
                     <asp:View ID="View3" runat="server">
                         <div class="col-md-9 register-right">
-                           <!-- <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                            <!-- <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
                                 <li class="nav-item" style="font-family: byekan,tahoma">مرحله سوم
                                 </li>
                             </ul>-->
@@ -165,13 +171,13 @@
                                         <div class="form-group">
                                             <!-- <input type="email" class="form-control" placeholder="Email *" value="" />-->
                                             <asp:TextBox ID="txtEmail" TextMode="Email" class="form-control" placeholder="example@Email.com" value="" runat="server"></asp:TextBox>
-                                            <asp:RequiredFieldValidator ID="validEmail" runat="server" ErrorMessage="وارد کردن ایمیل معتبر الزامیست." Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" Visible="true" ControlToValidate="txtEmail" ValidationGroup="g1" ></asp:RequiredFieldValidator>
+                                            <asp:RequiredFieldValidator ID="validEmail" runat="server" ErrorMessage="وارد کردن ایمیل معتبر الزامیست." Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" Visible="true" ControlToValidate="txtEmail" ValidationGroup="g1"></asp:RequiredFieldValidator>
 
                                         </div>
                                         <div class="form-group">
                                             <!-- <input type="text" maxlength="10" minlength="10" class="form-control" placeholder="Phone *" value="" />-->
                                             <asp:TextBox ID="txtPhoneNumber" class="form-control" placeholder="09xxxxxxxxx" value="" runat="server"></asp:TextBox>
-                                            <asp:RequiredFieldValidator ID="ValidPhone" runat="server" ErrorMessage="وارد کردن شماره همراه الزامیست." Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" Visible="true" ControlToValidate="txtPhoneNumber" ValidationGroup="g1" ></asp:RequiredFieldValidator>
+                                            <asp:RequiredFieldValidator ID="ValidPhone" runat="server" ErrorMessage="وارد کردن شماره همراه الزامیست." Font-Names="byekan" Font-Size="Small" ForeColor="#0000ff" Visible="true" ControlToValidate="txtPhoneNumber" ValidationGroup="g1"></asp:RequiredFieldValidator>
                                         </div>
 
 
@@ -182,15 +188,17 @@
 
 
                                         </div>
-                                        <div class="form-group ">
+                                        <div class="form-group">
                                             <cc1:RecaptchaWidget ID="RecaptchaWidget1" RenderApiScript="false" runat="server" />
 
                                         </div>
-                                        <div>
-                                            <asp:Button ID="btnRegFinal" class="btnRegister" value="Register" OnClick="btnRegFinal_Click" runat="server" Style="margin-top: 10px; margin-right: 50px;" Text="ثبت اطلاعات" ValidationGroup="g1" />
-                                            <asp:Button ID="btnBackStep2" CssClass="btnRegister" runat="server" Text="مرحله قبل" Style="margin-top:5px; margin-right: 50px;"  OnClick="btnBackStep2_Click" />
-                                            <asp:Label ID="lblErr" runat="server" Font-Names="byakan" Font-Size="Small" Font-Bold="true" ForeColor="#ff0000" Text=""></asp:Label>
 
+                                        <div>
+                                            <asp:Button ID="btnBackStep2" CssClass="btnBack" runat="server" Text="مرحله قبل" OnClick="btnBackStep2_Click" />
+                                            <asp:Button ID="btnRegFinal" class="btnRegister" value="Register" OnClick="btnRegFinal_Click" runat="server" Text="ثبت اطلاعات" ValidationGroup="g1" />
+                                        </div>
+                                        <div>
+                                            <asp:Label ID="lblErr" runat="server" Font-Names="byakan" Font-Size="Small" Font-Bold="true" ForeColor="#ff0000" Text=""></asp:Label>
                                         </div>
 
                                     </div>
@@ -208,6 +216,7 @@
                                 </h3>
                                 <p class="text-break " style="margin-top: 10px; color: blue; font-size: larger">
                                     ثبت اطلاعات با موفقیت انجام شد .در صورت تایید مدیریت ، کلمه عبور به ایمیل شما ارسال می شود !
+                               
                                 </p>
                             </div>
                         </div>

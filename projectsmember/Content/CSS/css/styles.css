@@ -12,9 +12,9 @@
  */
 @font-face {
     font-family: 'bmitra';
-    src: url('../../Fontt/bmitra.eot') format('embedded-opentype');
-    src: url('../../Fontt/bmitra.woff') format('woff');
-    src: url('../../Font/bmitra.ttf') format('truetype');
+    src: url('../../font/bmitra.eot') format('embedded-opentype');
+    src: url('../../font/bmitra.woff') format('woff');
+    src: url('../../font/bmitra.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

@@ -1,36 +1,36 @@
 ﻿@font-face {
     font-family: 'bmitra';
-    src: url('../fonts/bmitra.eot') format('embedded-opentype');
+    src: url('../../font/bmitra.eot') format('embedded-opentype');
 }
 
 @font-face {
     font-family: 'bmitra';
-    src: url('../fonts/bmitra.ttf') format('truetype');
+    src: url('../../font/bmitra.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'bmitra';
-    src: url('../../Font/bmitra.woff') format('woff');
+    src: url('../../font/bmitra.woff') format('woff');
 }
 
 @font-face {
     font-family: 'broya';
-    src: url('../../Font/broya.eot') format('embedded-opentype');
+    src: url('../../font/broya.eot') format('embedded-opentype');
 }
 
 @font-face {
     font-family: 'broya';
-    src: url('../../Font/broya.ttf') format('truetype');
+    src: url('../../font/broya.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'broya';
-    src: url('../../Font/broya.woff') format('woff');
+    src: url('../../font/broya.woff') format('woff');
 }
 
 @font-face {
     font-family: 'byekan';
-    src: url('../../Font/byekan.eot') format('embedded-opentype');
+    src: url('../../font/byekan.eot') format('embedded-opentype');
 }
 
 @font-face {
@@ -56,11 +56,11 @@ body {
 a:link, a:visited {
     font-family: byekan,Tahoma;
     text-decoration: none !important;
-    align-content: inherit;
+    /*align-content: inherit;*/
 }
 
 a:hover, a:active {
-    text-align: center;
+    /*text-align: center;*/
     text-decoration: none;
 }
 
@@ -152,14 +152,29 @@ a:hover, a:active {
     align-content: center;
 }
 
+.btnBack {
+    float: right;
+    margin-top: 5%;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    background: #0dcaf0;
+    color: #fff;
+    font-weight: 600;
+    width: 50%;
+    cursor: pointer;
+    font-family: byekan,Tahoma;
+    align-content: center;
+}
+
 .register .nav-tabs {
     margin-top: 3%;
     border: none;
-    background:#6873f5;
+    background: #6873f5;
     border-radius: 1.5rem;
-    width:18%;
-    float:right;
-    padding:0%;
+    width: 18%;
+    float: right;
+    padding: 0%;
 }
 
     .register .nav-tabs .nav-link {

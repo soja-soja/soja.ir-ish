@@ -1,27 +1,27 @@
 ﻿
 @font-face {
     font-family: 'bmitra';
-    src: url('../fonts/bmitra.eot') format('embedded-opentype');
-    src: url('../fonts/bmitra.woff') format('woff');
-    src: url('../fonts/bmitra.ttf') format('truetype');
+    src: url('../../font/bmitra.eot') format('embedded-opentype');
+    src: url('../../font/bmitra.woff') format('woff');
+    src: url('../../font/bmitra.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'byekan';
-    src: url('../fonts/byekan.eot') format('embedded-opentype');
-    src: url('../fonts/byekan.ttf') format('truetype');
-    src: url('../fonts/byekan.woff') format('woff');
+    src: url('../../font/byekan.eot') format('embedded-opentype');
+    src: url('../../font/byekan.ttf') format('truetype');
+    src: url('../../font/byekan.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'broya';
-    src: url('../fonts/broya.eot') format('embedded-opentype');
-    src: url('../fonts/broya.ttf') format('truetype');
-    src: url('../fonts/broya.woff') format('woff');
+    src: url('../../font/broya.eot') format('embedded-opentype');
+    src: url('../../font/broya.ttf') format('truetype');
+    src: url('../../font/broya.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
