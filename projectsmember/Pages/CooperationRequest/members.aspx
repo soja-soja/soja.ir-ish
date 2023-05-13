@@ -6,7 +6,7 @@
 <head runat="server">
     <link rel="icon" type="image/png" href="../../Content/Image/img/Puzzlefavicon.png">
 
-    <title>چالش ها</title>
+    <title>صفحه کاربری</title>
 
     <!-- Theme CSS -->
     <link rel="stylesheet" href="../../Content/CSS/MemCss/memberstyle.css" />
@@ -41,10 +41,10 @@
                             <li class="list-inline-item text-center"><a href="https://github.com/soja-soja/soja.ir-ish"><i class="fab fa-github fa-fw"></i></a></li>
                             <li class="list-inline-item text-center"><a href="https://www.youtube.com/channel/UCgMjLuov_-BhSOXjmyFmOtQ"><i class="fab fa-youtube  fa-fw"></i></a></li>
                             <li class="list-inline-item"><a href="https://soja.ir"><i class="fa fa-link"></i></a></li>
-
+                            
                         </ul>
                         <!--//social-list-->
-                        <a href="signin.aspx" class="btn btn-primary d-none d-lg-flex">خروج</a>
+                        <a href="../UserAdminPages/Login_User.aspx" class="btn btn-primary d-none d-lg-flex">خروج</a>
                     </div>
                     <!--//docs-top-utilities-->
                 </div>

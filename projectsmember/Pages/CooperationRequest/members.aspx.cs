@@ -23,7 +23,7 @@ namespace projectsmember.members
                     Response.Redirect("signin.aspx");
                 }
             }
-            catch(Exception)
+            catch (Exception)
             {
                 Response.Redirect("signin.aspx");
             }

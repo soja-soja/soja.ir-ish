@@ -267,15 +267,6 @@ namespace projectsmember
         protected global::Recaptcha.Web.UI.Controls.RecaptchaWidget RecaptchaWidget1;
 
         /// <summary>
-        /// btnRegFinal control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnRegFinal;
-
-        /// <summary>
         /// btnBackStep2 control.
         /// </summary>
         /// <remarks>
@@ -283,6 +274,15 @@ namespace projectsmember
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnBackStep2;
+
+        /// <summary>
+        /// btnRegFinal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnRegFinal;
 
         /// <summary>
         /// lblErr control.

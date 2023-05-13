@@ -6,25 +6,23 @@
  */
 @font-face {
     font-family: 'bmitra';
-    src: url('../../../fonts/bmitra.eot') format('embedded-opentype');
-    src: url('../../../fonts/bmitra.woff') format('woff');
-    src: url('../../../fonts/bmitra.ttf') format('truetype');
-    
+    src: url('../../font/bmitra.eot') format('embedded-opentype');
+    src: url('../../font/bmitra.woff') format('woff');
+    src: url('../../font/bmitra.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'byekan';
-    src: url('../../../fonts/byekan.eot') format('embedded-opentype');
-    src: url('../../../fonts/byekan.ttf') format('truetype');
-    src: url('../../../fonts/byekan.woff') format('woff');
-    
+    src: url('../../font/byekan.eot') format('embedded-opentype');
+    src: url('../../font/byekan.ttf') format('truetype');
+    src: url('../../font/byekan.woff') format('woff');
 }
 
 @font-face {
     font-family: 'broya';
-    src: url('../../../fonts/broya.eot') format('embedded-opentype');
-    src: url('../../../fonts/broya.ttf') format('truetype');
-    src: url('../../../fonts/broya.woff') format('woff');
+    src: url('../../font//broya.eot') format('embedded-opentype');
+    src: url('../../font/broya.ttf') format('truetype');
+    src: url('../../font/broya.woff') format('woff');
 }
 
    
@@ -118,7 +116,7 @@ hr {
 }
 body {
     margin: 0;
-    font-family:;
+    font-family: byekan,Tahoma;
     font-size: var(--bs-body-font-size);
     font-weight: var(--bs-body-font-weight);
     line-height: var(--bs-body-line-height);
@@ -3052,7 +3050,7 @@ textarea.form-control-lg {
 .btn {
     --bs-btn-padding-x: .75rem;
     --bs-btn-padding-y: .375rem;
-    --bs-btn-font-family:;
+    --bs-btn-font-family: byekan,Tahoma;
     --bs-btn-font-size: 1rem;
     --bs-btn-font-weight: 400;
     --bs-btn-line-height: 1.5;
@@ -12295,7 +12293,7 @@ textarea.form-control-lg {
 */
 
 body {
-    font-family: yekan,Tahoma;
+    font-family: byekan,Tahoma;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #5d6778;

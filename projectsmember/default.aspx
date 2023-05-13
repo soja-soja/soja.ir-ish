@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>مراحل عضوگیری پروژه</title>
+    <title>آکادمی آموزشی سوجا :: پروژه های طراحی وب سایت و تحلیل داده</title>
 
     <link href="Content/Bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/Bootstrap/font-awesome.min.css" rel="stylesheet" />
@@ -15,7 +15,7 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
+
 
     <!-- Favicon-->
     <link rel="icon" type="../image/x-icon" href="Content/Image/img/soja.jpg" />
@@ -27,7 +27,7 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="Content/CSS/css/styles.css" rel="stylesheet" />
-    
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -38,9 +38,11 @@
                 <li class="sidebar-brand"><a href="#page-top">سفارش و همکاری </a></li>
                 <li class="sidebar-nav-item"><a href="#page-top">مقدمه </a></li>
                 <li class="sidebar-nav-item"><a href="#services">نحوه همکاری</a></li>
-<%--                <li class="sidebar-nav-item"><a href="#steps">مراحل همکاری </a></li>--%>
-                <li class="sidebar-nav-item"><a href="#portfolio"> ثبت سفارش</a></li>
-<%--                <li class="sidebar-nav-item"><a href="#portfolio">نکات قابل توجه  </a></li>--%>
+                <%--                <li class="sidebar-nav-item"><a href="#steps">مراحل همکاری </a></li>--%>
+                <li class="sidebar-nav-item"><a href="#portfolio">ثبت سفارش</a></li>
+                <hr style="border: 1px solid white">
+
+                <li class="sidebar-nav-item" style="background: #ecb807; color: #1D809F !important;"><a href="#portfolio">ورود به بخش کاربری </a></li>
             </ul>
         </nav>
         <!-- Header-->
@@ -85,7 +87,7 @@
                         <h4><strong>مرحله دوم</strong></h4>
                         <p class="text-faded mb-0">
                             عضویت توی سایت سوال و جواب
-     </p>
+                        </p>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <span class="service-icon rounded-circle mx-auto mb-3">
@@ -105,6 +107,7 @@
            
                 <br />
                 <br />
+                <a class="btn btn-warning btn-xl" href="Pages/UserAdminPages/Login_User.aspx">ورود</a>
                 <a class="btn btn-warning btn-xl" href="#letsgo">ثبت نام</a>
             </h5>
 
@@ -195,7 +198,7 @@
                         <a class="social-link rounded-circle text-white" href="https://github.com/soja-soja/soja.ir-ish"><i class="icon-social-github"></i></a>
                     </li>
                 </ul>
-                <p dir="rtl" class="text-muted small mb-0">Copyright &copy; تمامی حقوق مادی و معنوی، متعلق به <a href="https://soja.ir" style="color:orange !important;">وب سایت سوال جواب</a> (soja.ir) و تیم مدیریتی آن می باشد.</p>
+                <p dir="rtl" class="text-muted small mb-0">Copyright &copy; تمامی حقوق مادی و معنوی، متعلق به <a href="https://soja.ir" style="color: orange !important;">وب سایت سوال جواب</a> (soja.ir) و تیم مدیریتی آن می باشد.</p>
             </div>
         </footer>
         <!-- Scroll to Top Button-->
