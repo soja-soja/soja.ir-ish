@@ -20,6 +20,11 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/placeholder-loading/dist/css/placeholder-loading.min.css" />
+    <style>
+        .list-inline-item {
+            margin-right: 14px !important
+        }
+    </style>
 </head>
 <body dir="rtl">
     <form id="form1" runat="server">
@@ -41,7 +46,7 @@
                             <li class="list-inline-item text-center"><a href="https://github.com/soja-soja/soja.ir-ish"><i class="fab fa-github fa-fw"></i></a></li>
                             <li class="list-inline-item text-center"><a href="https://www.youtube.com/channel/UCgMjLuov_-BhSOXjmyFmOtQ"><i class="fab fa-youtube  fa-fw"></i></a></li>
                             <li class="list-inline-item"><a href="https://soja.ir"><i class="fa fa-link"></i></a></li>
-                            
+
                         </ul>
                         <!--//social-list-->
                         <a href="../UserAdminPages/Login_User.aspx" class="btn btn-primary d-none d-lg-flex">خروج</a>
