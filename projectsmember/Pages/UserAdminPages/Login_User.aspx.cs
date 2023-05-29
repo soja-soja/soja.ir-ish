@@ -7,8 +7,6 @@ namespace projectsmember
 {
     public partial class Login_User : System.Web.UI.Page
     {
-        SqlConnection LOGConn = new SqlConnection(ConfigurationManager.ConnectionStrings["sojaIrishConnectionString"].ConnectionString);
-
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -26,7 +24,7 @@ namespace projectsmember
                 if (result.Success)
                 {
                     App_Code.DataSet1TableAdapters.MembersTableAdapter dstaMem = new App_Code.DataSet1TableAdapters.MembersTableAdapter();
-                    int numberOfUsers = dstaMem.QueryLoginUser(txtUserName.Text, txtPass.Text.GetHashCode().ToString()).GetHashCode();
+                    int numberOfUsers = dstaMem.QueryLoginUser(txtUserName.Text, txtPass.Text.GetHashCode().ToString()).GetValueOrDefault();
 
 
                     if (numberOfUsers > 0)

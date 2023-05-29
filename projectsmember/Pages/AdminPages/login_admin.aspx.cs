@@ -9,8 +9,6 @@ namespace projectsmember
 {
     public partial class login_admin : Page
     {
-        SqlConnection LOGConn = new SqlConnection(ConfigurationManager.ConnectionStrings["sojaIrishConnectionString"].ConnectionString);
-
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -30,7 +28,7 @@ namespace projectsmember
 
                     App_Code.DataSet1TableAdapters.AdminTableAdapter dstaAdmin = new App_Code.DataSet1TableAdapters.AdminTableAdapter();
 
-                    int numberOfAdminUsers = dstaAdmin.AdminLoginQuery(txtAdminUserName.Text, txtAdminPass.Text.GetHashCode().ToString()).GetHashCode();
+                    int numberOfAdminUsers = dstaAdmin.AdminLoginQuery(txtAdminUserName.Text, txtAdminPass.Text.GetHashCode().ToString()).GetValueOrDefault();
 
                     if (numberOfAdminUsers > 0)
                     {
@@ -44,9 +42,6 @@ namespace projectsmember
                         Session.Add("adminstatus", autoAdToken);
                         Session.Add("Name", txtAdminUserName.Text);
                         Response.Redirect("Dashboard.aspx");
-
-
-
 
                     }
                 }
