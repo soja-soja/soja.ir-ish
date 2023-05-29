@@ -26,7 +26,7 @@ namespace projectsmember
                 if (result.Success)
                 {
                     App_Code.DataSet1TableAdapters.MembersTableAdapter dstaMem = new App_Code.DataSet1TableAdapters.MembersTableAdapter();
-                    int numberOfUsers = dstaMem.QueryLoginUser(txtUserName.Text, txtPass.Text).GetHashCode();
+                    int numberOfUsers = dstaMem.QueryLoginUser(txtUserName.Text, txtPass.Text.GetHashCode().ToString()).GetHashCode();
 
 
                     if (numberOfUsers > 0)
@@ -37,7 +37,7 @@ namespace projectsmember
                         var resultToken = new string(Enumerable.Repeat(allChar, 5).Select(token => token[random.Next(token.Length)]).ToArray());
                         string autoToken = resultToken.ToString();
                         //DataSet1TableAdapters.MembersTableAdapter dstaToken = new DataSet1TableAdapters.MembersTableAdapter();
-                        dstaMem.UpdateQuery(autoToken, txtUserName.Text, txtPass.Text);
+                        dstaMem.UpdateQuery(autoToken, txtUserName.Text, txtPass.Text.GetHashCode().ToString());
                         //Login successful !
                         Session.Add("status", autoToken);
                         Session.Add("Name", txtUserName.Text);

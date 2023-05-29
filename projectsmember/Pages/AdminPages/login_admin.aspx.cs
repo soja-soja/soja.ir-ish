@@ -30,7 +30,7 @@ namespace projectsmember
 
                     App_Code.DataSet1TableAdapters.AdminTableAdapter dstaAdmin = new App_Code.DataSet1TableAdapters.AdminTableAdapter();
 
-                    int numberOfAdminUsers = dstaAdmin.AdminLoginQuery(txtAdminUserName.Text, txtAdminPass.Text).GetHashCode();
+                    int numberOfAdminUsers = dstaAdmin.AdminLoginQuery(txtAdminUserName.Text, txtAdminPass.Text.GetHashCode().ToString()).GetHashCode();
 
                     if (numberOfAdminUsers > 0)
                     {
@@ -39,7 +39,7 @@ namespace projectsmember
                         var resultToken = new string(Enumerable.Repeat(allChar, 5).Select(token => token[random.Next(token.Length)]).ToArray());
                         string autoAdToken = resultToken.ToString();
                         //App_Code.DataSet1TableAdapters.AdminTableAdapter dstAdmin = new App_Code.DataSet1TableAdapters.AdminTableAdapter();
-                        dstaAdmin.UpdateAdminQuery(autoAdToken, txtAdminUserName.Text, txtAdminPass.Text);
+                        dstaAdmin.UpdateAdminQuery(autoAdToken, txtAdminUserName.Text, txtAdminPass.Text.GetHashCode().ToString());
                         //Login successful !
                         Session.Add("adminstatus", autoAdToken);
                         Session.Add("Name", txtAdminUserName.Text);
