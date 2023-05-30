@@ -254,6 +254,7 @@
     <Content Include="Content\JS\js\material-dashboard.min.js" />
     <Content Include="Content\JS\js\scripts.js" />
     <Content Include="Pages\AdminPages\login_admin.aspx" />
+    <Content Include="Pages\CooperationRequest\Profiles\HamidForoughnia.html" />
     <Content Include="Pages\UserAdminPages\Login_User.aspx" />
     <Content Include="Pages\AdminPages\MasterAdmin.aspx" />
     <Content Include="Content\CSS\MemCss\git-style.css" />
@@ -2608,7 +2609,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\Scripts\gumshoe\" />
-    <Folder Include="Pages\CooperationRequest\Profiles\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
