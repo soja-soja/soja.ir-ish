@@ -61,8 +61,32 @@ namespace projectsmember
                     e.Row.Cells[2].Text = "---";
                 }
 
+            }
+            //foreach (GridViewColumnsGenerator col in GViewFullMember.Columns)
+            //{
+            //    CheckBoxField cbfChecked = (CheckBoxField)col.
+            //    CheckBoxField cbfContacted = (CheckBoxField)col.Columns[8];
+            //    CheckBoxField cbfEngaged = (CheckBoxField)col.Columns[9];
 
 
+            //    // Enable the check box field
+            //    cbfChecked.Enabled = true;
+            //    cbfContacted.Enabled = true;
+            //    cbfEngaged.Enabled = true;
+            //}
+
+
+            foreach (GridViewRow row in GViewFullMember.Rows)
+            {
+                // Get the check box field in the first column
+                CheckBoxField cbfChecked = (CheckBoxField)row.Cells[7];
+                CheckBoxField cbfContacted = (CheckBoxField)row.Cells[8].Controls[0];
+                CheckBoxField cbfEngaged = (CheckBoxField)row.Cells[9].Controls[0];
+
+                // Enable the check box field
+                cbfChecked.Enabled = true;
+                cbfContacted.Enabled = true;
+                cbfEngaged.Enabled = true;
             }
 
 
@@ -134,9 +158,19 @@ namespace projectsmember
                 e.Row.Cells[5].Text += newstr[i].ToString() + "<br> ";
             }
 
+            //    CheckBoxField cbfPChecked = (CheckBoxField)GViewFullMember.Columns[8];
+            //    CheckBoxField cbfPContacted = (CheckBoxField)GViewFullMember.Columns[9];
+            //    CheckBoxField cbfPEngaged = (CheckBoxField)GViewFullMember.Columns[10];
+            //    CheckBoxField cbfPofferedToMembers = (CheckBoxField)GViewFullMember.Columns[11];
+
+
+            //    // Enable the check box field
+            //    cbfPChecked.Enabled = true;
+            //    cbfPContacted.Enabled = true;
+            //    cbfPEngaged.Enabled = true;
+            //    cbfPofferedToMembers.Enabled = true;
+            //}
+
 
         }
-
-
     }
-}

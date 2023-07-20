@@ -269,7 +269,7 @@
                                             <asp:BoundField DataField="ProjectFeatures" HeaderText="ProjFeatures" SortExpression="ProjectFeatures"></asp:BoundField>
                                             <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email"></asp:BoundField>
                                             <asp:BoundField DataField="Phone" HeaderText="Phone" SortExpression="Phone"></asp:BoundField>
-                                            <asp:CheckBoxField DataField="checked" HeaderText="checked" SortExpression="checked"></asp:CheckBoxField>
+                                            <asp:CheckBoxField DataField="checked" HeaderText="checked" SortExpression="checked"  ></asp:CheckBoxField>
                                             <asp:CheckBoxField DataField="contacted" HeaderText="contacted" SortExpression="contacted"></asp:CheckBoxField>
                                             <asp:CheckBoxField DataField="engaged" HeaderText="engaged" SortExpression="engaged"></asp:CheckBoxField>
                                             <asp:CheckBoxField DataField="offeredToMembers" HeaderText="offeredToMembers" SortExpression="offeredToMembers"></asp:CheckBoxField>

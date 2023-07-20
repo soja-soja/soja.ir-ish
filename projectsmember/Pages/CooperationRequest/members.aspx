@@ -80,7 +80,7 @@
         <div class="page-content">
             <div class="container">
                 <div class="docs-overview py-5">
-                    <div class="row justify-content-center">
+                    <div class="row justify-content-center" id="parent" >
                         <div class="col-12 col-lg-8 py-3">
                             <div class="card shadow-sm" aria-hidden="true">
                                 <div class="card-body">

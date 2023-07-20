@@ -1,11 +1,39 @@
 ﻿using System;
 using System.Web.UI;
 using System.Web.UI.HtmlControls;
+using System.Collections.Generic;
+using System.Linq;
+
+
 
 namespace projectsmember.members
 {
     public partial class members : System.Web.UI.Page
     {
+        public class ControlProcessor
+        {
+            public void ProcessHtmlControls(int challengeNumber, List<HtmlGenericControl> htmlControls)
+            {
+                for (int i = 0; i < challengeNumber; i++)
+                {
+                    if (i < htmlControls.Count)
+                    {
+                        HtmlGenericControl control = htmlControls[i];
+
+                        foreach (var span in control.Controls.OfType<HtmlGenericControl>().Where(c => c.TagName == "span"))
+                        {
+                            span.Attributes["class"] = span.Attributes["class"].Replace("placeholder", "");
+                            span.Attributes["class"] = span.Attributes["class"].Replace("placeholder-glow", "");
+                        }
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+            }
+           
+        }
         protected void Page_Load(object sender, EventArgs e)
         {
             try
@@ -20,170 +48,25 @@ namespace projectsmember.members
                     string userWelcom = dtaUsrWlcom.returnSojaUserID(Session["Name"].ToString());
                     lblWelcome.Text = userWelcom + lblWelcome.Text;
                     App_Code.DataSet1TableAdapters.MembersTableAdapter dstaChlngNum = new App_Code.DataSet1TableAdapters.MembersTableAdapter();
-                    string chalengeNum = (dstaChlngNum.ReturnChalengeNum(Session["Name"].ToString())).ToString();
-                    if (chalengeNum == "2")
+                    int challengeNum = Convert.ToInt32(dstaChlngNum.ReturnChalengeNum((string)Session["Name"]).ToString());
+
+
+                    List<HtmlGenericControl> htmlControls = new List<HtmlGenericControl>();
+
+                    HtmlGenericControl parentControl = (HtmlGenericControl)FindControl("parent");
+
+                    foreach (Control childControl in parentControl.Controls)
                     {
-                        foreach (HtmlGenericControl span in chlng2.Controls)
+                        HtmlGenericControl divControl = childControl as HtmlGenericControl;
+                        if (divControl != null && divControl.TagName.ToLower() == "div" && divControl.Attributes["class"] == "card-body")
                         {
-                            string classes = span.Attributes["class"];
-                            span.Attributes["class"] = classes.Replace("placeholder", "");
-                            span.Attributes["class"] = classes.Replace("placeholder-glow", "");
-
-                        }
-                    }
-                    else if (chalengeNum == "3")
-                    {
-                        foreach (HtmlGenericControl span in chlng2.Controls)
-                        {
-                            string classes = span.Attributes["class"];
-                            span.Attributes["class"] = classes.Replace("placeholder", "");
-                            span.Attributes["class"] = classes.Replace("placeholder-glow", "");
-
-                        }
-                        foreach (HtmlGenericControl span in chlng3.Controls)
-                        {
-                            string classes = span.Attributes["class"];
-                            span.Attributes["class"] = classes.Replace("placeholder", "");
-                            span.Attributes["class"] = classes.Replace("placeholder-glow", "");
-
-                        }
-                    }
-                    else if (chalengeNum == "4")
-                    {
-                        foreach(HtmlGenericControl span in chlng2.Controls)
-                        {
-                            string classes = span.Attributes["class"];
-                            span.Attributes["class"] = classes.Replace("placeholder", "");
-                            span.Attributes["class"] = classes.Replace("placeholder-glow", "");
-                        }
-                        foreach (HtmlGenericControl span in chlng3.Controls)
-                        {
-                            string classes = span.Attributes["class"];
-                            span.Attributes["class"] = classes.Replace("placeholder", "");
-                            span.Attributes["class"] = classes.Replace("placeholder-glow", "");
-
-                        }
-                        foreach (HtmlGenericControl span in chlng4.Controls)
-                        {
-                            string classes = span.Attributes["class"];
-                            span.Attributes["class"] = classes.Replace("placeholder", "");
-                            span.Attributes["class"] = classes.Replace("placeholder-glow", "");
-
-                        }
-                    }
-                    else if (chalengeNum == "5")
-                    {
-                        foreach (HtmlGenericControl span in chlng2.Controls)
-                        {
-                            string classes = span.Attributes["class"];
-                            span.Attributes["class"] = classes.Replace("placeholder", "");
-                            span.Attributes["class"] = classes.Replace("placeholder-glow", "");
-                        }
-                        foreach (HtmlGenericControl span in chlng3.Controls)
-                        {
-                            string classes = span.Attributes["class"];
-                            span.Attributes["class"] = classes.Replace("placeholder", "");
-                            span.Attributes["class"] = classes.Replace("placeholder-glow", "");
-
-                        }
-                        foreach (HtmlGenericControl span in chlng4.Controls)
-                        {
-                            string classes = span.Attributes["class"];
-                            span.Attributes["class"] = classes.Replace("placeholder", "");
-                            span.Attributes["class"] = classes.Replace("placeholder-glow", "");
-
-                        }
-                        foreach (HtmlGenericControl span in chlng5.Controls)
-                        {
-                            string classes = span.Attributes["class"];
-                            span.Attributes["class"] = classes.Replace("placeholder", "");
-                            span.Attributes["class"] = classes.Replace("placeholder-glow", "");
-
-                        }
-                    }
-                    else if (chalengeNum == "6")
-                    {
-                        foreach (HtmlGenericControl span in chlng2.Controls)
-                        {
-                            string classes = span.Attributes["class"];
-                            span.Attributes["class"] = classes.Replace("placeholder", "");
-                            span.Attributes["class"] = classes.Replace("placeholder-glow", "");
-                        }
-                        foreach (HtmlGenericControl span in chlng3.Controls)
-                        {
-                            string classes = span.Attributes["class"];
-                            span.Attributes["class"] = classes.Replace("placeholder", "");
-                            span.Attributes["class"] = classes.Replace("placeholder-glow", "");
-
-                        }
-                        foreach (HtmlGenericControl span in chlng4.Controls)
-                        {
-                            string classes = span.Attributes["class"];
-                            span.Attributes["class"] = classes.Replace("placeholder", "");
-                            span.Attributes["class"] = classes.Replace("placeholder-glow", "");
-
-                        }
-                        foreach (HtmlGenericControl span in chlng5.Controls)
-                        {
-                            string classes = span.Attributes["class"];
-                            span.Attributes["class"] = classes.Replace("placeholder", "");
-                            span.Attributes["class"] = classes.Replace("placeholder-glow", "");
-
-                        }
-                        foreach (HtmlGenericControl span in chlng6.Controls)
-                        {
-                            string classes = span.Attributes["class"];
-                            span.Attributes["class"] = classes.Replace("placeholder", "");
-                            span.Attributes["class"] = classes.Replace("placeholder-glow", "");
-
-                        }
-                    }
-                    else if (chalengeNum == "7")
-                    {
-                        foreach (HtmlGenericControl span in chlng2.Controls)
-                        {
-                            string classes = span.Attributes["class"];
-                            span.Attributes["class"] = classes.Replace("placeholder", "");
-                            span.Attributes["class"] = classes.Replace("placeholder-glow", "");
-                        }
-                        foreach (HtmlGenericControl span in chlng3.Controls)
-                        {
-                            string classes = span.Attributes["class"];
-                            span.Attributes["class"] = classes.Replace("placeholder", "");
-                            span.Attributes["class"] = classes.Replace("placeholder-glow", "");
-
-                        }
-                        foreach (HtmlGenericControl span in chlng4.Controls)
-                        {
-                            string classes = span.Attributes["class"];
-                            span.Attributes["class"] = classes.Replace("placeholder", "");
-                            span.Attributes["class"] = classes.Replace("placeholder-glow", "");
-
-                        }
-                        foreach (HtmlGenericControl span in chlng5.Controls)
-                        {
-                            string classes = span.Attributes["class"];
-                            span.Attributes["class"] = classes.Replace("placeholder", "");
-                            span.Attributes["class"] = classes.Replace("placeholder-glow", "");
-
-                        }
-                        foreach (HtmlGenericControl span in chlng6.Controls)
-                        {
-                            string classes = span.Attributes["class"];
-                            span.Attributes["class"] = classes.Replace("placeholder", "");
-                            span.Attributes["class"] = classes.Replace("placeholder-glow", "");
-
-                        }
-                        foreach (HtmlGenericControl span in chlng7.Controls)
-                        {
-                            string classes = span.Attributes["class"];
-                            span.Attributes["class"] = classes.Replace("placeholder", "");
-                            span.Attributes["class"] = classes.Replace("placeholder-glow", "");
-
+                            htmlControls.Add(divControl);
                         }
                     }
 
-
+                    ControlProcessor processor = new ControlProcessor();
+                    int challengeIndex = 2; // start processing controls from index 2
+                    processor.ProcessHtmlControls(challengeNum - challengeIndex, htmlControls);
 
 
                 }
