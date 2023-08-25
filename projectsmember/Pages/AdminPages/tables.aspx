@@ -30,7 +30,7 @@
                     <asp:Label ID="lblName" class="ms-1 font-weight-bold text-white" runat="server" Text="Management panel"></asp:Label>
 
                     <i class="fa fa-circle text-success "></i>
-                    <span style="color: white; font-size:small ">online</span>
+                    <span style="color: white; font-size: small">online</span>
 
                 </div>
             </div>
@@ -77,7 +77,7 @@
         </aside>
         <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
             <!-- Navbar -->
-                        <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur" data-scroll="true">
+            <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur" data-scroll="true">
                 <div class="container-fluid py-1 px-3">
                     <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
                         <div class="ms-md-auto pe-md-3 d-flex align-items-center">
@@ -174,9 +174,8 @@
                                             </a>
                                         </li>
                                                                         test--%>
-
-                                    </ul>
-                                </li>
+                            </ul>
+                            </li>
 
 
                             </ul>
@@ -203,7 +202,7 @@
                                             <asp:CommandField ShowEditButton="True" ShowDeleteButton="True"></asp:CommandField>
                                             <asp:BoundField DataField="Id" HeaderText="Id" ReadOnly="True" InsertVisible="False" SortExpression="Id"></asp:BoundField>
                                             <asp:BoundField DataField="Subscribed" HeaderText="Ytube/Aparat" SortExpression="Subscribed"></asp:BoundField>
-                                            <asp:BoundField DataField="WatchedVideos" HeaderText="WatchedVideos" SortExpression="WatchedVideos" ItemStyle-CssClass=" text-wrap  " ></asp:BoundField>
+                                            <asp:BoundField DataField="WatchedVideos" HeaderText="WatchedVideos" SortExpression="WatchedVideos" ItemStyle-CssClass=" text-wrap  "></asp:BoundField>
                                             <asp:BoundField DataField="SojaID" HeaderText="SojaID" SortExpression="SojaID"></asp:BoundField>
                                             <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email"></asp:BoundField>
                                             <asp:BoundField DataField="Phone" HeaderText="Phone" SortExpression="Phone"></asp:BoundField>
@@ -244,6 +243,7 @@
                                             <asp:Parameter Name="Id" Type="Int32"></asp:Parameter>
                                         </UpdateParameters>
                                     </asp:SqlDataSource>
+
                                 </div>
                             </div>
                         </div>
@@ -269,7 +269,7 @@
                                             <asp:BoundField DataField="ProjectFeatures" HeaderText="ProjFeatures" SortExpression="ProjectFeatures"></asp:BoundField>
                                             <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email"></asp:BoundField>
                                             <asp:BoundField DataField="Phone" HeaderText="Phone" SortExpression="Phone"></asp:BoundField>
-                                            <asp:CheckBoxField DataField="checked" HeaderText="checked" SortExpression="checked"  ></asp:CheckBoxField>
+                                            <asp:CheckBoxField DataField="checked" HeaderText="checked" SortExpression="checked"></asp:CheckBoxField>
                                             <asp:CheckBoxField DataField="contacted" HeaderText="contacted" SortExpression="contacted"></asp:CheckBoxField>
                                             <asp:CheckBoxField DataField="engaged" HeaderText="engaged" SortExpression="engaged"></asp:CheckBoxField>
                                             <asp:CheckBoxField DataField="offeredToMembers" HeaderText="offeredToMembers" SortExpression="offeredToMembers"></asp:CheckBoxField>
@@ -331,7 +331,7 @@
             </div>
         </main>
 
-               <div class="fixed-plugin">
+        <div class="fixed-plugin">
             <%--<a class="fixed-plugin-button text-dark position-fixed px-3 py-2">
                 <i class="material-icons py-2">settings</i>
             </a>--%>
