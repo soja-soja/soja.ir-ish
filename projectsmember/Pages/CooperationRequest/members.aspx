@@ -80,7 +80,7 @@
         <div class="page-content">
             <div class="container">
                 <div class="docs-overview py-5">
-                    <div class="row justify-content-center">
+                    <div class="row justify-content-center" id="parent" >
                         <div class="col-12 col-lg-8 py-3">
                             <div class="card shadow-sm" aria-hidden="true">
                                 <div class="card-body">
@@ -155,19 +155,19 @@
                         <!--//col-->
                         <div class="col-12 col-lg-4 py-3">
                             <div class="card shadow-sm" aria-hidden="true">
-                                <div class="card-body">
-                                    <h5 class="card-title mb-3  placeholder-glow">
-                                        <span class="theme-icon-holder card-icon-holder placeholder-glow  me-2 "></span>
-                                        <span class=" card-title-text placeholder-glow  col-6  ">
-                                            <span class="placeholder col-8"></span>
+                                <div class="card-body" id="chlng2" runat="server" >
+                                    <h5 class="card-title mb-3 placeholder-glow "  >
+                                        <span class="theme-icon-holder card-icon-holder placeholder-glow me-2 " >abca</span>
+                                        <span class=" card-title-text placeholder-glow  col-6  " >
+                                            <span class="placeholder col-8" >teyerherjfhjd</span>
                                         </span>
                                     </h5>
-                                    <div class="card-text placeholder-glow  ">
-                                        <span class="placeholder col-12  "></span>
-                                        <span class="placeholder col-12"></span>
-                                        <span class="placeholder col-12"></span>
-                                        <span class="placeholder col-6"></span>
-                                        <span class="placeholder col-3"></span>
+                                    <div class="card-text placeholder-glow  " >
+                                        <span class="placeholder col-12  ">fdhgsfhshdisjds</span>
+                                        <span class="placeholder col-12">bfsfsnlkeske</span>
+                                        <span class="placeholder col-12">hihfihselkleskd</span>
+                                        <span class="placeholder col-6">powireyiuefndjj</span>
+                                        <span class="placeholder col-3">kjfieuyidopkpodjskpdkpodoh</span>
 
                                     </div>
                                     <!--  <a class="card-link-mask" href="docs-page.aspx#section-2"></a>-->
@@ -179,7 +179,7 @@
                         <!--//col-->
                         <div class="col-12 col-lg-4 py-3">
                             <div class="card shadow-sm" aria-hidden="true">
-                                <div class="card-body">
+                                <div class="card-body"  id="chlng3" runat="server">
                                     <h5 class="card-title mb-3  placeholder-glow">
                                         <span class="theme-icon-holder card-icon-holder placeholder-glow  me-2 "></span>
                                         <span class=" card-title-text placeholder-glow  col-6  ">
@@ -203,7 +203,7 @@
                         <!--//col-->
                         <div class="col-12 col-lg-4 py-3">
                             <div class="card shadow-sm" aria-hidden="true">
-                                <div class="card-body">
+                                <div class="card-body"  id="chlng4" runat="server">
                                     <h5 class="card-title mb-3  placeholder-glow">
                                         <span class="theme-icon-holder card-icon-holder placeholder-glow  me-2 "></span>
                                         <span class=" card-title-text placeholder-glow  col-6  ">
@@ -227,8 +227,8 @@
                         <!--//col-->
                         <div class="col-12 col-lg-4 py-3">
                             <div class="card shadow-sm" aria-hidden="true">
-                                <div class="card-body">
-                                    <h5 class="card-title mb-3  placeholder-glow">
+                                <div class="card-body"  id="chlng5" runat="server">
+                                    <h5 class="card-title mb-3  placeholder-glow"  >
                                         <span class="theme-icon-holder card-icon-holder placeholder-glow  me-2 "></span>
                                         <span class=" card-title-text placeholder-glow  col-6  ">
                                             <span class="placeholder col-9"></span>
@@ -251,7 +251,7 @@
                         <!--//col-->
                         <div class="col-12 col-lg-4 py-3">
                             <div class="card shadow-sm" aria-hidden="true">
-                                <div class="card-body">
+                                <div class="card-body"  id="chlng6" runat="server">
                                     <h5 class="card-title mb-3  placeholder-glow">
                                         <span class="theme-icon-holder card-icon-holder placeholder-glow  me-2 "></span>
                                         <span class=" card-title-text placeholder-glow  col-6  ">
@@ -275,7 +275,7 @@
                         <!--//col-->
                         <div class="col-12 col-lg-4 py-3">
                             <div class="card shadow-sm" aria-hidden="true">
-                                <div class="card-body">
+                                <div class="card-body"  id="chlng7" runat="server">
                                     <h5 class="card-title mb-3  placeholder-glow">
                                         <span class="theme-icon-holder card-icon-holder placeholder-glow  me-2 "></span>
                                         <span class=" card-title-text placeholder-glow  col-6  ">
